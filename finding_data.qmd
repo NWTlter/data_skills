@@ -6,7 +6,7 @@ editor: visual
 
 Niwot data can be found by searching any of the [Environmental Data Initiative](https://portal.edirepository.org/nis/advancedSearch.jsp) (EDI) repository; the [Niwot Ridge data catalog](https://nwt.lternet.edu/data-catalog) or [DataOne](https://www.dataone.org/).
 
-We archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack.
+We archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack. Read on for some tips on how to make this process easier and efficiently get the data you are looking for.
 
 ------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ Within EDI, data package identifiers have the form **scope.accession.version**, 
 
 An example of a packageID is knb-lter-nwt.314.3
 
-A DOI is a globally unique and persistent identifier that unambiguously resolves to the data package [landing page](#0). DOIs are used in citations and references of a data package.
+A DOI is a globally unique and persistent identifier that unambiguously resolves to the data package landing page. *DOIs should always be used when citing a data package.*
 
 An example of a DOI is doi:10.6073/pasta/7890c3264eb71bb992f0237844b02667
 :::
@@ -55,15 +55,15 @@ If you know the packageID of a dataset, you can enter that directly into the Ide
 
 ## DOI
 
-If you know the DOI of a dataset you can enter it directly into your browser to be taken to the landing page of the dataset, all you need to do is append the doi (the doi will start with 10.6073)
+If you know the DOI of a dataset you can enter it directly into your browser to be taken to the landing page of the dataset, all you need to do is append the doi to the url https://doi.org/ (the doi will start with 10.6073)
 :::
 
 ::: custom-section
 ## Where to find packageIDs or DOI?s
 
 PackageIDs and DOIs can be found in the data catalog and citations of journal articles. Most of Niwot's long-term datasets (aka "signature datasets" were listed in the NWT VIII renewal. This table can be downloaded [here](./pdfs/signature_data.pdf). Note most of our ongoing datasets get updated each year. However the scope and accession of the packageID stays consistent over time; only the version increments over time.
-
 :::
+
 ## How do I know if I am using the most current version?
 
 The landing page of an out-of-date version of a dataset will clearly indicate that there is a more recent version available as well as provide a link to the most current version. Unless you are specifically trying to reproduce an prior analysis, it is recommended to always use the most current version.
