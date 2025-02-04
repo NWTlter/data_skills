@@ -1,0 +1,269 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NWT Data Skills",
+    "section": "",
+    "text": "These guides are intended to refresh you on how to find, use and work with data from the Niwot Ridge LTER Data Catalog\nThis is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue here",
+    "crumbs": [
+      "NWT Data Skills"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "where_data_live.html",
+    "href": "where_data_live.html",
+    "title": "Where Data Live",
+    "section": "",
+    "text": "Niwot LTER uses the Environmental Data Initiative as it’s primary repository. The EDI data portal provides the back end for the Niwot Data Catalog. Because it is a DataOne member node, all Niwot Data can also be found by searching on DataOne. You can access the same Niwot data from any of these endpoints; it does not matter which you use you will end up with the same data.\n\n\nA few Niwot LTER datasets that are part of larger networks (e.g. Ameriflux), as well as numerous dataset collected on or near Niwot Ridge by partner organizations are linked directly on Niwot website under ‘Other Niwot Datasets’",
+    "crumbs": [
+      "Where Data Live"
+    ]
+  },
+  {
+    "objectID": "finding_data.html",
+    "href": "finding_data.html",
+    "title": "Finding Data",
+    "section": "",
+    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack.",
+    "crumbs": [
+      "Finding Data"
+    ]
+  },
+  {
+    "objectID": "finding_data.html#search",
+    "href": "finding_data.html#search",
+    "title": "Finding Data",
+    "section": "Search",
+    "text": "Search\n\nNiwot CatalogEDI CatalogPackageIDDOI\n\n\nNiwot Catalog can be searched using the search box, which indexes the title, abstract and keywords, or through Advanced Search, which provides additional fields. Often, I find that the default search returns either too many or too few datasets, and it can be frustrating to page through them all on the web. In this case, it can be more efficient to download the entire catalog as a .csv and either search the results locally after opening the spreadsheet (CTL-F), or scanning quickly for a specific dataset or datasets of interest.\n\n\n\nEDI catalog has both search and advanced search features. Narrowing the search to include only the Niwot scope (data packages beginning with knb-lter-nwt) will help reduce your search to Niwot LTER data\n\n\n\nIf you know the packageID of a dataset, you can enter that directly into the Identifier field of the EDI data catalog advanced search. Entering a packageID without a version will lead you to the most current version.\n\n\n\nIf you know the DOI of a dataset you can enter it directly into your browser to be taken to the landing page of the dataset, all you need to do is append the doi (the doi will start with 10.6073)",
+    "crumbs": [
+      "Finding Data"
+    ]
+  },
+  {
+    "objectID": "finding_data.html#anatomy-of-a-data-package",
+    "href": "finding_data.html#anatomy-of-a-data-package",
+    "title": "Finding Data",
+    "section": "Anatomy of a Data Package",
+    "text": "Anatomy of a Data Package\nTo effectively search it is helpful to understand the anatomy of a “data package” on EDI. A single data package contains one or many thematically linked data files (aka “entities”), which are archived together with their metadata, under a single packageID, referenced by a single dataset citation, and assigned a single DOI.\nWithin EDI, data package identifiers have the form scope.accession.version, where:\n\nscope is a string value that identifies the organization, project, or theme of the data package. For Niwot Ridge datasets, the scope is always knb-lter-nwt\naccession is an integer value that uniquely identifies the data package within the namespace of the scope\nversion is an integer value in increasing order that identifies the version of the data package\n\nAn example of a packageID is knb-lter-nwt.314.3\nA DOI is a globally unique and persistent identifier that unambiguously resolves to the data package landing page. DOIs are used in citations and references of a data package.\nAn example of a DOI is doi:10.6073/pasta/7890c3264eb71bb992f0237844b02667",
+    "crumbs": [
+      "Finding Data"
+    ]
+  },
+  {
+    "objectID": "finding_data.html#where-to-find-packageids-or-dois",
+    "href": "finding_data.html#where-to-find-packageids-or-dois",
+    "title": "Finding Data",
+    "section": "Where to find packageIDs or DOI?s",
+    "text": "Where to find packageIDs or DOI?s\nPackageIDs and DOIs can be found in the data catalog and citations of journal articles. Most of Niwot’s long-term datasets (aka “signature datasets” were listed in the NWT VIII renewal. This table can be downloaded here. Note most of our ongoing datasets get updated each year. However the scope and accession of the packageID stays consistent over time; only the version increments over time.",
+    "crumbs": [
+      "Finding Data"
+    ]
+  },
+  {
+    "objectID": "finding_data_bu.html",
+    "href": "finding_data_bu.html",
+    "title": "Finding Data",
+    "section": "",
+    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
+  },
+  {
+    "objectID": "finding_data_bu.html#search",
+    "href": "finding_data_bu.html#search",
+    "title": "Finding Data",
+    "section": "",
+    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
+  },
+  {
+    "objectID": "finding_data_bu.html#anatomy-of-a-data-package",
+    "href": "finding_data_bu.html#anatomy-of-a-data-package",
+    "title": "Finding Data",
+    "section": "Anatomy of a Data Package",
+    "text": "Anatomy of a Data Package\nTo effectively search it is helpful to understand the anatomy of a “data package” on EDI. A single data package contains one or many thematically linked data files (aka “entities”), which are archived together with their metadata, under a single packageID, referenced by a single dataset citation, and assigned a single DOI.\nWithin EDI, data package identifiers have the form scope.accession.version, where:\n\nscope is a string value that identifies the organization, project, or theme of the data package. For Niwot Ridge datasets, the scope is always knb-lter-nwt\naccession is an integer value that uniquely identifies the data package within the namespace of the scope\nversion is an integer value in increasing order that identifies the version of the data package\n\nAn example of a packageID is knb-lter-nwt.314.3\nA DOI is a globally unique and persistent identifier that unambiguously resolves to the data package landing page. DOIs are used in citations and references of a data package.\nAn example of a DOI is doi:10.6073/pasta/7890c3264eb71bb992f0237844b02667"
+  },
+  {
+    "objectID": "finding_data_bu2.html",
+    "href": "finding_data_bu2.html",
+    "title": "Finding Data",
+    "section": "",
+    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
+  },
+  {
+    "objectID": "finding_data_bu2.html#search",
+    "href": "finding_data_bu2.html#search",
+    "title": "Finding Data",
+    "section": "",
+    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
+  },
+  {
+    "objectID": "finding_data_bu2.html#anatomy-of-a-data-package",
+    "href": "finding_data_bu2.html#anatomy-of-a-data-package",
+    "title": "Finding Data",
+    "section": "Anatomy of a Data Package",
+    "text": "Anatomy of a Data Package\nTo effectively search it is helpful to understand the anatomy of a “data package” on EDI. A single data package contains one or many thematically linked data files (aka “entities”), which are archived together with their metadata, under a single packageID, referenced by a single dataset citation, and assigned a single DOI.\nWithin EDI, data package identifiers have the form scope.accession.version, where:\n\nscope is a string value that identifies the organization, project, or theme of the data package. For Niwot Ridge datasets, the scope is always knb-lter-nwt\naccession is an integer value that uniquely identifies the data package within the namespace of the scope\nversion is an integer value in increasing order that identifies the version of the data package\n\nAn example of a packageID is knb-lter-nwt.314.3\nA DOI is a globally unique and persistent identifier that unambiguously resolves to the data package landing page. DOIs are used in citations and references of a data package.\nAn example of a DOI is doi:10.6073/pasta/7890c3264eb71bb992f0237844b02667"
+  },
+  {
+    "objectID": "finding_data_bu2.html#where-to-find-packageids-or-dois",
+    "href": "finding_data_bu2.html#where-to-find-packageids-or-dois",
+    "title": "Finding Data",
+    "section": "Where to find packageIDs or DOIs?",
+    "text": "Where to find packageIDs or DOIs?\nPackageIDs and DOIs can be found in the data catalog and citations of journal articles. Most of Niwot’s long-term datasets (aka “signature datasets” were listed in the NWT VIII renewal. This table is included below."
+  },
+  {
+    "objectID": "finding_data.html#four-ways-to-search-for-data",
+    "href": "finding_data.html#four-ways-to-search-for-data",
+    "title": "Finding Data",
+    "section": "Four ways to search for data",
+    "text": "Four ways to search for data\n\nNiwot CatalogEDI CatalogPackageIDDOI\n\n\nNiwot Catalog can be searched using the search box, which indexes the title, abstract and keywords, or through Advanced Search, which provides additional fields. Often, I find that the default search returns either too many or too few datasets, and it can be frustrating to page through them all on the web. In this case, it can be more efficient to download the entire catalog as a .csv and either search the results locally after opening the spreadsheet (CTL-F), or scanning quickly for a specific dataset or datasets of interest.\n\n\n\nEDI catalog has both search and advanced search features. Narrowing the search to include only the Niwot scope (data packages beginning with knb-lter-nwt) will help reduce your search to Niwot LTER data\n\n\n\nIf you know the packageID of a dataset, you can enter that directly into the Identifier field of the EDI data catalog advanced search. Entering a packageID without a version (i.e. entering only the scope and accession, example: knb-lter-nwt.314) will lead you to the most current version.\n\n\n\nIf you know the DOI of a dataset you can enter it directly into your browser to be taken to the landing page of the dataset, all you need to do is append the doi (the doi will start with 10.6073)",
+    "crumbs": [
+      "Finding Data"
+    ]
+  },
+  {
+    "objectID": "finding_data.html#how-do-i-know-if-i-am-using-the-most-current-version",
+    "href": "finding_data.html#how-do-i-know-if-i-am-using-the-most-current-version",
+    "title": "Finding Data",
+    "section": "How do I know if I am using the most current version?",
+    "text": "How do I know if I am using the most current version?\nThe landing page of an out-of-date version of a dataset will clearly indicate that there is a more recent version available as well as provide a link to the most current version. Unless you are specifically trying to reproduce an prior analysis, it is recommended to always use the most current version.",
+    "crumbs": [
+      "Finding Data"
+    ]
+  },
+  {
+    "objectID": "reading_metadata.html",
+    "href": "reading_metadata.html",
+    "title": "Understanding Metadata",
+    "section": "",
+    "text": "Niwot data are archived with machine-readable metadata, using the Ecological Metadata Language (EML), an XML schema for describing ecological datasets.\nIt is challenging for humans to read EML directly. However the landing page of each dataset on EDI has the salient parts displayed in an easy-to-read format. Toggling the full metadata button will display/collapse details\n.\nWhile we recommend you read all the metadata, below we highlight some areas some users have reported difficult finding.\n\n\nCitationUnitsPeopleMethods\n\n\nAny time you download a dataset you will want to make note of the suggested dataset citation, so you can track what you are using and credit the authors appropriately. EDI provides a handy button to do just this. \n\n\nVariable definitions and units can be found under Data Entities in the section Table Column Descriptions. This section will also tell you what any abbreviations mean.\n\n\n\nCreators are the main individuals who initiated or maintained a dataset and are listed as authors in the suggested dataset citation. Where possible, we have also been adding the names of techs (they will display on EDI as ‘associate’, downloading the full EML also allows you to see their full roles. Consider adding key data contributors to you authorship or acknowledgements section as appropriate.\n\n\n\nRead the methods! They contain critical information about how the data were collected, known issues and other information that will help guide your analyses. If there’s something you don’t understand, reach out to the dataset creators and/or the dataset contact and we will put you in touch with someone who can help.",
+    "crumbs": [
+      "Understanding Metadata"
+    ]
+  },
+  {
+    "objectID": "data_download.html",
+    "href": "data_download.html",
+    "title": "Downloading data programatically",
+    "section": "",
+    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R.",
+    "crumbs": [
+      "Downloading data programatically"
+    ]
+  },
+  {
+    "objectID": "data_download.knit.html",
+    "href": "data_download.knit.html",
+    "title": "Downloading data programatically",
+    "section": "",
+    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R."
+  },
+  {
+    "objectID": "data_download.html#overview-of-download-methods",
+    "href": "data_download.html#overview-of-download-methods",
+    "title": "Downloading data programatically",
+    "section": "",
+    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R.",
+    "crumbs": [
+      "Downloading data programatically"
+    ]
+  },
+  {
+    "objectID": "data_download.html#download-programmatically-using-r",
+    "href": "data_download.html#download-programmatically-using-r",
+    "title": "Downloading data programatically",
+    "section": "Download programmatically using R",
+    "text": "Download programmatically using R\n\nFind what you want\n\nlibrary (EDIutils) # Handy tools for interacting with EDI's API\nlibrary (tidyverse) # For inspecting data\n\nIf you know the identifier of the data package you want, it’s easy to find the latest revision\n\nscope = 'knb-lter-nwt' # Niwot scope\nidentifier = \"314\" #Dataset of interest\n\n# ask EDI to tell me what the most current version is\nrevision = list_data_package_revisions(scope, identifier, filter = \"newest\")\n\n#display current version - &gt; this is referred to as the \"packageID\"\npackageID &lt;- paste(scope, identifier, revision, sep = \".\")\npackageID\n\n[1] \"knb-lter-nwt.314.3\"\n\n\n\n\nDownload by package\nIf you want to download the entire data package, use the function read_data_package_archive. Warning some datasets are large so you may not want to read the entire dataset.\n\n# Download the ENTIRE package to a temporary directory\nread_data_package_archive(packageID, path = tempdir())\n\n# Inspect results \nlist.files(tempdir())\n\n# Download the ENTIRE package to a place you intend to store it for repeated use\n# Note you must FIRST create the directory 'some_real_path_on_your_computer'\n# before downlaoding\nread_data_package_archive(packageID, path = 'some_real_path_on_your_computer')\n\n# Inspect results  \nlist.files('some_real_path_on_your_computer')\n\n\n\nDownload select entities\nIt is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file)\n\n# List data entities of the data package\nres &lt;- read_data_entity_names(packageID)\nres\n\n                          entityId\n1 fd533b5b9f3ae79862a33bad964d0c0c\n2 e786cdbe1ac83579f69a0e088cccc1c9\n                                                   entityName\n1              Homogenized, gap-filled, daily air temperature\n2 Homogenized, gap-filled, daily air temperature full methods\n\n\nUsing the above mapping information, find the entityID of the data table you want to analyze\n\n# Download a in raw bytes. Use the entityName and entityID as keys.\n\nentityId &lt;- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']\n\nThe read_data_entity_resource_metadata function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset\n\nentity_resources &lt;- read_data_entity_resource_metadata(packageID, entityId)\nurl_of_the_table &lt;- entity_resources$resourceId\nname_of_the_table &lt;- entity_resources$fileName\n\nWith the url of the entities, you can down individual data tables\n\ndownload.file(url = url_of_the_table,\n                destfile = file.path('./some_real_path_on_your_computer', name_of_the_table))\n\nThis method then allows you to read back the data tables you want without the slow step of downloading each time you fix your code.\n\nmy_file &lt;- read.csv(file.path('./some_real_path_on_your_computer', name_of_the_table))\n# analyze away\n\n\n\nRead data directly into R without a separate download step\nAlternatively, you can wrap the code to read the data table directly into your code and never store the file locally.\n\nmy_awesome_data &lt;- read_data_entity(packageID, entityId) |&gt;\n  # pipe the result to readr::read_csv() to read the data into R\n  # readr::read_csv() will guess the column types\n  # but sometimes you need to have it scan a larger portion of the than the default\n  # first 1000 lines to get the right type\n  readr::read_csv(guess_max = 100000)\n\nRows: 13540 Columns: 112\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (48): LTER_site, local_site, logger, flag_1, flag_2, flag_3, source_sta...\ndbl  (63): year, airtemp_max_homogenized, airtemp_min_homogenized, airtemp_a...\ndate  (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n# analyze away",
+    "crumbs": [
+      "Downloading data programatically"
+    ]
+  },
+  {
+    "objectID": "data_download.knit.html#overview-of-download-methods",
+    "href": "data_download.knit.html#overview-of-download-methods",
+    "title": "Downloading data programatically",
+    "section": "",
+    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R."
+  },
+  {
+    "objectID": "data_download.knit.html#download-programmatically-using-r",
+    "href": "data_download.knit.html#download-programmatically-using-r",
+    "title": "Downloading data programatically",
+    "section": "Download programmatically using R",
+    "text": "Download programmatically using R\n\nFind what you want\n\nlibrary (EDIutils) # Handy tools for interacting with EDI's API\nlibrary (tidyverse) # For inspecting data\n\nIf you know the identifier of the data package you want, it’s easy to find the latest revision\n\nscope = 'knb-lter-nwt' # Niwot scope\nidentifier = \"314\" #Dataset of interest\n\n# ask EDI to tell me what the most current version is\nrevision = list_data_package_revisions(scope, identifier, filter = \"newest\")\n\n#display current version - &gt; this is referred to as the \"packageID\"\npackageID &lt;- paste(scope, identifier, revision, sep = \".\")\npackageID\n\n[1] \"knb-lter-nwt.314.3\"\n\n\n\n\nDownload by package\nIf you want to download the entire data package, use the function read_data_package_archive. Warning some datasets are large so you may not want to read the entire dataset.\n\n# Download the ENTIRE package to a temporary directory\nread_data_package_archive(packageID, path = tempdir())\n\n# Inspect results \nlist.files(tempdir())\n\n# Download the ENTIRE package to a place you intend to store it for repeated use\n# Note you must FIRST create the directory 'some_real_path_on_your_computer'\n# before downlaoding\nread_data_package_archive(packageID, path = 'some_real_path_on_your_computer')\n\n# Inspect results  \nlist.files('some_real_path_on_your_computer')\n\n\n\nDownload select entities\nIt is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file)\n\n# List data entities of the data package\nres &lt;- read_data_entity_names(packageID)\nres\n\n                          entityId\n1 fd533b5b9f3ae79862a33bad964d0c0c\n2 e786cdbe1ac83579f69a0e088cccc1c9\n                                                   entityName\n1              Homogenized, gap-filled, daily air temperature\n2 Homogenized, gap-filled, daily air temperature full methods\n\n\nUsing the above mapping information, find the entityID of the data table you want to analyze\n\n# Download a in raw bytes. Use the entityName and entityID as keys.\n\nentityId &lt;- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']\n\nThe read_data_entity_resource_metadata function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset\n\nentity_resources &lt;- read_data_entity_resource_metadata(packageID, entityId)\nurl_of_the_table &lt;- entity_resources$resourceId\nname_of_the_table &lt;- entity_resources$fileName\n\nWith the url of the entities, you can down individual data tables\n\ndownload.file(url = url_of_the_table,\n                destfile = file.path('some_real_path_on_your_computer', name_of_the_table))\n\nWarning in download.file(url = url_of_the_table, destfile =\nfile.path(\"some_real_path_on_your_computer\", : URL\nhttps://pasta.lternet.edu/package/data/eml/knb-lter-nwt/314/3/fd533b5b9f3ae79862a33bad964d0c0c:\ncannot open destfile\n'some_real_path_on_your_computer/sdl_daily_airtemp_gapfilled.cw.data.csv',\nreason 'No such file or directory'\n\n\nWarning in download.file(url = url_of_the_table, destfile =\nfile.path(\"some_real_path_on_your_computer\", : download had nonzero exit status\n\n\n\nmy_awesome_data &lt;- read_data_entity(packageID, entityId) |&gt;\n  # pipe the result to readr::read_csv() to read the data into R\n  # readr::read_csv() will guess the column types\n  # but sometimes you need to have it scan a larger portion of the than the default\n  # first 1000 lines to get the right type\n  readr::read_csv(guess_max = 100000)\n\nRows: 13540 Columns: 112\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (48): LTER_site, local_site, logger, flag_1, flag_2, flag_3, source_sta...\ndbl  (63): year, airtemp_max_homogenized, airtemp_min_homogenized, airtemp_a...\ndate  (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\ntibble::glimpse(my_awesome_data)\n\nRows: 13,540\nColumns: 112\n$ LTER_site                              &lt;chr&gt; \"NWT\", \"NWT\", \"NWT\", \"NWT\", \"NW…\n$ local_site                             &lt;chr&gt; \"SDL\", \"SDL\", \"SDL\", \"SDL\", \"SD…\n$ logger                                 &lt;chr&gt; \"CR21X\", \"CR21X\", \"CR21X\", \"CR2…\n$ year                                   &lt;dbl&gt; 1986, 1986, 1986, 1986, 1986, 1…\n$ date                                   &lt;date&gt; 1986-12-06, 1986-12-07, 1986-1…\n$ airtemp_max_homogenized                &lt;dbl&gt; -5.2540, -5.9060, -6.6570, -15.…\n$ airtemp_min_homogenized                &lt;dbl&gt; -10.2500, -12.2700, -21.5100, -…\n$ airtemp_avg_homogenized                &lt;dbl&gt; -7.6600, -9.3900, -13.7600, -22…\n$ dtr_homogenized                        &lt;dbl&gt; 4.9960, 6.3640, 14.8530, 13.810…\n$ airtemp_max_adjustment                 &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…\n$ airtemp_avg_adjustment                 &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…\n$ airtemp_min_adjustment                 &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…\n$ airtemp_max_gapfilled                  &lt;dbl&gt; -5.254000, -5.906000, -6.657000…\n$ airtemp_min_gapfilled                  &lt;dbl&gt; -10.250000, -12.270000, -21.510…\n$ airtemp_avg_gapfilled                  &lt;dbl&gt; -7.660000, -9.390000, -13.76000…\n$ dtr_gapfilled                          &lt;dbl&gt; 4.996000, 6.364000, 14.853000, …\n$ flag_1                                 &lt;chr&gt; \"A\", \"A\", \"A\", \"A\", \"B\", \"B\", \"…\n$ flag_2                                 &lt;chr&gt; \"A\", \"A\", \"A\", \"A\", \"C\", \"B\", \"…\n$ flag_3                                 &lt;chr&gt; \"A\", \"A\", \"A\", \"A\", \"B\", \"B\", \"…\n$ source_station                         &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"SD…\n$ airtemp_avg_pvalue                     &lt;dbl&gt; NaN, NaN, NaN, NaN, 1.384339e-2…\n$ airtemp_avg_rsquared                   &lt;dbl&gt; NaN, NaN, NaN, NaN, 0.9040004, …\n$ num_obs_in_airtemp_avg_regression      &lt;dbl&gt; NaN, NaN, NaN, NaN, 51, 49, 48,…\n$ airtemp_avg_equation                   &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"y …\n$ dtr_pvalue                             &lt;dbl&gt; NaN, NaN, NaN, NaN, 5.868164e-1…\n$ dtr_rsquared                           &lt;dbl&gt; NaN, NaN, NaN, NaN, 0.5864932, …\n$ num_obs_in_dtr_regression              &lt;dbl&gt; NaN, NaN, NaN, NaN, 51, 49, 48,…\n$ dtr_equation                           &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"y …\n$ airtemp_max_qcflag                     &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Va…\n$ raw_airtemp_max                        &lt;dbl&gt; -5.254, -5.906, -6.657, -15.560…\n$ raw_airtemp_max_flag                   &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_min_qcflag                     &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ raw_airtemp_min                        &lt;dbl&gt; -10.25, -12.27, -21.51, -29.37,…\n$ raw_airtemp_min_flag                   &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_avg_qcflag                     &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Av…\n$ raw_airtemp_avg                        &lt;dbl&gt; -7.66, -9.39, -13.76, -22.70, N…\n$ raw_airtemp_avg_flag                   &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_max_gapfilled_hmp1             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_min_gapfilled_hmp1             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_gapfilled_hmp1             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_gapfilled_hmp1                     &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ flag_1_hmp1                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ flag_2_hmp1                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ flag_3_hmp1                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ source_station_hmp1                    &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_avg_pvalue_hmp1                &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_rsquared_hmp1              &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ num_obs_in_airtemp_avg_regression_hmp1 &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_equation_hmp1              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ dtr_pvalue_hmp1                        &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_rsquared_hmp1                      &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ num_obs_in_dtr_regression_hmp1         &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_equation_hmp1                      &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_max_qcflag_hmp1                &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ raw_airtemp_max_hmp1                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_max_flag_hmp1              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_min_qcflag_hmp1                &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ raw_airtemp_min_hmp1                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_min_flag_hmp1              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_avg_qcflag_hmp1                &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_avg_hmp1                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_avg_flag_hmp1              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_max_gapfilled_hmp2             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_min_gapfilled_hmp2             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_gapfilled_hmp2             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_gapfilled_hmp2                     &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ flag_1_hmp2                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ flag_2_hmp2                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ flag_3_hmp2                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ source_station_hmp2                    &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_avg_pvalue_hmp2                &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_rsquared_hmp2              &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ num_obs_in_airtemp_avg_regression_hmp2 &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_equation_hmp2              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ dtr_pvalue_hmp2                        &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_rsquared_hmp2                      &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ num_obs_in_dtr_regression_hmp2         &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_equation_hmp2                      &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_max_qcflag_hmp2                &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_max_hmp2                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_max_flag_hmp2              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_min_qcflag_hmp2                &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_min_hmp2                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_min_flag_hmp2              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_avg_qcflag_hmp2                &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ raw_airtemp_avg_hmp2                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_avg_flag_hmp2              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_max_gapfilled_hmp3             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_min_gapfilled_hmp3             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_gapfilled_hmp3             &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_gapfilled_hmp3                     &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ flag_1_hmp3                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ flag_2_hmp3                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ flag_3_hmp3                            &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ source_station_hmp3                    &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_avg_pvalue_hmp3                &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_rsquared_hmp3              &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ num_obs_in_airtemp_avg_regression_hmp3 &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ airtemp_avg_equation_hmp3              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ dtr_pvalue_hmp3                        &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_rsquared_hmp3                      &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ num_obs_in_dtr_regression_hmp3         &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ dtr_equation_hmp3                      &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_max_qcflag_hmp3                &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ raw_airtemp_max_hmp3                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_max_flag_hmp3              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_min_qcflag_hmp3                &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ raw_airtemp_min_hmp3                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_min_flag_hmp3              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ airtemp_avg_qcflag_hmp3                &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…\n$ raw_airtemp_avg_hmp3                   &lt;dbl&gt; NaN, NaN, NaN, NaN, NaN, NaN, N…\n$ raw_airtemp_avg_flag_hmp3              &lt;chr&gt; \"NaN\", \"NaN\", \"NaN\", \"NaN\", \"Na…"
+  },
+  {
+    "objectID": "be_a_good_citizen.html",
+    "href": "be_a_good_citizen.html",
+    "title": "Be a good citizen",
+    "section": "",
+    "text": "Niwot is indebted to its funder (the National Science Foundation), the people who collect the data and the historical occupants of Niwot Ridge.",
+    "crumbs": [
+      "Be a good citizen"
+    ]
+  },
+  {
+    "objectID": "be_a_good_citizen.html#citing-data",
+    "href": "be_a_good_citizen.html#citing-data",
+    "title": "Be a good citizen",
+    "section": "Citing Data",
+    "text": "Citing Data\nIf you use a Niwot dataset in your research, remember to cite it, so that we can track data useage for ourselves, and for our funders. The landing page on each dataset provides a suggested citation format. If a journal requests a different format, that’s fine too so long as the citation includes the DOI. And yes - you should cite a dataset – even if it one you provided.",
+    "crumbs": [
+      "Be a good citizen"
+    ]
+  },
+  {
+    "objectID": "be_a_good_citizen.html#acknowledge-niwot-funding",
+    "href": "be_a_good_citizen.html#acknowledge-niwot-funding",
+    "title": "Be a good citizen",
+    "section": "Acknowledge Niwot funding",
+    "text": "Acknowledge Niwot funding\nThe following acknowledgment should accompany any publication that makes use of Niwot resources: Logistical support and/or data were provided by the NSF-supported Niwot Ridge LTER program (NWT VII: NSF DEB – 1637686, NWT VIII: NSF DEB-2224439)",
+    "crumbs": [
+      "Be a good citizen"
+    ]
+  },
+  {
+    "objectID": "be_a_good_citizen.html#consider-co-authorship",
+    "href": "be_a_good_citizen.html#consider-co-authorship",
+    "title": "Be a good citizen",
+    "section": "Consider Co-authorship",
+    "text": "Consider Co-authorship\nAll Niwot data are provided free of charge, for use without restriction. However if your analysis relies heavily on data collected by others, consider asking them to collaborate. Niwot LTER’s recommended authorship guidelines can be found here.",
+    "crumbs": [
+      "Be a good citizen"
+    ]
+  },
+  {
+    "objectID": "be_a_good_citizen.html#acknowledge-niwot-researchers-technicians-and-seasonals",
+    "href": "be_a_good_citizen.html#acknowledge-niwot-researchers-technicians-and-seasonals",
+    "title": "Be a good citizen",
+    "section": "Acknowledge Niwot Researchers, technicians and seasonals",
+    "text": "Acknowledge Niwot Researchers, technicians and seasonals\nWe encourage data re-use. If co-authorship is not appropriate, consider adding an acknowledgement to your manuscript instead. The ‘people’ element of the metadata file is a good place to start. The fNiwot data are provided free of charge, for use without restriction. However if your analysis relies heavily on data collected by others, consider asking them to collaborate. Niwot LTER’s recommended authorship guidelines can be found here.",
+    "crumbs": [
+      "Be a good citizen"
+    ]
+  },
+  {
+    "objectID": "be_a_good_citizen.html#keep-up-to-date-with-the-latest-recommendations",
+    "href": "be_a_good_citizen.html#keep-up-to-date-with-the-latest-recommendations",
+    "title": "Be a good citizen",
+    "section": "Keep up to date with the latest recommendations",
+    "text": "Keep up to date with the latest recommendations\nOur website has the most up to date information on authorship and citations.",
+    "crumbs": [
+      "Be a good citizen"
+    ]
+  },
+  {
+    "objectID": "be_a_good_citizen.html#add-a-land-acknowledgement",
+    "href": "be_a_good_citizen.html#add-a-land-acknowledgement",
+    "title": "Be a good citizen",
+    "section": "Add a land acknowledgement",
+    "text": "Add a land acknowledgement\nSuggested text can be found on the Niwot Ridge and/or University of Colorado websites",
+    "crumbs": [
+      "Be a good citizen"
+    ]
+  }
+]

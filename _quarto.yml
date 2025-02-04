@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  repo-url: https://github.com/NWTlter/data_skills
+  repo-actions: [issue]
+  page-navigation: true
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+        - index.qmd
+        - where_data_live.qmd
+        - finding_data.qmd
+        - reading_metadata.qmd
+        - data_download.qmd
+        - be_a_good_citizen.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

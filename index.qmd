@@ -1,0 +1,9 @@
+---
+title: "NWT Data Skills"
+format: html
+editor: visual
+---
+
+These guides are intended to refresh you on how to find, use and work with data from the [Niwot Ridge LTER Data Catalog](https://nwt.lternet.edu/data-catalog)
+
+This is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue [here](https://github.com/NWTlter/data_skills/issues)
