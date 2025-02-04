@@ -3,6 +3,7 @@ title: "Downloading data programatically"
 ---
 
 ## Overview of download methods
+
 EDI provides several tools and methods for [accessing data](https://edirepository.org/resources/accessing-data). These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.
 
 The [EDIutils](https://docs.ropensci.org/EDIutils/) R package also provides excellent documentation on how to [Search and Access Data](https://docs.ropensci.org/EDIutils/articles/search_and_access.html) directly from R.
@@ -32,6 +33,7 @@ packageID
 ```
 
 ### Download by package
+
 If you want to download the entire data package, use the function `read_data_package_archive`. Warning some datasets are large so you may not want to read the entire dataset.
 
 ```{r download data package, eval = FALSE}
@@ -51,6 +53,7 @@ list.files('some_real_path_on_your_computer')
 ```
 
 ### Download select entities
+
 It is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file)
 
 ```{r read selectively, eval = TRUE}
@@ -61,6 +64,7 @@ res
 ```
 
 Using the above mapping information, find the entityID of the data table you want to analyze
+
 ```{r analyze, eval = TRUE}
 # Download a in raw bytes. Use the entityName and entityID as keys.
 
@@ -79,6 +83,7 @@ name_of_the_table <- entity_resources$fileName
 ```
 
 With the url of the entities, you can down individual data tables
+
 ```{r download, eval = TRUE}
 
 download.file(url = url_of_the_table,
@@ -95,7 +100,9 @@ my_file <- read.csv(file.path('./some_real_path_on_your_computer', name_of_the_t
 ```
 
 ### Read data directly into R without a separate download step
+
 Alternatively, you can wrap the code to read the data table directly into your code and never store the file locally.
+
 ```{r read directly into R, eval = TRUE}
 my_awesome_data <- read_data_entity(packageID, entityId) |>
   # pipe the result to readr::read_csv() to read the data into R
@@ -106,3 +113,7 @@ my_awesome_data <- read_data_entity(packageID, entityId) |>
 
 # analyze away
 ```
+
+### Authentication
+
+EDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above).

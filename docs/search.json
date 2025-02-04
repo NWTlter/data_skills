@@ -14,31 +14,10 @@
     "href": "index.html",
     "title": "NWT Data Skills",
     "section": "",
-    "text": "These guides are intended to refresh you on how to find, use and work with data from the Niwot Ridge LTER Data Catalog\nThis is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue here",
+    "text": "This guide is intended as a quick-start summary of materials for Niwot LTER researchers on how to find, use and work with data from the Niwot Ridge LTER Data Catalog.\nThe Environmental Data Catalog also has extensive resources for data users. We thank EDI for providing the basis of much of the material here.\nThis is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue here",
     "crumbs": [
       "NWT Data Skills"
     ]
-  },
-  {
-    "objectID": "finding_data_bu.html",
-    "href": "finding_data_bu.html",
-    "title": "Finding Data",
-    "section": "",
-    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
-  },
-  {
-    "objectID": "finding_data_bu.html#search",
-    "href": "finding_data_bu.html#search",
-    "title": "Finding Data",
-    "section": "",
-    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
-  },
-  {
-    "objectID": "finding_data_bu.html#anatomy-of-a-data-package",
-    "href": "finding_data_bu.html#anatomy-of-a-data-package",
-    "title": "Finding Data",
-    "section": "Anatomy of a Data Package",
-    "text": "Anatomy of a Data Package\nTo effectively search it is helpful to understand the anatomy of a “data package” on EDI. A single data package contains one or many thematically linked data files (aka “entities”), which are archived together with their metadata, under a single packageID, referenced by a single dataset citation, and assigned a single DOI.\nWithin EDI, data package identifiers have the form scope.accession.version, where:\n\nscope is a string value that identifies the organization, project, or theme of the data package. For Niwot Ridge datasets, the scope is always knb-lter-nwt\naccession is an integer value that uniquely identifies the data package within the namespace of the scope\nversion is an integer value in increasing order that identifies the version of the data package\n\nAn example of a packageID is knb-lter-nwt.314.3\nA DOI is a globally unique and persistent identifier that unambiguously resolves to the data package landing page. DOIs are used in citations and references of a data package.\nAn example of a DOI is doi:10.6073/pasta/7890c3264eb71bb992f0237844b02667"
   },
   {
     "objectID": "data_download.html",
@@ -65,7 +44,7 @@
     "href": "data_download.html#download-programmatically-using-r",
     "title": "Downloading data programatically",
     "section": "Download programmatically using R",
-    "text": "Download programmatically using R\n\nFind what you want\n\nlibrary (EDIutils) # Handy tools for interacting with EDI's API\nlibrary (tidyverse) # For inspecting data\n\nIf you know the identifier of the data package you want, it’s easy to find the latest revision\n\nscope = 'knb-lter-nwt' # Niwot scope\nidentifier = \"314\" #Dataset of interest\n\n# ask EDI to tell me what the most current version is\nrevision = list_data_package_revisions(scope, identifier, filter = \"newest\")\n\n#display current version - &gt; this is referred to as the \"packageID\"\npackageID &lt;- paste(scope, identifier, revision, sep = \".\")\npackageID\n\n[1] \"knb-lter-nwt.314.3\"\n\n\n\n\nDownload by package\nIf you want to download the entire data package, use the function read_data_package_archive. Warning some datasets are large so you may not want to read the entire dataset.\n\n# Download the ENTIRE package to a temporary directory\nread_data_package_archive(packageID, path = tempdir())\n\n# Inspect results \nlist.files(tempdir())\n\n# Download the ENTIRE package to a place you intend to store it for repeated use\n# Note you must FIRST create the directory 'some_real_path_on_your_computer'\n# before downlaoding\nread_data_package_archive(packageID, path = 'some_real_path_on_your_computer')\n\n# Inspect results  \nlist.files('some_real_path_on_your_computer')\n\n\n\nDownload select entities\nIt is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file)\n\n# List data entities of the data package\nres &lt;- read_data_entity_names(packageID)\nres\n\n                          entityId\n1 fd533b5b9f3ae79862a33bad964d0c0c\n2 e786cdbe1ac83579f69a0e088cccc1c9\n                                                   entityName\n1              Homogenized, gap-filled, daily air temperature\n2 Homogenized, gap-filled, daily air temperature full methods\n\n\nUsing the above mapping information, find the entityID of the data table you want to analyze\n\n# Download a in raw bytes. Use the entityName and entityID as keys.\n\nentityId &lt;- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']\n\nThe read_data_entity_resource_metadata function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset\n\nentity_resources &lt;- read_data_entity_resource_metadata(packageID, entityId)\nurl_of_the_table &lt;- entity_resources$resourceId\nname_of_the_table &lt;- entity_resources$fileName\n\nWith the url of the entities, you can down individual data tables\n\ndownload.file(url = url_of_the_table,\n                destfile = file.path('./some_real_path_on_your_computer', name_of_the_table))\n\nThis method then allows you to read back the data tables you want without the slow step of downloading each time you fix your code.\n\nmy_file &lt;- read.csv(file.path('./some_real_path_on_your_computer', name_of_the_table))\n# analyze away\n\n\n\nRead data directly into R without a separate download step\nAlternatively, you can wrap the code to read the data table directly into your code and never store the file locally.\n\nmy_awesome_data &lt;- read_data_entity(packageID, entityId) |&gt;\n  # pipe the result to readr::read_csv() to read the data into R\n  # readr::read_csv() will guess the column types\n  # but sometimes you need to have it scan a larger portion of the than the default\n  # first 1000 lines to get the right type\n  readr::read_csv(guess_max = 100000)\n\nRows: 13540 Columns: 112\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (48): LTER_site, local_site, logger, flag_1, flag_2, flag_3, source_sta...\ndbl  (63): year, airtemp_max_homogenized, airtemp_min_homogenized, airtemp_a...\ndate  (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n# analyze away",
+    "text": "Download programmatically using R\n\nFind what you want\n\nlibrary (EDIutils) # Handy tools for interacting with EDI's API\nlibrary (tidyverse) # For inspecting data\n\nIf you know the identifier of the data package you want, it’s easy to find the latest revision\n\nscope = 'knb-lter-nwt' # Niwot scope\nidentifier = \"314\" #Dataset of interest\n\n# ask EDI to tell me what the most current version is\nrevision = list_data_package_revisions(scope, identifier, filter = \"newest\")\n\n#display current version - &gt; this is referred to as the \"packageID\"\npackageID &lt;- paste(scope, identifier, revision, sep = \".\")\npackageID\n\n[1] \"knb-lter-nwt.314.3\"\n\n\n\n\nDownload by package\nIf you want to download the entire data package, use the function read_data_package_archive. Warning some datasets are large so you may not want to read the entire dataset.\n\n# Download the ENTIRE package to a temporary directory\nread_data_package_archive(packageID, path = tempdir())\n\n# Inspect results \nlist.files(tempdir())\n\n# Download the ENTIRE package to a place you intend to store it for repeated use\n# Note you must FIRST create the directory 'some_real_path_on_your_computer'\n# before downlaoding\nread_data_package_archive(packageID, path = 'some_real_path_on_your_computer')\n\n# Inspect results  \nlist.files('some_real_path_on_your_computer')\n\n\n\nDownload select entities\nIt is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file)\n\n# List data entities of the data package\nres &lt;- read_data_entity_names(packageID)\nres\n\n                          entityId\n1 fd533b5b9f3ae79862a33bad964d0c0c\n2 e786cdbe1ac83579f69a0e088cccc1c9\n                                                   entityName\n1              Homogenized, gap-filled, daily air temperature\n2 Homogenized, gap-filled, daily air temperature full methods\n\n\nUsing the above mapping information, find the entityID of the data table you want to analyze\n\n# Download a in raw bytes. Use the entityName and entityID as keys.\n\nentityId &lt;- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']\n\nThe read_data_entity_resource_metadata function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset\n\nentity_resources &lt;- read_data_entity_resource_metadata(packageID, entityId)\nurl_of_the_table &lt;- entity_resources$resourceId\nname_of_the_table &lt;- entity_resources$fileName\n\nWith the url of the entities, you can down individual data tables\n\ndownload.file(url = url_of_the_table,\n                destfile = file.path('./some_real_path_on_your_computer', name_of_the_table))\n\nThis method then allows you to read back the data tables you want without the slow step of downloading each time you fix your code.\n\nmy_file &lt;- read.csv(file.path('./some_real_path_on_your_computer', name_of_the_table))\n# analyze away\n\n\n\nRead data directly into R without a separate download step\nAlternatively, you can wrap the code to read the data table directly into your code and never store the file locally.\n\nmy_awesome_data &lt;- read_data_entity(packageID, entityId) |&gt;\n  # pipe the result to readr::read_csv() to read the data into R\n  # readr::read_csv() will guess the column types\n  # but sometimes you need to have it scan a larger portion of the than the default\n  # first 1000 lines to get the right type\n  readr::read_csv(guess_max = 100000)\n\nRows: 13540 Columns: 112\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (48): LTER_site, local_site, logger, flag_1, flag_2, flag_3, source_sta...\ndbl  (63): year, airtemp_max_homogenized, airtemp_min_homogenized, airtemp_a...\ndate  (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n# analyze away\n\n\n\nAuthentication\nEDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above).",
     "crumbs": [
       "Downloading data programatically"
     ]
@@ -196,34 +175,6 @@
     "crumbs": [
       "Finding Data"
     ]
-  },
-  {
-    "objectID": "finding_data_bu2.html",
-    "href": "finding_data_bu2.html",
-    "title": "Finding Data",
-    "section": "",
-    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
-  },
-  {
-    "objectID": "finding_data_bu2.html#search",
-    "href": "finding_data_bu2.html#search",
-    "title": "Finding Data",
-    "section": "",
-    "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack."
-  },
-  {
-    "objectID": "finding_data_bu2.html#anatomy-of-a-data-package",
-    "href": "finding_data_bu2.html#anatomy-of-a-data-package",
-    "title": "Finding Data",
-    "section": "Anatomy of a Data Package",
-    "text": "Anatomy of a Data Package\nTo effectively search it is helpful to understand the anatomy of a “data package” on EDI. A single data package contains one or many thematically linked data files (aka “entities”), which are archived together with their metadata, under a single packageID, referenced by a single dataset citation, and assigned a single DOI.\nWithin EDI, data package identifiers have the form scope.accession.version, where:\n\nscope is a string value that identifies the organization, project, or theme of the data package. For Niwot Ridge datasets, the scope is always knb-lter-nwt\naccession is an integer value that uniquely identifies the data package within the namespace of the scope\nversion is an integer value in increasing order that identifies the version of the data package\n\nAn example of a packageID is knb-lter-nwt.314.3\nA DOI is a globally unique and persistent identifier that unambiguously resolves to the data package landing page. DOIs are used in citations and references of a data package.\nAn example of a DOI is doi:10.6073/pasta/7890c3264eb71bb992f0237844b02667"
-  },
-  {
-    "objectID": "finding_data_bu2.html#where-to-find-packageids-or-dois",
-    "href": "finding_data_bu2.html#where-to-find-packageids-or-dois",
-    "title": "Finding Data",
-    "section": "Where to find packageIDs or DOIs?",
-    "text": "Where to find packageIDs or DOIs?\nPackageIDs and DOIs can be found in the data catalog and citations of journal articles. Most of Niwot’s long-term datasets (aka “signature datasets” were listed in the NWT VIII renewal. This table is included below."
   },
   {
     "objectID": "reading_metadata.html",
