@@ -65,9 +65,7 @@ res
 
 Using the above mapping information, find the entityID of the data table you want to analyze
 
-```{r analyze, eval = TRUE}
-# Download a in raw bytes. Use the entityName and entityID as keys.
-
+```{r find entityID, eval = TRUE}
 entityId <- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']
 
 ```
