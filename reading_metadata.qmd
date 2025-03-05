@@ -17,23 +17,23 @@ While we recommend you read all the metadata, below we highlight some areas some
 ::: panel-tabset
 ## Citation
 
-Any time you download a dataset you will want to make note of the suggested dataset citation, so you can track what you are using and credit the authors appropriately. EDI provides a handy <span style="color:red;">button</span> to do just this. ![](figures/citation.jpg){width="50%"}
+Any time you download a dataset you will want to make note of the suggested dataset citation, so you can track what you are using and credit the authors appropriately. EDI provides a handy [button]{style="color:red;"} to do just this. ![](figures/citation.jpg){width="50%"}
 
 ## Units
 
-Variable definitions and units can be found under <span style="color:red;">Data Entities</span> in the section <span style="color:red;">Table Column Descriptions</span>. This section will also tell you what any abbreviations mean.
+Variable definitions and units can be found under [Data Entities]{style="color:red;"} in the section [Table Column Descriptions]{style="color:red;"}. This section will also tell you what any abbreviations mean.
 
 ![](figures/edi_units.jpg){width="90%"}
 
 ## People
 
-<span style="color:red;">Creators</span> are the main individuals who initiated or maintained a dataset and are listed as authors in the suggested dataset citation. Where possible, we have also been adding the names of techs (they will display on EDI as 'associate', downloading the full EML also allows you to see their full roles). Consider adding key data contributors to you authorship or acknowledgements section as appropriate.
+[Creators]{style="color:red;"} are the main individuals who initiated or maintained a dataset and are listed as authors in the suggested dataset citation. Where possible, we have also been adding the names of techs (they will display on EDI as 'associate', downloading the full EML also allows you to see their full roles). Consider adding key data contributors to you authorship or acknowledgements section as appropriate.
 
 ![](figures/edi_people.jpg){width="90%"}
 
 ## Methods
 
-<span style="color:red;">Read the methods!</span> They contain critical information about how the data were collected, known issues and other information that will help guide your analyses. If there's something you don't understand, reach out to the dataset creators and/or the dataset contact and we will put you in touch with someone who can help.
+[Read the methods!]{style="color:red;"} They contain critical information about how the data were collected, known issues and other information that will help guide your analyses. If there's something you don't understand, reach out to the dataset creators and/or the dataset contact and we will put you in touch with someone who can help.
 
 ![](figures/edi_methods.jpg){width="90%"}
 :::

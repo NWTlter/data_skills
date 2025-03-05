@@ -231,13 +231,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>If you know the identifier of the data package you want, it’s easy to find the latest revision</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scope <span class="ot">=</span> <span class="st">'knb-lter-nwt'</span> <span class="co"># Niwot scope</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>identifier <span class="ot">=</span> <span class="st">"314"</span> <span class="co">#Dataset of interest</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scope <span class="ot">&lt;-</span> <span class="st">"knb-lter-nwt"</span> <span class="co"># Niwot scope</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>identifier <span class="ot">&lt;-</span> <span class="st">"314"</span> <span class="co"># Dataset of interest</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ask EDI to tell me what the most current version is</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>revision <span class="ot">=</span> <span class="fu">list_data_package_revisions</span>(scope, identifier, <span class="at">filter =</span> <span class="st">"newest"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>revision <span class="ot">&lt;-</span> <span class="fu">list_data_package_revisions</span>(scope, identifier, <span class="at">filter =</span> <span class="st">"newest"</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#display current version - &gt; this is referred to as the "packageID"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># display current version - &gt; this is referred to as the "packageID"</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>packageID <span class="ot">&lt;-</span> <span class="fu">paste</span>(scope, identifier, revision, <span class="at">sep =</span> <span class="st">"."</span>)</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>packageID</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -252,21 +252,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the ENTIRE package to a temporary directory</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">read_data_package_archive</span>(packageID, <span class="at">path =</span> <span class="fu">tempdir</span>())</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect results </span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect results</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">tempdir</span>())</span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the ENTIRE package to a place you intend to store it for repeated use</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Note you must FIRST create the directory 'some_real_path_on_your_computer'</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># before downlaoding</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">read_data_package_archive</span>(packageID, <span class="at">path =</span> <span class="st">'some_real_path_on_your_computer'</span>)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect results  </span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="st">'some_real_path_on_your_computer'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># before downloading</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="st">"./some_real_path_on_your_computer"</span>)) {</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="st">"./some_real_path_on_your_computer"</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">read_data_package_archive</span>(packageID, <span class="at">path =</span> <span class="st">"./some_real_path_on_your_computer"</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect results</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="st">"./some_real_path_on_your_computer"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="download-select-entities" class="level3">
 <h3 class="anchored" data-anchor-id="download-select-entities">Download select entities</h3>
-<p>It is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file)</p>
+<p>It is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List data entities of the data package</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">read_data_entity_names</span>(packageID)</span>
@@ -327,7 +330,7 @@ date  (1): date
 </section>
 <section id="authentication" class="level3">
 <h3 class="anchored" data-anchor-id="authentication">Authentication</h3>
-<p>EDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above).</p>
+<p>EDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above). EDI is in the process of updating the EDI utils package and documentation for seamless authentication. Stay tuned.</p>
 
 
 </section>

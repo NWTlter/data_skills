@@ -20,13 +20,13 @@ library (tidyverse) # For inspecting data
 If you know the identifier of the data package you want, it's easy to find the latest revision
 
 ```{r find latest version}
-scope = 'knb-lter-nwt' # Niwot scope
-identifier = "314" #Dataset of interest
+scope <- "knb-lter-nwt" # Niwot scope
+identifier <- "314" # Dataset of interest
 
 # ask EDI to tell me what the most current version is
-revision = list_data_package_revisions(scope, identifier, filter = "newest")
+revision <- list_data_package_revisions(scope, identifier, filter = "newest")
 
-#display current version - > this is referred to as the "packageID"
+# display current version - > this is referred to as the "packageID"
 packageID <- paste(scope, identifier, revision, sep = ".")
 packageID
 
@@ -40,21 +40,24 @@ If you want to download the entire data package, use the function `read_data_pac
 # Download the ENTIRE package to a temporary directory
 read_data_package_archive(packageID, path = tempdir())
 
-# Inspect results 
+# Inspect results
 list.files(tempdir())
 
 # Download the ENTIRE package to a place you intend to store it for repeated use
 # Note you must FIRST create the directory 'some_real_path_on_your_computer'
-# before downlaoding
-read_data_package_archive(packageID, path = 'some_real_path_on_your_computer')
+# before downloading
+if (!dir.exists("./some_real_path_on_your_computer")) {
+  dir.create("./some_real_path_on_your_computer")
+}
+read_data_package_archive(packageID, path = "./some_real_path_on_your_computer")
 
-# Inspect results  
-list.files('some_real_path_on_your_computer')
+# Inspect results
+list.files("./some_real_path_on_your_computer")
 ```
 
 ### Download select entities
 
-It is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file)
+It is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file).
 
 ```{r read selectively, eval = TRUE}
 # List data entities of the data package
@@ -114,4 +117,4 @@ my_awesome_data <- read_data_entity(packageID, entityId) |>
 
 ### Authentication
 
-EDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above).
+EDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above). EDI is in the process of updating the EDI utils package and documentation for seamless authentication. Stay tuned.

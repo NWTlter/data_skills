@@ -8,4 +8,4 @@ This guide is intended as a quick-start summary of materials for Niwot LTER rese
 
 The Environmental Data Catalog also has extensive [resources for data users](https://edirepository.org/resources/resources-for-data-users). We thank EDI for providing the basis of much of the material here.
 
-This is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue [here](https://github.com/NWTlter/data_skills/issues)
+This is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue [here](https://github.com/NWTlter/data_skills/issues).
