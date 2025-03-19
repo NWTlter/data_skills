@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Downloading data programatically</title>
+<title>Abstract and Methods</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./be_a_good_citizen.html" rel="next">
-<link href="./reading_metadata.html" rel="prev">
+<link href="./ezEML.html" rel="next">
+<link href="./qc_and_format.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -115,7 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./where_data_live.html">Finding/Using Niwot Data</a></li><li class="breadcrumb-item"><a href="./data_download.html">Data Download</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_submission_overview.html">Archiving Niwot Data</a></li><li class="breadcrumb-item"><a href="./abstract_and_methods.html">Abstract and Methods</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -170,7 +136,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_download.html" class="sidebar-item-text sidebar-link active">
+  <a href="./data_download.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Download</span></a>
   </div>
 </li>
@@ -211,7 +177,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abstract_and_methods.html" class="sidebar-item-text sidebar-link">
+  <a href="./abstract_and_methods.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Abstract and Methods</span></a>
   </div>
 </li>
@@ -232,9 +198,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./where_data_live.html">Finding/Using Niwot Data</a></li><li class="breadcrumb-item"><a href="./data_download.html">Data Download</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_submission_overview.html">Archiving Niwot Data</a></li><li class="breadcrumb-item"><a href="./abstract_and_methods.html">Abstract and Methods</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Downloading data programatically</h1>
+<h1 class="title">Abstract and Methods</h1>
 </div>
 
 
@@ -251,125 +217,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="overview-of-download-methods" class="level2">
-<h2 class="anchored" data-anchor-id="overview-of-download-methods">Overview of download methods</h2>
-<p>EDI provides several tools and methods for <a href="https://edirepository.org/resources/accessing-data">accessing data</a>. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.</p>
-<p>The <a href="https://docs.ropensci.org/EDIutils/">EDIutils</a> R package also provides excellent documentation on how to <a href="https://docs.ropensci.org/EDIutils/articles/search_and_access.html">Search and Access Data</a> directly from R.</p>
-</section>
-<section id="download-programmatically-using-r" class="level2">
-<h2 class="anchored" data-anchor-id="download-programmatically-using-r">Download programmatically using R</h2>
-<section id="find-what-you-want" class="level3">
-<h3 class="anchored" data-anchor-id="find-what-you-want">Find what you want</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (EDIutils) <span class="co"># Handy tools for interacting with EDI's API</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (tidyverse) <span class="co"># For inspecting data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>If you know the identifier of the data package you want, it’s easy to find the latest revision</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scope <span class="ot">&lt;-</span> <span class="st">"knb-lter-nwt"</span> <span class="co"># Niwot scope</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>identifier <span class="ot">&lt;-</span> <span class="st">"314"</span> <span class="co"># Dataset of interest</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ask EDI to tell me what the most current version is</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>revision <span class="ot">&lt;-</span> <span class="fu">list_data_package_revisions</span>(scope, identifier, <span class="at">filter =</span> <span class="st">"newest"</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># display current version - &gt; this is referred to as the "packageID"</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>packageID <span class="ot">&lt;-</span> <span class="fu">paste</span>(scope, identifier, revision, <span class="at">sep =</span> <span class="st">"."</span>)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>packageID</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "knb-lter-nwt.314.3"</code></pre>
-</div>
-</div>
-</section>
-<section id="download-by-package" class="level3">
-<h3 class="anchored" data-anchor-id="download-by-package">Download by package</h3>
-<p>If you want to download the entire data package, use the function <code>read_data_package_archive</code>. Warning some datasets are large so you may not want to read the entire dataset.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the ENTIRE package to a temporary directory</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">read_data_package_archive</span>(packageID, <span class="at">path =</span> <span class="fu">tempdir</span>())</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect results</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">tempdir</span>())</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the ENTIRE package to a place you intend to store it for repeated use</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Note you must FIRST create the directory 'some_real_path_on_your_computer'</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># before downloading</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="st">"./some_real_path_on_your_computer"</span>)) {</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="st">"./some_real_path_on_your_computer"</span>)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">read_data_package_archive</span>(packageID, <span class="at">path =</span> <span class="st">"./some_real_path_on_your_computer"</span>)</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect results</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="st">"./some_real_path_on_your_computer"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="download-select-entities" class="level3">
-<h3 class="anchored" data-anchor-id="download-select-entities">Download select entities</h3>
-<p>It is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file).</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List data entities of the data package</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">read_data_entity_names</span>(packageID)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>res</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                          entityId
-1 fd533b5b9f3ae79862a33bad964d0c0c
-2 e786cdbe1ac83579f69a0e088cccc1c9
-                                                   entityName
-1              Homogenized, gap-filled, daily air temperature
-2 Homogenized, gap-filled, daily air temperature full methods</code></pre>
-</div>
-</div>
-<p>Using the above mapping information, find the entityID of the data table you want to analyze</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>entityId <span class="ot">&lt;-</span> res<span class="sc">$</span>entityId[res<span class="sc">$</span>entityName <span class="sc">==</span> <span class="st">'Homogenized, gap-filled, daily air temperature'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The <code>read_data_entity_resource_metadata</code> function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>entity_resources <span class="ot">&lt;-</span> <span class="fu">read_data_entity_resource_metadata</span>(packageID, entityId)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>url_of_the_table <span class="ot">&lt;-</span> entity_resources<span class="sc">$</span>resourceId</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>name_of_the_table <span class="ot">&lt;-</span> entity_resources<span class="sc">$</span>fileName</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>With the url of the entities, you can down individual data tables</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(<span class="at">url =</span> url_of_the_table,</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">destfile =</span> <span class="fu">file.path</span>(<span class="st">'./some_real_path_on_your_computer'</span>, name_of_the_table))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>This method then allows you to read back the data tables you want without the slow step of downloading each time you fix your code.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>my_file <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(<span class="st">'./some_real_path_on_your_computer'</span>, name_of_the_table))</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># analyze away</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="read-data-directly-into-r-without-a-separate-download-step" class="level3">
-<h3 class="anchored" data-anchor-id="read-data-directly-into-r-without-a-separate-download-step">Read data directly into R without a separate download step</h3>
-<p>Alternatively, you can wrap the code to read the data table directly into your code and never store the file locally.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>my_awesome_data <span class="ot">&lt;-</span> <span class="fu">read_data_entity</span>(packageID, entityId) <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pipe the result to readr::read_csv() to read the data into R</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># readr::read_csv() will guess the column types</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># but sometimes you need to have it scan a larger portion of the than the default</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># first 1000 lines to get the right type</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">guess_max =</span> <span class="dv">100000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 13540 Columns: 112
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr  (48): LTER_site, local_site, logger, flag_1, flag_2, flag_3, source_sta...
-dbl  (63): year, airtemp_max_homogenized, airtemp_min_homogenized, airtemp_a...
-date  (1): date
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># analyze away</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="authentication" class="level3">
-<h3 class="anchored" data-anchor-id="authentication">Authentication</h3>
-<p>EDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above). EDI is in the process of updating the EDI utils package and documentation for seamless authentication. Stay tuned.</p>
+<ul>
+<li><p>Abstract and methods for an archived dataset differ from a publication. Here, you will want to simply describe the motivations and basics of the dataset (abstract) and details about collection and processing (methods). Do NOT include details on statistical analyses performed for publications and/or results as you would for a scientific publication</p></li>
+<li><p>If you have detailed methods such as a protocol or SOP that includes diagrams etc - include the entire document as an entity in your data package and just provide a brief methodological overview in the methods component of your EML metadata.</p></li>
+</ul>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -794,13 +647,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./reading_metadata.html" class="pagination-link" aria-label="Reading Metadata">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reading Metadata</span>
+      <a href="./qc_and_format.html" class="pagination-link" aria-label="QC and Format Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">QC and Format Data</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./be_a_good_citizen.html" class="pagination-link" aria-label="Be a Good Citizen">
-        <span class="nav-page-text">Be a Good Citizen</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ezEML.html" class="pagination-link" aria-label="ezEML">
+        <span class="nav-page-text">ezEML</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

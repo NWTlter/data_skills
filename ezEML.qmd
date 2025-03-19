@@ -1,0 +1,28 @@
+---
+title: "ezEML"
+---
+
+ezEML is an GUI-based system devised by the Environmental Data Initiative to help in preparation of structured metadata. While your data will eventually be published using the Ecological Metadata Standard (a machine-readable format), these forms will guide you in preparing the information for that file. ezEML is in active development and improving all the time. Having learned how to prepare the metadata for a Niwot dataset using ezEML, you will be well on your way to being able to prepare data from other projects to this or similar repositories, so it is worth investing some time into learning this system.
+
+## Workflow for **Niwot** datasets in ezEML
+
+-   When you have the data, abstract, methods, and title ready to go, please send them to the Niwot Information manager, who will review the information you have provided and provide any feedback on formatting or content before proceeding.
+-   The Niwot information manager will then initiate the metadata preparation, using the EDI's ezEML platform, and invite you to collaborate on a metadata document. Look for an email from EDI Support [support\@edirepository.org](mailto:support@edirepository.org){.email}.
+-   Sign into EDI using any of the options (an EDI account, google, ORCID or github).
+-   Click the 'collaborate' button in the upper right corner to complete the metadata. The metadata will be partially filled out for you including the Project, Intellectual Rights, Contacts, and Data Package ID, as well as the Title, Abstract and Methods you provided.
+-   *You should not ever be creating or submitting 'New' EML document for any Niwot data. While this workflow is available to you on EDI for other projects, please work only from the template shared with you through the* Collaborate *feature for Niwot datasets*.
+
+## Using ezEML
+
+-   EDI has extensive documentation provided in its [User Guide](https://ezeml.edirepository.org/eml/user_guide)
+-   EDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.
+-   EDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left! (You will have some yellow badges left where contact information defaults to the LTER project contact, who does not have an ORCID.)
+
+::: .{column-margin}
+![](figures/badges.jpg)
+:::
+
+
+
+
+

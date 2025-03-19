@@ -10,18 +10,33 @@ website:
     style: "docked"
     search: true
     contents:
-        - index.qmd
-        - where_data_live.qmd
-        - finding_data.qmd
-        - reading_metadata.qmd
-        - data_download.qmd
-        - be_a_good_citizen.qmd
-
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+    - href: index.qmd
+      text: Intro
+    - section: Finding/Using Niwot Data
+      contents:
+      - href: where_data_live.qmd
+        text: Where Data Live
+      - href: finding_data.qmd
+        text: Finding Data
+      - href: reading_metadata.qmd
+        text: Reading Metadata
+      - href: data_download.qmd
+        text: Data Download
+      - href: be_a_good_citizen.qmd
+        text: Be a Good Citizen
+    - section: Archiving Niwot Data
+      contents:
+      - href: data_submission_overview.qmd
+        text: Data Submission Overview
+      - href: decide_what_to_archive.qmd
+        text: Decide What to Archive
+      - href: qc_and_format.qmd
+        text: QC and Format Data
+      - href: abstract_and_methods.qmd
+        text: Abstract and Methods
+      - href: ezEML.qmd
+        text: ezEML
+     
 
 
 
