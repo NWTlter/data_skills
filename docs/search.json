@@ -81,7 +81,7 @@
     "href": "decide_what_to_archive.html",
     "title": "Decide what to archive",
     "section": "",
-    "text": "Where file sizes are small, best practice is to publicly archive quality-controlled raw data (rather than calculated fields)\n\nExceptions may be made for large datasets, fine-scale temporal data; model outputs, and or other products derived from complex calculations)\nRegardless of what you publicly archive keep a copy of all your own scanned datasheets & raw files (prior to cleaning or reformatting)* - on your own computer.\n\nData will be published in data packages. A single data package can consist of multiple entities (tables, shapefiles, code, etc). In deciding what to lump/split, consider what groups of data would be usefully downloaded together (e.g. one could consider packaging up all the measurements from a single experiment).\nFor datasets where a specialized repository provides unique tools or audience, it may be appropriate to archive your data in a non-EDI repository (e.g. GenBank, Ameriflux). If you believe your data would be better served in a non-EDI data repository, contact the IM.",
+    "text": "Where file sizes are small, best practice is to publicly archive quality-controlled raw data (rather than calculated fields)\n\nExceptions may be made for large datasets, fine-scale temporal data; model outputs, and or other products derived from complex calculations)\nRegardless of what you publicly archive keep a copy of all your own scanned datasheets & raw files (prior to cleaning or reformatting) - on your own computer.\n\nData will be published in data packages. A single data package can consist of multiple entities (tables, shapefiles, code, etc). In deciding what to lump/split, consider what groups of data would be usefully downloaded together (e.g. one could consider packaging up all the measurements from a single experiment).\nFor datasets where a specialized repository provides unique tools or audience, it may be appropriate to archive your data in a non-EDI repository (e.g. GenBank, Ameriflux). If you believe your data would be better served in a non-EDI data repository, contact the IM.",
     "crumbs": [
       "Archiving Niwot Data",
       "Decide What to Archive"
@@ -275,7 +275,7 @@
     "href": "ezEML.html#using-ezeml",
     "title": "ezEML",
     "section": "Using ezEML",
-    "text": "Using ezEML\n\nEDI has extensive documentation provided in its User Guide\nEDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.\n\n\n\n\n\nEDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left! (You will have some yellow badges left where contact information defaults to the LTER project contact, who does not have an ORCID.)",
+    "text": "Using ezEML\n\nEDI has extensive documentation provided in its User Guide\nEDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.\nEDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left! (You will have some yellow badges left where contact information defaults to the LTER project contact, who does not have an ORCID.)",
     "crumbs": [
       "Archiving Niwot Data",
       "ezEML"
