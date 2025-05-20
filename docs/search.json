@@ -275,7 +275,7 @@
     "href": "ezEML.html#using-ezeml",
     "title": "ezEML",
     "section": "Using ezEML",
-    "text": "Using ezEML\n\nEDI has extensive documentation provided in its User Guide\nEDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.\nEDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left! (You will have some yellow badges left where contact information defaults to the LTER project contact, who does not have an ORCID.)",
+    "text": "Using ezEML\n\nEDI has extensive documentation provided in its User Guide\nEDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.\nEDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left!\n\n\n\n\n\nPreview your entire metadata before finalizing, using the Import/Export-&gt;Preview your Metadata in the EDI Portal menu at the top of the page. This is how your dataset will appear for the whole wide world once it is published. Check for spelling errors, weird units, anything else that you might have missed in paging through the individual forms.\nWhen you have completed filling out the metadata, email the Niwot Ridge Information Manager, who will check over the contents and submit. Do not use the share/submit button on the ezEML platform.",
     "crumbs": [
       "Archiving Niwot Data",
       "ezEML"
@@ -300,6 +300,17 @@
     "crumbs": [
       "Finding/Using Niwot Data",
       "Reading Metadata"
+    ]
+  },
+  {
+    "objectID": "ezEML.html#tips",
+    "href": "ezEML.html#tips",
+    "title": "ezEML",
+    "section": "Tips",
+    "text": "Tips\n\nOften the ezEML parser gets the ‘column types’ wrong. It is simply guessing based on content so if you have categorical variables that have numerical contents (e.g. blocks 1-3), it will often ‘assume’ this is a measured (‘Numerical’) type column and prompt you for units. You can use the ‘change type’ button to set this back to ‘text’ (even if the entire content of the column is numbers, for example for indexed values) and/or ‘categorical’ (for use when numeric codes signify particular categories).\nConversely, ezEML may miscategorize numeric columns as text when missing value codes are strings. This can also be reset by editing the column types as above, and then adding explicit missing value codes.",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "ezEML"
     ]
   }
 ]

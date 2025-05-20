@@ -224,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <li>The Niwot information manager will then initiate the metadata preparation, using the EDI’s ezEML platform, and invite you to collaborate on a metadata document. Look for an email from EDI Support <a href="mailto:support@edirepository.org" class="email">support@edirepository.org</a>.</li>
 <li>Sign into EDI using any of the options (an EDI account, google, ORCID or github).</li>
 <li>Click the ‘collaborate’ button in the upper right corner to complete the metadata. The metadata will be partially filled out for you including the Project, Intellectual Rights, Contacts, and Data Package ID, as well as the Title, Abstract and Methods you provided.</li>
-<li><em>You should not ever be creating or submitting ‘New’ EML document for any Niwot data. While this workflow is available to you on EDI for other projects, please work only from the template shared with you through the</em> Collaborate <em>feature for Niwot datasets</em>.</li>
+<li><em>You should not ever be creating or submitting ‘New’ EML document for any Niwot data. While this workflow is available to you on EDI for other projects, please work only from the template shared with you through the</em> <strong>Collaborate</strong> <em>feature for Niwot datasets</em>.</li>
 </ul>
 </section>
 <section id="using-ezeml" class="level2">
@@ -232,11 +232,22 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>EDI has extensive documentation provided in its <a href="https://ezeml.edirepository.org/eml/user_guide">User Guide</a></li>
 <li>EDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.</li>
-<li>EDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left! (You will have some yellow badges left where contact information defaults to the LTER project contact, who does not have an ORCID.)</li>
+<li>EDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left!</li>
 </ul>
 <div class=".{column-margin}">
 <p><img src="figures/badges.jpg" class="img-fluid"></p>
 </div>
+<ul>
+<li>Preview your entire metadata before finalizing, using the Import/Export-&gt;Preview your Metadata in the EDI Portal menu at the top of the page. This is how your dataset will appear for the whole wide world once it is published. Check for spelling errors, weird units, anything else that you might have missed in paging through the individual forms.</li>
+<li>When you have completed filling out the metadata, email the Niwot Ridge Information Manager, who will check over the contents and submit. <em>Do</em> <strong>not</strong> <em>use the share/submit button on the ezEML platform.</em></li>
+</ul>
+</section>
+<section id="tips" class="level2">
+<h2 class="anchored" data-anchor-id="tips">Tips</h2>
+<ul>
+<li>Often the ezEML parser gets the ‘column types’ wrong. It is simply guessing based on content so if you have categorical variables that have numerical contents (e.g.&nbsp;blocks 1-3), it will often ‘assume’ this is a measured (‘Numerical’) type column and prompt you for units. You can use the ‘change type’ button to set this back to ‘text’ (even if the entire content of the column is numbers, for example for indexed values) and/or ‘categorical’ (for use when numeric codes signify particular categories).</li>
+<li>Conversely, ezEML may miscategorize numeric columns as text when missing value codes are strings. This can also be reset by editing the column types as above, and then adding explicit missing value codes.</li>
+</ul>
 
 
 </section>
