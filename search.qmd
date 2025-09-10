@@ -1,0 +1,26 @@
+---
+title: Search
+---
+
+<div class="search-container">
+  <div id="quarto-search"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchElement = document.getElementById('quarto-search');
+  if (window.quartoSearchManager) {
+    window.quartoSearchManager.init({ 
+      searchElement: searchElement,
+      lunrOptions: {}, 
+      resultsOptions: {}
+    });
+  }
+});
+</script>
+
+<style>
+.search-container {
+  padding: 2rem 0;
+}
+</style>

@@ -1,0 +1,169 @@
+---
+title: "Quickstart Guide: Using AI in Your IDE"
+format:
+  html:
+    css: custom.css
+---
+
+## Leveling up: using AI within your IDE
+
+### Understanding the anatomy of the workflow.
+![](figures/genAI_code_workflow.jpg)
+
+To jump right in, we'll use only one tool, but see the [full instructions](AI_how_to_2_full_IDE.qmd) for more information on the different options available.
+
+### I'm overwhelmed already where should I start?
+
+#### IDEs
+-  If you are an R user, I recommend starting with RStudio and experimenting with typeaheads. 
+
+-  If you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use VScode. The agent/edit modes interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It's a much more streamlined interface. As well, the LLMs can use files in your project to inform their suggestions.
+
+#### Model service providers 
+-  If you are affiliated with an academic institution, sign up for Github Copilot Pro through [GitHub Education](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student) (students) or [here](https://docs.github.com/en/education/about-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher) (educators). It is free for students and educators, and well worth the effort to get verified. Github Copilot will allow you to try out a variety of models (albeit with a somewhat smaller context window than some other providers, which may give you lower quality results)
+
+#### Models 
+-  To conserve tokens start with the free tier models and work your way up to more expensive models if things aren't working. Current consensus is that Claude code is the best for R coding; there is a [blog](https://www.simonpcouch.com/blog/) that fairly regularly does a bake-off, so check back there if you want the most current
+
+### Software Setup is half the battle. Or maybe 3/4.
+
+Once you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing VSCode (together with the Copilot extensions). If you like the interface of Rstudio (or Positron) for day-to-day coding install one or both of those as well. *There are genAI tools that are only available in VSCode (not RStudio or Positron) so even if you prefer one of the more R-centric IDEs for everyday coding, consider trying out VSCode for more involved genAI tasks.*
+
+::: panel-tabset
+##### RStudio
+
+To enable GitHub Copilot in RStudio follow the directions [here](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html) (I have copied the relevant parts below)
+
+1.  Navigate to Tools \> Global Options \> Copilot.\
+2.  Check the box to "Enable GitHub Copilot".\
+3.  Download and install the Copilot Agent components.\
+4.  Click the "Sign In" button.\
+5.  In the "GitHub Copilot: Sign in" dialog, copy the Verification Code.\
+6.  Navigate to or click on the link to <https://github.com/login/device>, paste the Verification Code and click "Continue".\
+7.  GitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click "Authorize GitHub Copilot Plugin".\
+8.  After the permissions have been approved, your RStudio IDE will indicate the currently signed in user.\
+9.  Close the Global Options dialogue, open a source file (`.R`, `.py`, `.qmd`, etc) and begin coding with Copilot!
+
+To disable GitHub Copilot either:
+
+-   Navigate to Tools \> Global Options \> Copilot and uncheck "Enable GitHub Copilot", or\
+-   Use the Command Palette <kbd>Cmd+Shift+P</kbd> on Mac or <kbd>Ctrl+Shift+P</kbd> on Windows/Linux, search for "Enable GitHub Copilot" and then uncheck "Enable GitHub Copilot".
+
+##### Positron
+
+To enable Positron Assistant follow the directions [here](https://positron.posit.co/assistant.html). Note Positron supports both code completion through Github Copilot (requires Copilot setup, above) as well as sidebar/inline chat. The latter requires an Anthropic API key (paid). If you haven't installed Positron, you can download it [here](https://positron.posit.co/start.html#install-positron). *If you are already a happy RStudio user, you do not need to install Positron as the genAI functionality (for R) is about the same.*
+
+##### VSCode
+
+If you haven't installed VScode, you can download it [here](https://code.visualstudio.com/). Setup instructions for copilot are [here](https://code.visualstudio.com/docs/copilot/setup). Note to complete this step you must already registered for Github Pro and enabled Copilot).
+
+If you are an R user, you'll also want to install the R extension for VS code. Follow instructions [here](https://code.visualstudio.com/docs/languages/r).
+:::
+
+
+
+#### Demo: Easy Wins
+
+::: {.custom-section .typeaheads-section}
+##### Typeaheads
+
+Typeaheads are a quick and easy way to get started with AI-assisted coding. As you type, suggestions will appear inline, allowing you to accept or reject them with a simple keystroke.
+
+To accept a suggestion, press <kbd>Tab</kbd>. To ignore it, just keep typing.
+:::
+
+<hr class="section-divider">
+
+::: {.custom-section .documentation-section}
+##### Documentation
+
+Figure out what's in an entire repository/workspace
+
+`update the readme to explain the contents of each folder`
+
+Document the script that is open
+
+`/doc`
+:::
+
+<hr class="section-divider">
+
+::: {.custom-section .explain-section}
+##### Explain
+
+`explain what this code is doing`
+
+or
+
+`/explain`
+
+Use inline chat, highlighting the example code OR provide the entire script file as context.
+:::
+
+<hr class="section-divider">
+
+::: {.custom-section .review-section}
+##### Review/Fix
+
+`/fix`
+
+Provide the datafile as context here.
+
+or Highlight an existing code and use the Copilot 'Code Review' function.
+
+You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method [here](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
+:::
+
+::: {.custom-section .function-section}
+##### Script -\> function
+One application that AI excels at is converting repetitive code into functions.
+
+Enter the following into the inline chat, highlighting the example code.
+
+`using this example code, write a function where the input data frame, line colors, point colors and titles can be modified using function arguments`
+
+:::
+
+<hr class="section-divider">
+
+::: {.custom-section .qc-section}
+##### QC
+
+AI isn't great at running QC on large datasets (it doesn't typically read in huge files). But it can help you write code to qc your own data. An example prompt might look something like this (providing the datafile as context)
+
+`write R code to run quality control and visualize these data. Include checks for spelling errors, duplicates or missing data and repeating values.`
+
+:::
+
+<hr class="section-divider">
+
+#### Review: Where the heck are all those buttons?
+
+::: {.panel-tabset}
+## Typeaheads
+
+When enabled, grey "ghost text" will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it's faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.
+
+Features are similar in Rstudio and VS code. 
+The official RStudio GitHub Copilot user's guide is here: [RStudio Copilot Guide](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html).
+
+This [youtube video](https://www.youtube.com/watch?v=Lihg6il9SzE) demos using Github Copilot in Rstudio.
+
+
+## Chat
+![Open chat is located in the upper right of your screen](figures/vscode_open_chat.jpg)
+
+## Insert code
+![Code generated by chat can be inserted into your code directly from the chat window](figures/vscode_ask_apply_insert.jpg)
+
+## Accept/Reject edits
+![Each code suggestion can be individually kept or discarded. Red lines with a are deletions, green lines are additions](figures/vscode_keep_discard.jpg)
+
+## Review code
+![Invoking a review of your code from copilot](figures/vscode_review.jpg)
+
+## Limits
+![See how close you are to your monthly token limits](figures/vscode_copilot_usage.jpg)
+
+:::
+

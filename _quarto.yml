@@ -3,40 +3,94 @@ project:
   output-dir: docs
 
 website:
-  repo-url: https://github.com/NWTlter/data_skills
-  repo-actions: [issue]
-  page-navigation: true
+  title: "Niwot Data Skills"
+  navbar:
+    background: light
+    logo: "figures/Tundra_NoShrub_icon2.png"  # If you have a logo, otherwise remove this line
+    logo-height: 200px  # Adjust this value to make the logo bigger (e.g., 50px, 75px, etc.)
+    right:
+      - icon: github
+        href: https://github.com/NWTlter/data_skills
   sidebar:
     style: "docked"
     search: true
+    background: "green"
+    foreground: "white"
     contents:
     - href: index.qmd
       text: Intro
     - section: Finding/Using Niwot Data
       contents:
-      - href: where_data_live.qmd
+      - href: FIND_where_data_live.qmd
         text: Where Data Live
-      - href: finding_data.qmd
+      - href: FIND_finding_data.qmd
         text: Finding Data
-      - href: reading_metadata.qmd
+      - href: FIND_reading_metadata.qmd
         text: Reading Metadata
-      - href: data_download.qmd
+      - href: FIND_data_download.qmd
         text: Data Download
-      - href: be_a_good_citizen.qmd
+      - href: FIND_be_a_good_citizen.qmd
         text: Be a Good Citizen
     - section: Archiving Niwot Data
       contents:
-      - href: data_submission_overview.qmd
+      - href: ARCHIVE_data_submission_overview.qmd
         text: Data Submission Overview
-      - href: decide_what_to_archive.qmd
+      - href: ARCHIVE_decide_what_to_archive.qmd
         text: Decide What to Archive
-      - href: qc_and_format.qmd
+      - href: ARCHIVE_qc_and_format.qmd
         text: QC and Format Data
-      - href: abstract_and_methods.qmd
+      - href: ARCHIVE_abstract_and_methods.qmd
         text: Abstract and Methods
-      - href: ezEML.qmd
+      - href: ARCHIVE_ezEML.qmd
         text: ezEML
-     
+    - section: AI for NWT Researchers
+      contents:
+      - href: AI_intro_to_AI.qmd
+        text: "AI Tools Introduction"
+      - href: AI_privacy_reproducibility_warning.qmd
+        text: "Before You Start"
+      - href: AI_how_to_1_browser_based.qmd
+        text: "genAI I: In Your Browser"
+      - section: "genAI II: IDE Integration"
+        contents:
+        - href: AI_how_to_2_IDE_quickstart.qmd
+          text: "Copilot Quick Start Guide"
+        - href: AI_how_to_2_full_IDE.qmd
+          text: "Beyond Microsoft Products: Other IDEs and Assistants" 
+      - href: AI_3_Danger_zone.qmd
+        text: "The Danger Zone"
+      - href: AI_product_examples.qmd
+        text: "AI Successes and Failures"
+      - href: AI_further_reading.qmd
+        text: "Further Reading"
+    tools:
+      - icon: bug-fill
+        text: "Report an issue"
+        href: "https://github.com/NWTlter/data_skills/issues/new"
+  
+  repo-url: https://github.com/NWTlter/data_skills
+  repo-actions: [issue]
+  
+  page-navigation: true
+  page-footer: "© 2025 Niwot Ridge LTER"
+  margin-footer: |
+    ![](figures/Tundra_NoShrub_icon2.png){ width=60% }
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-title: "On this page"
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Open Sans"
+    smooth-scroll: true
+    search: true
+
+
+
 
 
 

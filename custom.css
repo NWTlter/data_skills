@@ -1,0 +1,31 @@
+/* Panel tabset container with grey box and dark blue border */
+.panel-tabset {
+  border: 2px solid #1e3a8a;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+/* All tab links (inactive tabs) - light grey */
+.nav-tabs .nav-link {
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #1e3a8a;
+  border-bottom: none;
+}
+
+/* Active tab - darker grey to distinguish from inactive */
+.nav-tabs .nav-link.active { 
+  background-color: #d4edda;
+  color: #000;
+  border: 1px solid #1e3a8a;
+  border-bottom-color: transparent;
+}
+
+/* Tab content area */
+.tab-content { 
+  background-color: #fff;
+  padding: 1rem;
+  border-top: 1px solid #1e3a8a;
+}

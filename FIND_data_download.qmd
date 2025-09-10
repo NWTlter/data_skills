@@ -1,0 +1,120 @@
+---
+title: "Downloading data programatically"
+---
+
+## Overview of download methods
+
+EDI provides several tools and methods for [accessing data](https://edirepository.org/resources/accessing-data). These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.
+
+The [EDIutils](https://docs.ropensci.org/EDIutils/) R package also provides excellent documentation on how to [Search and Access Data](https://docs.ropensci.org/EDIutils/articles/search_and_access.html) directly from R.
+
+## Download programmatically using R
+
+### Find what you want
+
+```{r load packages, message=FALSE, warning=FALSE}
+library (EDIutils) # Handy tools for interacting with EDI's API
+library (tidyverse) # For inspecting data
+```
+
+If you know the identifier of the data package you want, it's easy to find the latest revision
+
+```{r find latest version}
+scope <- "knb-lter-nwt" # Niwot scope
+identifier <- "314" # Dataset of interest
+
+# ask EDI to tell me what the most current version is
+revision <- list_data_package_revisions(scope, identifier, filter = "newest")
+
+# display current version - > this is referred to as the "packageID"
+packageID <- paste(scope, identifier, revision, sep = ".")
+packageID
+
+```
+
+### Download by package
+
+If you want to download the entire data package, use the function `read_data_package_archive`. Warning some datasets are large so you may not want to read the entire dataset.
+
+```{r download data package, eval = FALSE}
+# Download the ENTIRE package to a temporary directory
+read_data_package_archive(packageID, path = tempdir())
+
+# Inspect results
+list.files(tempdir())
+
+# Download the ENTIRE package to a place you intend to store it for repeated use
+# Note you must FIRST create the directory 'some_real_path_on_your_computer'
+# before downloading
+if (!dir.exists("./some_real_path_on_your_computer")) {
+  dir.create("./some_real_path_on_your_computer")
+}
+read_data_package_archive(packageID, path = "./some_real_path_on_your_computer")
+
+# Inspect results
+list.files("./some_real_path_on_your_computer")
+```
+
+### Download select entities
+
+It is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file).
+
+```{r read selectively, eval = TRUE}
+# List data entities of the data package
+res <- read_data_entity_names(packageID)
+res
+
+```
+
+Using the above mapping information, find the entityID of the data table you want to analyze
+
+```{r find entityID, eval = TRUE}
+entityId <- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']
+
+```
+
+The `read_data_entity_resource_metadata` function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset
+
+```{r find url, eval = TRUE}
+
+entity_resources <- read_data_entity_resource_metadata(packageID, entityId)
+url_of_the_table <- entity_resources$resourceId
+name_of_the_table <- entity_resources$fileName
+
+```
+
+With the url of the entities, you can down individual data tables
+
+```{r download, eval = TRUE}
+
+download.file(url = url_of_the_table,
+                destfile = file.path('./some_real_path_on_your_computer', name_of_the_table))
+
+```
+
+This method then allows you to read back the data tables you want without the slow step of downloading each time you fix your code.
+
+```{r read downloaded data, eval = FALSE}
+
+my_file <- read.csv(file.path('./some_real_path_on_your_computer', name_of_the_table))
+# analyze away
+```
+
+### Read data directly into R without a separate download step
+
+Alternatively, you can wrap the code to read the data table directly into your code and never store the file locally.
+
+```{r read directly into R, eval = TRUE}
+my_awesome_data <- read_data_entity(packageID, entityId) |>
+  # pipe the result to readr::read_csv() to read the data into R
+  # readr::read_csv() will guess the column types
+  # but sometimes you need to have it scan a larger portion of the than the default
+  # first 1000 lines to get the right type
+  readr::read_csv(guess_max = 100000)
+
+# analyze away
+```
+
+### Authentication
+
+EDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above). EDI is in the process of updating the EDI utils package and documentation for seamless authentication. Stay tuned.

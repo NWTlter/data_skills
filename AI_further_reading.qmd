@@ -1,0 +1,58 @@
+---
+title: "Further AI reading"
+format:
+  html:
+    css: custom.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Other tutorials, blogs, and articles
+
+[Leveraging Generative AI: Applications for the LTER
+Network](https://lternet.edu/stories/leveraging-generative-ai-applications-for-the-lter-network/)
+
+[AI for NCEAS](https://nceas-learning-hub.github.io/ai_for_nceas/)
+
+[AI for research: the ultimate guide to choosing the right
+tool](https://www.nature.com/articles/d41586-025-01069-0)
+
+[Github copilot for beginners
+blog](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-started-with-github-copilot/)
+
+Chris Brown's [Blog](https://www.seascapemodels.org/bluecology_blog.html) has a lot of useful tips for ecologists getting started with AI. His [Article](https://doi.org/10.32942/X2CS80) and [Tutorial](https://www.seascapemodels.org/rstats/2025/06/27/prompting-llms-quality-ecological-statistics.html) on using LLMs for ecological statistics are good reading if you want to delve into this reams (but see [Danger Zone](AI_3_Danger_zone.qmd).
+
+[Copilot in VS code cheat sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+
+### Helpful tips on prompt engineering
+
+-   [Getting started with AI: Good enough
+    prompting](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough)
+
+-   [Shiny app](https://jcheng.shinyapps.io/ellmer-assistant/) for
+    drafting prompts (R-focused)
+
+### Alternatives to vscode
+
+-   [Cursor](https://cursor.com/features) AI-assisted IDE
+-   Many more!
+
+### AI agents
+
+AI-assisted software development tools that code in the background while
+you work on other things.
+
+-   [GitHub Copilot
+    Agent](https://code.visualstudio.com/docs/copilot/copilot-coding-agent)
+    (Microsoft)
+
+-   [Claude
+    code](https://www.anthropic.com/claude-code?utm_source=google&utm_medium=paid_search_coder&utm_campaign=acq_code_us_q3&utm_term=ai%20development%20agent&gad_source=1&gad_campaignid=22795617257&gbraid=0AAAAA99jmqvVD7X-E8VhaZmqFVKbE-8u3&gclid=Cj0KCQjwndHEBhDVARIsAGh0g3CO73LVU889MkatKGOhQFT6g_kLNPmN1pp6TzySUKLOyTzHPyB5pCUaAoatEALw_wcB)
+    (Anthropic)
+
+-   [Gemini code assist](https://codeassist.google/) (Google)
+
+-   [Codex](https://openai.com/index/introducing-codex/) (OpenAI)
+
+

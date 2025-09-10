@@ -1,6 +1,178 @@
+/* Banner styling */
+.navbar {
+  background-color: #e6e6fa !important; /* Light purple banner */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Left sidebar styling */
+.sidebar-navigation {
+  background-color: #563d7c !important; /* Dark purple sidebar */
+}
+
+.sidebar-item {
+  color: white !important;
+}
+
+.sidebar-item-text {
+  color: white !important;
+}
+
+.sidebar-item-container .active {
+  color: white !important;
+  font-weight: bold;
+}
+
+.sidebar-title {
+  color: white !important;
+}
+
+/* Right sidebar (TOC) styling */
+#toc-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Remove the image from before the TOC container */
+.sidebar-right div#quarto-toc-container::before {
+  content: none;
+}
+
+/* Add Tundra image after the Report an issue button */
+.sidebar-right .sidebar-tools::after {
+  content: "";
+  display: block;
+  background-image: url("figures/Tundra_NoShrub_icon2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  margin: 20px auto 0 auto;
+  width: 80%;
+}
+
+/* General page styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Code blocks */
+pre {
+  border-radius: 4px;
+}
+
 /* css styles */
 .custom-section {
     background-color: #f0f8ff; /* Light blue */
     padding: 20px;
     border-radius: 10px;
+}
+
+/* Demo Easy Wins section styling */
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 25px 0;
+}
+
+.custom-section {
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Ensure headers within custom sections have proper spacing */
+.custom-section h5 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Section-specific colors */
+.documentation-section {
+  background-color: #e6f7ff;
+  border-left-color: #1890ff;
+}
+
+.explain-section {
+  background-color: #f6ffed;
+  border-left-color: #52c41a;
+}
+
+.function-section {
+  background-color: #fff7e6;
+  border-left-color: #fa8c16;
+}
+
+.qc-section {
+  background-color: #f9f0ff;
+  border-left-color: #722ed1;
+}
+
+.review-section {
+  background-color: #fff2f0;
+  border-left-color: #ff4d4f;
+}
+
+/* Fix code blocks within custom sections */
+.custom-section code {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Ensure links have consistent styling */
+.custom-section a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Fix the malformed selector by removing the extra quotation mark */
+.sidebar-navigation a[href="https://github.com/NWTlter/data_skills"] {
+  /* styles for the GitHub link in the sidebar */
+}
+
+/* Hide the repository URL display at the top of each page */
+.quarto-title-meta-heading:contains("Repository") {
+  display: none !important;
+}
+
+.quarto-title-meta-contents a[href^="https://github.com"] {
+  display: none !important;
+}
+
+/* Hide the parent div if it only contains the repository info */
+.quarto-title-meta-contents a[href^="https://github.com"]:only-child {
+  display: none !important;
+}
+
+.quarto-title-meta:has(.quarto-title-meta-heading:contains("Repository")) {
+  display: none !important;
+}
+
+/* Custom color for the Typeaheads section */
+.typeaheads-section {
+  background-color: #f0fff0; /* Light green background */
+  border-left: 5px solid #32cd32; /* Lime green border */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }

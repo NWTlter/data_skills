@@ -1,0 +1,72 @@
+---
+title: "AI How to Part I: Using genAI Tools in Your Browser"
+format:
+  html:
+    css: custom.css
+---
+
+An easy, low-effort way to get a feel for genAI tools is through browser-based interfaces. They do not require any installation or setup and do not have a steep learning curve to get started. Below is an example of using [Claude](https://claude.ai/) to modify an R script to change figure aesthetics. Tweaking figures is one of my favorite ways to use genAI tools. Results are easy to verify and I often find it's much faster than looking up documentation or searching through Stack Overflow.
+
+### Browser based
+
+::: callout-note
+## Note the original code is from the [R graph gallery](https://r-graph-gallery.com/277-marginal-histogram-for-ggplot2.html)
+
+"You are an expert R programmer. Modify the following R code to use red colors in p, blues in p1, greens in p2 and purples in p3. Use cowplot to make a multipanel figure with the title 'AI tools are pretty cool'".
+:::
+
+::: panel-tabset
+##### Prompt
+
+“You are an expert R programmer. Modify the following R code to use red colors in p, blues in p1, greens in p2 and purples in p3. Use cowplot to make a multipanel figure with the title ‘AI tools are pretty cool’”.
+
+```{r eval = FALSE}
+
+# library
+
+library(ggplot2)
+library(ggExtra)
+
+# The mtcars dataset is proposed in R
+
+head(mtcars)
+
+# classic plot :
+
+p <- ggplot(mtcars, aes(x=wt, y=mpg, color=cyl, size=cyl)) + geom_point() + theme(legend.position="none")
+
+# with marginal histogram
+
+p1 <- ggMarginal(p, type="histogram")
+
+# marginal density
+
+p2 <- ggMarginal(p, type="density")
+
+# marginal boxplot
+
+p3 <- ggMarginal(p, type="boxplot")
+```
+
+##### Original Figure
+
+![](figures/ggmarginal.jpg){width="800"}
+
+##### With Anthropic/Claude modifications
+
+![](figures/claude_marginal.png){width="500"}
+:::
+
+::: {.callout-note icon="false"}
+#### Activity: Try it out!
+
+-   Select an AI interface to further modify your plot. You can use any of the following: [ChatGPT](https://chatgpt.com//), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com), or another of your choosing. You will probably need to sign up for an account if you haven't already.
+
+-   Use a prompt such as: "You are an expert R programmer. Modify the following R code to {use your imagination here}. Copy the R code from the "Prompt" window above, and paste it into the chat window.
+
+-   Inspect the results and if they seem reasonable, copy and paste the generated code back into your R session and run it.
+
+How did it work?
+
+Congratulations, you are have now dipped your toes into the world of [vibe coding](https://cloud.google.com/discover/what-is-vibe-coding)!
+:::

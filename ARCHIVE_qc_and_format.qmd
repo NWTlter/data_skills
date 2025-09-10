@@ -1,0 +1,23 @@
+---
+title: "QC and format your data for publication"
+---
+-   [Clean](https://edirepository.org/resources/cleaning-data-and-quality-control) your data
+    -   It is best to publish data in a minimally processed form that preserves the original measurements. Any alteration of the values and associated rational should be clearly described in the methods section of the data package metadata.
+    -   Before publishing, please conduct basic quality control checks, such as checking for duplicates, spelling errors, and values out of range. Where it is clear that the error is from transcription (for example copying the same data twice from field notebooks, or data are misspelled), please rectify these data before publishing.
+    -   For tips on data quality control using R, see the tutorial [here](https://scelmendorf.github.io/data_qa/).
+    -   If you discover out of range that is not simply a transcription error, consider flagging problematic data instead of removing.
+
+-   Format your data
+
+    -   Use long rather than wide formats. This facilitates tacking on another year or location of the same data without widening your data tables and remaking the metadata, and is also much easier to analyze.
+    -   Use non proprietary tabular data (comma or tab delimited ASCII text) and geospatial data types. Do NOT use excel for published data.
+    -   Avoid using white space or special characters in column names
+    -   Use consistent missing value codes (i.e. do not use NA in some rows and N/A in others)
+    -   Use UTF-8 encoding if your data includes special characters
+    -   **If you need help achieving the above, [contact the IM](nwt-coordinator@colorado.edu).**
+
+
+
+-   Follow Niwot Ridge naming conventions for each entity
+
+    -   All Niwot Ridge data follow the convention \<short_description\>.\<author first initial last initial\>.data.\<extension\>. For example if Nancy Emery submitted a file on Geum demography, it might be entitled geum_demog.ne.data.csv

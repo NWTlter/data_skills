@@ -1,0 +1,50 @@
+---
+title: "AI Danger Zone"
+format:
+  html:
+    css: custom.css
+---
+
+### Danger #1 Don't stop thinking!
+
+AI tools are great for implementation, but they are not going to do amazing science without a human at the helm. I think of them as a great assistant to quickly take over some tedious tasks. They make fewer typos than a person. They also sometimes completely make stuff up. If you can't read and understand the code they generate, don't trust it! As well, you should absolutely test/validate to make sure the code generated is doing what you think it's doing. It is tempting to think that LLMs obviate the need to learn to code, if you aren't fluent enough in a language to understand their suggestions and/or do not carefully check the proposed code, you risk doing some pretty terrible science. They are a tool, but you need to use it effectively and responsibly.
+
+Software engineers use unit tests (where the answer is known) to ensure their code is working as expected. While there are some cases in scientific programming where this works, often we are writing code *where we do not know the expected output in advance*. For example, if you are running an anova model to test for a treatment effect, you are probably(?) running that model *because you do not know whether the treatment has an effect or not*. If an AI model suggests a different syntax, is it to be trusted? This is a simple example that might be solved by reading the relevant help files, but for more involved workflows, one option is to use [characterization tests](https://en.wikipedia.org/wiki/Characterization_test) to ensure that AI generated (or modified, for example to streamline or make more efficient) generates the same output as your initial code.
+
+A great tool to compare files is a [checksum](https://en.wikipedia.org/wiki/Checksum), which can be used to test if two files are identical.
+
+The code snippet below demonstrates how you would go about this.
+
+```{r eval = FALSE}
+
+# load libraries
+library (digest)
+
+# assume your original code generated the csv "my_output.jpg" and you have used genAI tools to speed up your code, writing out a new file "ai_output.jpg" that should contain exactly the same contents.
+
+hash_original <- digest(file = "my_output.jpg", algo = "md5")
+hash_improved <- digest(file = "ai_output.jpg", algo = "md5")
+
+# this should return TRUE if the file has not changed
+identical(hash_original, hash_improved)
+
+
+```
+
+If elements of a tabular dataset (e.g. dataframe) have changed, it is also possible to see cell-wise differences directly in R using the [comparedf](https://cran.r-project.org/web/packages/arsenal/vignettes/comparedf.html) function from the arsenal package.
+
+Last, if your outputs are already tracked in git, git will show a diff the output files before and after updating codes. You can use this to inspect any differences and evaluate whether the genAI tools have made desirable improvements or introduced errors.
+
+### Danger #2 LLMs are confident but (often) incompetent statistical consultants
+
+AI tools will more often then not generate syntactically correct code that does the wrong thing. Trained to be helpful, they will rarely admit they do not know how to do something or have insufficient information. This is particularly dangerous in the realm of statistical analysis. A recent study determined that LLMs produced the correct statistical analysis 0 (complex tasks) to 88% (simple tasks) of the time [(Jansen *et al.* 2025)](https://doi.org/10.1371/journal.pone.0317084). Your statistical analyses should be right 100% of the time; and you should be able to explain why you chose the methods you did and understand how they were implemented.
+
+### Danger #3 Inefficient/outdated code
+
+AI is trained on a lot of old internet material. If the stackoverflow solution references a function that has been deprecated, odds are your AI-generated code is going to use that. As well, the solutions can be pretty inefficient. Sometimes that may not matter - for a one-off analysis it's probably better to spend 5 minutes writing code and let your computer churn away for an hour than write code for an hour that runs in 5 minutes. You can also ask your AI pair programmer to rewrite the code using a different syntax, rewrite more efficiently, or provide the errors/warnings back to the chat and ask for the code to be fixed based on that feedback. Iteration can help here, as can asking a different LLM to check the work of the first.
+
+### Danger #4 AI agents doing something nefarious on your computer.
+
+AI chat models can be enabled to run code on your computer if you provide it with tools. This can be advantageous as you can get your agent to do work for you! But also dangerous, e.g. if you enable your agent to delete or modify files on your computer, download viruses from the interwebs, create a bot that writes angry emails to your advisor on your behalf etc, you will experience REGRET. Using a version control system (e.g. github) is a partial antidote to make sure that you can undo any code modifications that your AI pair programmer implements that break things in your code, but cannot prevent all disasters. Do not install vs code extensions, workspaces, or run code blindly that you find on the internet. vscode has some [advice](https://code.visualstudio.com/docs/editing/workspaces/workspace-trust) on this. Be particularly cautious with Model Context Protocol (MCP) servers, which specify what code can be run on your computer.
+
+### 

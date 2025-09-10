@@ -1,7 +1,7 @@
 [
   {
-    "objectID": "where_data_live.html",
-    "href": "where_data_live.html",
+    "objectID": "FIND_where_data_live.html",
+    "href": "FIND_where_data_live.html",
     "title": "Where Data Live",
     "section": "",
     "text": "Niwot LTER uses the Environmental Data Initiative as its primary repository. The EDI data portal provides the back end for the Niwot Ridge LTER Data Catalog. Because it is a DataOne member node, all Niwot Data can also be found by searching on DataOne. You can access the same Niwot data from any of these endpoints; it does not matter which you use you will end up with the same data.\n\n\nA few Niwot LTER datasets that are part of larger networks (e.g. Ameriflux), as well as numerous dataset collected on or near Niwot Ridge by partner organizations are linked directly on Niwot website under ‘Other Niwot Datasets’",
@@ -11,19 +11,8 @@
     ]
   },
   {
-    "objectID": "qc_and_format.html",
-    "href": "qc_and_format.html",
-    "title": "QC and format your data for publication",
-    "section": "",
-    "text": "Clean your data\n\nIt is best to publish data in a minimally processed form that preserves the original measurements. Any alteration of the values and associated rational should be clearly described in the methods section of the data package metadata.\nBefore publishing, please conduct basic quality control checks, such as checking for duplicates, spelling errors, and values out of range. Where it is clear that the error is from transcription (for example copying the same data twice from field notebooks, or data are misspelled), please rectify these data before publishing.\nFor tips on data quality control using R, see the tutorial here.\nIf you discover out of range that is not simply a transcription error, consider flagging problematic data instead of removing.\n\nFormat your data\n\nUse long rather than wide formats. This facilitates tacking on another year or location of the same data without widening your data tables and remaking the metadata, and is also much easier to analyze.\nUse non proprietary tabular data (comma or tab delimited ASCII text) and geospatial data types. Do NOT use excel for published data.\nAvoid using white space or special characters in column names\nUse consistent missing value codes (i.e. do not use NA in some rows and N/A in others)\nUse UTF-8 encoding if your data includes special characters\nIf you need help achieving the above, contact the IM.\n\nFollow Niwot Ridge naming conventions for each entity\n\nAll Niwot Ridge data follow the convention &lt;short_description&gt;.&lt;author first initial last initial&gt;.data.&lt;extension&gt;. For example if Nancy Emery submitted a file on Geum demography, it might be entitled geum_demog.ne.data.csv",
-    "crumbs": [
-      "Archiving Niwot Data",
-      "QC and Format Data"
-    ]
-  },
-  {
-    "objectID": "finding_data.html",
-    "href": "finding_data.html",
+    "objectID": "FIND_finding_data.html",
+    "href": "FIND_finding_data.html",
     "title": "Finding Data",
     "section": "",
     "text": "Niwot data can be found by searching any of the Environmental Data Initiative (EDI) repository; the Niwot Ridge data catalog or DataOne.\nWe archive all datasets collected with LTER funds, which can sometimes make finding the dataset you want feel like looking for a needle in a haystack. Read on for some tips on how to make this process easier and efficiently get the data you are looking for.",
@@ -33,8 +22,8 @@
     ]
   },
   {
-    "objectID": "finding_data.html#anatomy-of-a-data-package",
-    "href": "finding_data.html#anatomy-of-a-data-package",
+    "objectID": "FIND_finding_data.html#anatomy-of-a-data-package",
+    "href": "FIND_finding_data.html#anatomy-of-a-data-package",
     "title": "Finding Data",
     "section": "Anatomy of a Data Package",
     "text": "Anatomy of a Data Package\nTo effectively search it is helpful to understand the anatomy of a “data package” on EDI. A single data package contains one or many thematically linked data files (aka “entities”), which are archived together with their metadata, under a single packageID, referenced by a single dataset citation, and assigned a single DOI.\nWithin EDI, data package identifiers have the form scope.accession.version, where:\n\nscope is a string value that identifies the organization, project, or theme of the data package. For Niwot Ridge datasets, the scope is always knb-lter-nwt\naccession is an integer value that uniquely identifies the data package within the namespace of the scope\nversion is an integer value in increasing order that identifies the version of the data package\n\nAn example of a packageID is knb-lter-nwt.314.3\nA DOI is a globally unique and persistent identifier that unambiguously resolves to the data package landing page. DOIs should always be used when citing a data package.\nAn example of a DOI is doi:10.6073/pasta/7890c3264eb71bb992f0237844b02667",
@@ -44,8 +33,8 @@
     ]
   },
   {
-    "objectID": "finding_data.html#four-ways-to-search-for-data",
-    "href": "finding_data.html#four-ways-to-search-for-data",
+    "objectID": "FIND_finding_data.html#four-ways-to-search-for-data",
+    "href": "FIND_finding_data.html#four-ways-to-search-for-data",
     "title": "Finding Data",
     "section": "Four ways to search for data",
     "text": "Four ways to search for data\n\nNiwot CatalogEDI CatalogPackageIDDOI\n\n\nNiwot Catalog can be searched using the search box, which indexes the title, abstract and keywords, or through Advanced Search, which provides additional fields. Often, I find that the default search returns either too many or too few datasets, and it can be frustrating to page through them all on the web. In this case, it can be more efficient to download the entire catalog as a .csv and either search the results locally after opening the spreadsheet (CTL-F), or scanning quickly for a specific dataset or datasets of interest.\n\n\n\nEDI catalog has both search and advanced search features. Narrowing the search to include only the Niwot scope (data packages beginning with knb-lter-nwt) will help reduce your search to Niwot LTER data\n\n\n\nIf you know the packageID of a dataset, you can enter that directly into the Identifier field of the EDI data catalog advanced search. Entering a packageID without a version (i.e. entering only the scope and accession, example: knb-lter-nwt.314) will lead you to the most current version.\n\n\n\nIf you know the DOI of a dataset you can enter it directly into your browser to be taken to the landing page of the dataset, all you need to do is append the doi to the url https://doi.org/ (the doi will start with 10.6073)",
@@ -55,8 +44,8 @@
     ]
   },
   {
-    "objectID": "finding_data.html#where-to-find-packageids-or-dois",
-    "href": "finding_data.html#where-to-find-packageids-or-dois",
+    "objectID": "FIND_finding_data.html#where-to-find-packageids-or-dois",
+    "href": "FIND_finding_data.html#where-to-find-packageids-or-dois",
     "title": "Finding Data",
     "section": "Where to find packageIDs or DOI?s",
     "text": "Where to find packageIDs or DOI?s\nPackageIDs and DOIs can be found in the data catalog and citations of journal articles. Most of Niwot’s long-term datasets (aka “signature datasets” were listed in the NWT VIII renewal. This table can be downloaded here. Note most of our ongoing datasets get updated each year. However the scope and accession of the packageID stays consistent over time; only the version increments over time.",
@@ -66,8 +55,8 @@
     ]
   },
   {
-    "objectID": "finding_data.html#how-do-i-know-if-i-am-using-the-most-current-version",
-    "href": "finding_data.html#how-do-i-know-if-i-am-using-the-most-current-version",
+    "objectID": "FIND_finding_data.html#how-do-i-know-if-i-am-using-the-most-current-version",
+    "href": "FIND_finding_data.html#how-do-i-know-if-i-am-using-the-most-current-version",
     "title": "Finding Data",
     "section": "How do I know if I am using the most current version?",
     "text": "How do I know if I am using the most current version?\nThe landing page of an out-of-date version of a dataset will clearly indicate that there is a more recent version available as well as provide a link to the most current version. Unless you are specifically trying to reproduce an prior analysis, it is recommended to always use the most current version.",
@@ -77,58 +66,280 @@
     ]
   },
   {
-    "objectID": "decide_what_to_archive.html",
-    "href": "decide_what_to_archive.html",
-    "title": "Decide what to archive",
+    "objectID": "FIND_be_a_good_citizen.html",
+    "href": "FIND_be_a_good_citizen.html",
+    "title": "Be a good citizen",
     "section": "",
-    "text": "Where file sizes are small, best practice is to publicly archive quality-controlled raw data (rather than calculated fields)\n\nExceptions may be made for large datasets, fine-scale temporal data; model outputs, and or other products derived from complex calculations)\nRegardless of what you publicly archive keep a copy of all your own scanned datasheets & raw files (prior to cleaning or reformatting) - on your own computer.\n\nData will be published in data packages. A single data package can consist of multiple entities (tables, shapefiles, code, etc). In deciding what to lump/split, consider what groups of data would be usefully downloaded together (e.g. one could consider packaging up all the measurements from a single experiment).\nFor datasets where a specialized repository provides unique tools or audience, it may be appropriate to archive your data in a non-EDI repository (e.g. GenBank, Ameriflux). If you believe your data would be better served in a non-EDI data repository, contact the IM.",
+    "text": "Niwot is indebted to its funder (the National Science Foundation), the people who collect the data and the historical occupants of Niwot Ridge.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Be a Good Citizen"
+    ]
+  },
+  {
+    "objectID": "FIND_be_a_good_citizen.html#citing-data",
+    "href": "FIND_be_a_good_citizen.html#citing-data",
+    "title": "Be a good citizen",
+    "section": "Citing Data",
+    "text": "Citing Data\nIf you use a Niwot dataset in your research, remember to cite it, so that we can track data useage for ourselves, and for our funders. The landing page on each dataset provides a suggested citation format. If a journal requests a different format, that’s fine too so long as the citation includes the DOI. And yes - you should cite a dataset – even if it is one you provided.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Be a Good Citizen"
+    ]
+  },
+  {
+    "objectID": "FIND_be_a_good_citizen.html#acknowledge-niwot-funding",
+    "href": "FIND_be_a_good_citizen.html#acknowledge-niwot-funding",
+    "title": "Be a good citizen",
+    "section": "Acknowledge Niwot funding",
+    "text": "Acknowledge Niwot funding\nThe following acknowledgment should accompany any publication that makes use of Niwot resources: Logistical support and/or data were provided by the NSF-supported Niwot Ridge LTER program (NWT VII: NSF DEB – 1637686, NWT VIII: NSF DEB-2224439)",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Be a Good Citizen"
+    ]
+  },
+  {
+    "objectID": "FIND_be_a_good_citizen.html#add-a-land-acknowledgement",
+    "href": "FIND_be_a_good_citizen.html#add-a-land-acknowledgement",
+    "title": "Be a good citizen",
+    "section": "Add a land acknowledgement",
+    "text": "Add a land acknowledgement\nSuggested text can be found on the Niwot Ridge and/or University of Colorado websites",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Be a Good Citizen"
+    ]
+  },
+  {
+    "objectID": "FIND_be_a_good_citizen.html#consider-co-authorship",
+    "href": "FIND_be_a_good_citizen.html#consider-co-authorship",
+    "title": "Be a good citizen",
+    "section": "Consider Co-authorship",
+    "text": "Consider Co-authorship\nAll Niwot data are provided free of charge, for use without restriction. However if your analysis relies heavily on data collected by others, consider asking them to collaborate. Niwot LTER’s recommended authorship guidelines can be found here.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Be a Good Citizen"
+    ]
+  },
+  {
+    "objectID": "FIND_be_a_good_citizen.html#acknowledge-niwot-researchers-technicians-and-seasonals",
+    "href": "FIND_be_a_good_citizen.html#acknowledge-niwot-researchers-technicians-and-seasonals",
+    "title": "Be a good citizen",
+    "section": "Acknowledge Niwot Researchers, technicians and seasonals",
+    "text": "Acknowledge Niwot Researchers, technicians and seasonals\nWe encourage data re-use. If co-authorship is not appropriate, consider adding an acknowledgement to your manuscript instead. The ‘people’ element of the metadata file is a good place to start.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Be a Good Citizen"
+    ]
+  },
+  {
+    "objectID": "FIND_be_a_good_citizen.html#keep-up-to-date-with-the-latest-recommendations",
+    "href": "FIND_be_a_good_citizen.html#keep-up-to-date-with-the-latest-recommendations",
+    "title": "Be a good citizen",
+    "section": "Keep up to date with the latest recommendations",
+    "text": "Keep up to date with the latest recommendations\nOur website has the most up to date information on authorship and citations.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Be a Good Citizen"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_ezEML.html",
+    "href": "ARCHIVE_ezEML.html",
+    "title": "ezEML",
+    "section": "",
+    "text": "ezEML is an GUI-based system devised by the Environmental Data Initiative to help in preparation of structured metadata. While your data will eventually be published using the Ecological Metadata Standard (a machine-readable format), these forms will guide you in preparing the information for that file. ezEML is in active development and improving all the time. Having learned how to prepare the metadata for a Niwot dataset using ezEML, you will be well on your way to being able to prepare data from other projects to this or similar repositories, so it is worth investing some time into learning this system.",
     "crumbs": [
       "Archiving Niwot Data",
-      "Decide What to Archive"
+      "ezEML"
     ]
   },
   {
-    "objectID": "data_download.html",
-    "href": "data_download.html",
-    "title": "Downloading data programatically",
-    "section": "",
-    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R.",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Data Download"
-    ]
-  },
-  {
-    "objectID": "data_download.html#overview-of-download-methods",
-    "href": "data_download.html#overview-of-download-methods",
-    "title": "Downloading data programatically",
-    "section": "",
-    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R.",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Data Download"
-    ]
-  },
-  {
-    "objectID": "data_download.html#download-programmatically-using-r",
-    "href": "data_download.html#download-programmatically-using-r",
-    "title": "Downloading data programatically",
-    "section": "Download programmatically using R",
-    "text": "Download programmatically using R\n\nFind what you want\n\nlibrary (EDIutils) # Handy tools for interacting with EDI's API\nlibrary (tidyverse) # For inspecting data\n\nIf you know the identifier of the data package you want, it’s easy to find the latest revision\n\nscope &lt;- \"knb-lter-nwt\" # Niwot scope\nidentifier &lt;- \"314\" # Dataset of interest\n\n# ask EDI to tell me what the most current version is\nrevision &lt;- list_data_package_revisions(scope, identifier, filter = \"newest\")\n\n# display current version - &gt; this is referred to as the \"packageID\"\npackageID &lt;- paste(scope, identifier, revision, sep = \".\")\npackageID\n\n[1] \"knb-lter-nwt.314.3\"\n\n\n\n\nDownload by package\nIf you want to download the entire data package, use the function read_data_package_archive. Warning some datasets are large so you may not want to read the entire dataset.\n\n# Download the ENTIRE package to a temporary directory\nread_data_package_archive(packageID, path = tempdir())\n\n# Inspect results\nlist.files(tempdir())\n\n# Download the ENTIRE package to a place you intend to store it for repeated use\n# Note you must FIRST create the directory 'some_real_path_on_your_computer'\n# before downloading\nif (!dir.exists(\"./some_real_path_on_your_computer\")) {\n  dir.create(\"./some_real_path_on_your_computer\")\n}\nread_data_package_archive(packageID, path = \"./some_real_path_on_your_computer\")\n\n# Inspect results\nlist.files(\"./some_real_path_on_your_computer\")\n\n\n\nDownload select entities\nIt is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file).\n\n# List data entities of the data package\nres &lt;- read_data_entity_names(packageID)\nres\n\n                          entityId\n1 fd533b5b9f3ae79862a33bad964d0c0c\n2 e786cdbe1ac83579f69a0e088cccc1c9\n                                                   entityName\n1              Homogenized, gap-filled, daily air temperature\n2 Homogenized, gap-filled, daily air temperature full methods\n\n\nUsing the above mapping information, find the entityID of the data table you want to analyze\n\nentityId &lt;- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']\n\nThe read_data_entity_resource_metadata function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset\n\nentity_resources &lt;- read_data_entity_resource_metadata(packageID, entityId)\nurl_of_the_table &lt;- entity_resources$resourceId\nname_of_the_table &lt;- entity_resources$fileName\n\nWith the url of the entities, you can down individual data tables\n\ndownload.file(url = url_of_the_table,\n                destfile = file.path('./some_real_path_on_your_computer', name_of_the_table))\n\nThis method then allows you to read back the data tables you want without the slow step of downloading each time you fix your code.\n\nmy_file &lt;- read.csv(file.path('./some_real_path_on_your_computer', name_of_the_table))\n# analyze away\n\n\n\nRead data directly into R without a separate download step\nAlternatively, you can wrap the code to read the data table directly into your code and never store the file locally.\n\nmy_awesome_data &lt;- read_data_entity(packageID, entityId) |&gt;\n  # pipe the result to readr::read_csv() to read the data into R\n  # readr::read_csv() will guess the column types\n  # but sometimes you need to have it scan a larger portion of the than the default\n  # first 1000 lines to get the right type\n  readr::read_csv(guess_max = 100000)\n\nRows: 13540 Columns: 112\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (48): LTER_site, local_site, logger, flag_1, flag_2, flag_3, source_sta...\ndbl  (63): year, airtemp_max_homogenized, airtemp_min_homogenized, airtemp_a...\ndate  (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n# analyze away\n\n\n\nAuthentication\nEDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above). EDI is in the process of updating the EDI utils package and documentation for seamless authentication. Stay tuned.",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Data Download"
-    ]
-  },
-  {
-    "objectID": "abstract_and_methods.html",
-    "href": "abstract_and_methods.html",
-    "title": "Abstract and Methods",
-    "section": "",
-    "text": "Abstract and methods for an archived dataset differ from a publication. Here, you will want to simply describe the motivations and basics of the dataset (abstract) and details about collection and processing (methods). Do NOT include details on statistical analyses performed for publications and/or results as you would for a scientific publication\nIf you have detailed methods such as a protocol or SOP that includes diagrams etc - include the entire document as an entity in your data package and just provide a brief methodological overview in the methods component of your EML metadata.",
+    "objectID": "ARCHIVE_ezEML.html#workflow-for-niwot-datasets-in-ezeml",
+    "href": "ARCHIVE_ezEML.html#workflow-for-niwot-datasets-in-ezeml",
+    "title": "ezEML",
+    "section": "Workflow for Niwot datasets in ezEML",
+    "text": "Workflow for Niwot datasets in ezEML\n\nWhen you have the data, abstract, methods, and title ready to go, please send them to the Niwot Information manager, who will review the information you have provided and provide any feedback on formatting or content before proceeding.\nThe Niwot information manager will then initiate the metadata preparation, using the EDI’s ezEML platform, and invite you to collaborate on a metadata document. Look for an email from EDI Support support@edirepository.org.\nSign into EDI using any of the options (an EDI account, google, ORCID or github).\nClick the ‘collaborate’ button in the upper right corner to complete the metadata. The metadata will be partially filled out for you including the Project, Intellectual Rights, Contacts, and Data Package ID, as well as the Title, Abstract and Methods you provided.\nYou should not ever be creating or submitting ‘New’ EML document for any Niwot data. While this workflow is available to you on EDI for other projects, please work only from the template shared with you through the Collaborate feature for Niwot datasets.",
     "crumbs": [
       "Archiving Niwot Data",
-      "Abstract and Methods"
+      "ezEML"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_ezEML.html#using-ezeml",
+    "href": "ARCHIVE_ezEML.html#using-ezeml",
+    "title": "ezEML",
+    "section": "Using ezEML",
+    "text": "Using ezEML\n\nEDI has extensive documentation provided in its User Guide\nEDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.\nEDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left!\n\n\n\n\n\nPreview your entire metadata before finalizing, using the Import/Export-&gt;Preview your Metadata in the EDI Portal menu at the top of the page. This is how your dataset will appear for the whole wide world once it is published. Check for spelling errors, weird units, anything else that you might have missed in paging through the individual forms.\nWhen you have completed filling out the metadata, email the Niwot Ridge Information Manager, who will check over the contents and submit. Do not use the share/submit button on the ezEML platform.",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "ezEML"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_ezEML.html#tips",
+    "href": "ARCHIVE_ezEML.html#tips",
+    "title": "ezEML",
+    "section": "Tips",
+    "text": "Tips\n\nOften the ezEML parser gets the ‘column types’ wrong. It is simply guessing based on content so if you have categorical variables that have numerical contents (e.g. blocks 1-3), it will often ‘assume’ this is a measured (‘Numerical’) type column and prompt you for units. You can use the ‘change type’ button to set this back to ‘text’ (even if the entire content of the column is numbers, for example for indexed values) and/or ‘categorical’ (for use when numeric codes signify particular categories).\nConversely, ezEML may miscategorize numeric columns as text when missing value codes are strings. This can also be reset by editing the column types as above, and then adding explicit missing value codes.",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "ezEML"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_data_submission_overview.html",
+    "href": "ARCHIVE_data_submission_overview.html",
+    "title": "Submitting Niwot Data for Publication",
+    "section": "",
+    "text": "Niwot Ridge follows the LTER Network Data Policy. If you are funded by the LTER, your data must submit data, on time, to the information manager, who will work with you to get it archived.",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "Data Submission Overview"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_data_submission_overview.html#data-policy",
+    "href": "ARCHIVE_data_submission_overview.html#data-policy",
+    "title": "Submitting Niwot Data for Publication",
+    "section": "",
+    "text": "Niwot Ridge follows the LTER Network Data Policy. If you are funded by the LTER, your data must submit data, on time, to the information manager, who will work with you to get it archived.",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "Data Submission Overview"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_data_submission_overview.html#the-niwot-ridge-data-catalog",
+    "href": "ARCHIVE_data_submission_overview.html#the-niwot-ridge-data-catalog",
+    "title": "Submitting Niwot Data for Publication",
+    "section": "The Niwot Ridge Data Catalog",
+    "text": "The Niwot Ridge Data Catalog\nNiwot Ridge uses the Environmental Data Initiative as its primary archive. This also forms the backend for the Niwot Data Catalog. While we will work collaboratively on preparing your data for submission to EDI, the Niwot Information Manager must submit the data to EDI in order for it to be included in Niwot’s data catalog. Do NOT submit Niwot LTER data to EDI on your own or it will not appear in the Niwot catalog, and it will be extremely difficult for future NWT researcher to find.",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "Data Submission Overview"
+    ]
+  },
+  {
+    "objectID": "AI_product_examples.html",
+    "href": "AI_product_examples.html",
+    "title": "AI Success Stories (and some failures)",
+    "section": "",
+    "text": "NWT-8 Renewal Prep (2022)Data Dashboard (2023)NWT Symposium (2025)\n\n\nOriginal figures from the Niwot renewal prep work (pre-AI)\n\n\n\nModified code in (? an hour or two can’t remember) to make nice aesthetics for the data dashboard (pre-AI)\n\n\n\nModified code in ~ an hour to update the import to read from EDI following EDI API modifications, all sites, split by season, calculate mann-kendall statistics plus Thiel-sen trends, render into multi-panel figure with embedded stats. ~391 lines of code.",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "AI Successes and Failures"
+    ]
+  },
+  {
+    "objectID": "AI_product_examples.html#ai-failures",
+    "href": "AI_product_examples.html#ai-failures",
+    "title": "AI Success Stories (and some failures)",
+    "section": "AI Failures",
+    "text": "AI Failures\nToo many to name! Some examples below:\nFirst attempts at all coding things were filled with hallucinations, imaginary packages, functions that didn’t exist and nonsense code. Syntactically correct but completely disfunctional. (this was about a year ago, things are improving fast).\nMany parsio alternatives. Won’t throw anyone under the bus by naming them here…\nAsking chatGPT or copilot to make a pptx slide deck for me.\nAsking chatGPT to make a cartoon illustration for a talk. No matter how much prompting I provided, we just don’t share the same sense of humor.",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "AI Successes and Failures"
+    ]
+  },
+  {
+    "objectID": "AI_intro_to_AI.html",
+    "href": "AI_intro_to_AI.html",
+    "title": "AI Tools Introduction",
+    "section": "",
+    "text": "This workshop is a very short introduction to AI tools that may speed up your every day life as a researcher. The field is moving fast and what is relevant/true today may not be tomorrow. The aim is to give an overview of things you might try, and to give you the confidence to continue exploring on your own.\nThis workshop is specifically about using Generative Artificial Intelligence (GenAI), or large language models (LLMs) to speed up everyday tasks of a researcher. It is mainly focused on how to use these tools for scientific coding. There are many other applications of AI to scientific research that are not covered here!",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "AI Tools Introduction"
+    ]
+  },
+  {
+    "objectID": "AI_intro_to_AI.html#teach-the-controversy",
+    "href": "AI_intro_to_AI.html#teach-the-controversy",
+    "title": "AI Tools Introduction",
+    "section": "Teach the Controversy",
+    "text": "Teach the Controversy\nMany people – whom I respect – are against using GenAI tools in their scientific research. Academia is somewhat of an outlier here.\n\nNick LyonJonathan FoleyKyle JenningsMeYou\n\n\nNick Lyon (LTER LNO data analyst) perspective on AI tools | \n\n\nJonathan Foley (Executive Director, Project Drawdown) perspective on AI tools\n\n\n\nKyle Jennings (Technology for Human Empowerment, Google.org) Employers are mandating AI use while educators are banning it.\n\n\n\n\nMy Opinion\n\nIt is empowering to understand the tools available, the benefits and risks of use, and how to use them.\nAI tools are not a miracle; their work needs to be checked.\nEthics demand that we disclose use of AI tools in our research.\nI use AI for coding but not for scientific writing.\n\n\n\n\n\nYour Opinion\n\n?",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "AI Tools Introduction"
+    ]
+  },
+  {
+    "objectID": "AI_intro_to_AI.html#my-opinion",
+    "href": "AI_intro_to_AI.html#my-opinion",
+    "title": "AI Tools Introduction",
+    "section": "My Opinion",
+    "text": "My Opinion\n\nIt is empowering to understand the tools available, the benefits and risks of use, and how to use them.\nAI tools are not a miracle; their work needs to be checked.\nEthics demand that we disclose use of AI tools in our research.\nI use AI for coding but not for scientific writing.",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "AI Tools Introduction"
+    ]
+  },
+  {
+    "objectID": "AI_intro_to_AI.html#your-opinion",
+    "href": "AI_intro_to_AI.html#your-opinion",
+    "title": "AI Tools Introduction",
+    "section": "Your Opinion",
+    "text": "Your Opinion\n\n?",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "AI Tools Introduction"
+    ]
+  },
+  {
+    "objectID": "AI_intro_to_AI.html#how-i-use-ai-tools-in-my-work-life",
+    "href": "AI_intro_to_AI.html#how-i-use-ai-tools-in-my-work-life",
+    "title": "AI Tools Introduction",
+    "section": "How I use AI tools in my work life",
+    "text": "How I use AI tools in my work life\n\nSummarizing meeting notes or discussions\nSearching for academic papers (mixed success here)\nCoding\n\nTweaking aesthetics - figures, this website, etc.\nTypeaheads (code completion)\nData wrangling\nTurning example scripts into functions\nCode review\nCoding in languages I don’t know fluently but can read (experimental/higher risk)",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "AI Tools Introduction"
+    ]
+  },
+  {
+    "objectID": "AI_how_to_2_full_IDE.html",
+    "href": "AI_how_to_2_full_IDE.html",
+    "title": "Niwot Data Skills",
+    "section": "",
+    "text": "RStudio has Github copilot for inline code completion. Add #comments right into your script and watch copilot try to write code. Works likes a multiline typeahead.\nPositron uses Anthropic for chat and Github Copilot for inline code completion. Positron accesses Anthropic through the API, so you’ll need to set up an account and pay a nominal fee for service.\nVScode (as well as Eclipse, JetBrains, Visual Studio, and Xcode) provide access to Github Copilot. Applications include inline code completion, editing and agent mode.\nThis is not an exhaustive list. Eclipse, JetBrains, Visual Studio, and Xcode also have integrated AI tools. If you prefer or are familiar with one of those, start there.\n\n\n\n[Roo]\n[Cline]\nCopilot\n\n\n\n\nInclude companies that have developed the models (e.g. OpenAI, Anthropic, Google) as companies that have contracts to source models from different providers (e.g. Openrouter, Copilots).\nGenerally the free tier is small to non-existent.\nPaying for access to the API is different billing system than subscribing to a higher tier of the brower-based chat service. For example, if you are already have a chatGPT plus subcription, you still need to set up and fund an API account with OpenAI to use the integrated code development features.\n\n\nCopilotOpenrouterClaudeChatGPTGemini\n\n\n\nGithub Copilot\n\nIf you’re a student or educator interested in using LLM’s for coding, this is the thing you should sign up for first. There’s also a free tier anyone can try. Students and educators get free access to Github Copilot Pro through GitHub Education. Note it can take a few days to get verified through GitHub Education, and can be a bit of a hassle but it is definitely worth it! Github Copilot supports [multiple AI models] (https://docs.github.com/en/copilot/reference/ai-models/supported-models).\n\n\nNote: Github Copilot is NOT the same thing as microsoft copilot. Even though github is now owned by microsoft! The ‘copilot’ that shows up on your windows machine and offers to help you with various tasks is a different (and much less useful, IMO) beast.\n\n\n\nOpenrouter allows you to pay one fee to access multiple models from different providers (similar to copilot). I believe the context window is larger than with Copilot, so performance may be better. Have not tried it out.\n\n\n\n\nAnthropic’s Claude\n\nIn my experience the best at coding in R. Also surprisingly good at Google Earth Engine. The API is not free but you can sign up for $5 of tokens to try it out.\n\n\n\n\n\nOpenAI’s ChatGPT\n\nThe classic. The API is not free.\n\n\n\n\n\nGoogle’s Gemini\n\nYou can try out gemini for free. The privacy is not the greatest. Apparently good at images/videos.\n\n\n\n\n\n\n\nToday’s quickstart demo’s give you some idea of how to use these tools, but to learn more, check out the following resources:\n\nRStudioVSCode\n\n\nThe official RStudio GitHub Copilot user’s guide is here: RStudio Copilot Guide.\nWhen enabled, grey “ghost text” will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it’s faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.\nThis youtube video demos using Github Copilot in Rstudio.\nLLM chat is also possible in R/RStudio, via the ellmer package. To use LLM chat features, you must set up an API key to access models. API keys are available from Anthropic (Claude), OpenAI (ChatGPT), or Google (Gemini). Some are not free. Confusingly, an upgraded plan on ChatGPT etc that would allow you to used more advanced models through the browser does NOT cover the API tools.\nSee the ellmer documentation, slides from a short-course or this helpful youtube video for more information. I personally find the interface not as useful as VScode (see below).\n\n\nThis blog has some helpful tips, as does the corresponding instructional video How to use GitHub Copilot (the complete beginner’s guide)\nThere are extensive how-to documents about GitHub copilot with VScode here. The prompt engineering section is particularly helpful.",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "genAI II: IDE Integration",
+      "Beyond Microsoft Products: Other IDEs and Assistants"
+    ]
+  },
+  {
+    "objectID": "AI_how_to_2_full_IDE.html#beyond-microsoft-products-other-ides-and-assistants",
+    "href": "AI_how_to_2_full_IDE.html#beyond-microsoft-products-other-ides-and-assistants",
+    "title": "Niwot Data Skills",
+    "section": "",
+    "text": "RStudio has Github copilot for inline code completion. Add #comments right into your script and watch copilot try to write code. Works likes a multiline typeahead.\nPositron uses Anthropic for chat and Github Copilot for inline code completion. Positron accesses Anthropic through the API, so you’ll need to set up an account and pay a nominal fee for service.\nVScode (as well as Eclipse, JetBrains, Visual Studio, and Xcode) provide access to Github Copilot. Applications include inline code completion, editing and agent mode.\nThis is not an exhaustive list. Eclipse, JetBrains, Visual Studio, and Xcode also have integrated AI tools. If you prefer or are familiar with one of those, start there.\n\n\n\n[Roo]\n[Cline]\nCopilot\n\n\n\n\nInclude companies that have developed the models (e.g. OpenAI, Anthropic, Google) as companies that have contracts to source models from different providers (e.g. Openrouter, Copilots).\nGenerally the free tier is small to non-existent.\nPaying for access to the API is different billing system than subscribing to a higher tier of the brower-based chat service. For example, if you are already have a chatGPT plus subcription, you still need to set up and fund an API account with OpenAI to use the integrated code development features.\n\n\nCopilotOpenrouterClaudeChatGPTGemini\n\n\n\nGithub Copilot\n\nIf you’re a student or educator interested in using LLM’s for coding, this is the thing you should sign up for first. There’s also a free tier anyone can try. Students and educators get free access to Github Copilot Pro through GitHub Education. Note it can take a few days to get verified through GitHub Education, and can be a bit of a hassle but it is definitely worth it! Github Copilot supports [multiple AI models] (https://docs.github.com/en/copilot/reference/ai-models/supported-models).\n\n\nNote: Github Copilot is NOT the same thing as microsoft copilot. Even though github is now owned by microsoft! The ‘copilot’ that shows up on your windows machine and offers to help you with various tasks is a different (and much less useful, IMO) beast.\n\n\n\nOpenrouter allows you to pay one fee to access multiple models from different providers (similar to copilot). I believe the context window is larger than with Copilot, so performance may be better. Have not tried it out.\n\n\n\n\nAnthropic’s Claude\n\nIn my experience the best at coding in R. Also surprisingly good at Google Earth Engine. The API is not free but you can sign up for $5 of tokens to try it out.\n\n\n\n\n\nOpenAI’s ChatGPT\n\nThe classic. The API is not free.\n\n\n\n\n\nGoogle’s Gemini\n\nYou can try out gemini for free. The privacy is not the greatest. Apparently good at images/videos.\n\n\n\n\n\n\n\nToday’s quickstart demo’s give you some idea of how to use these tools, but to learn more, check out the following resources:\n\nRStudioVSCode\n\n\nThe official RStudio GitHub Copilot user’s guide is here: RStudio Copilot Guide.\nWhen enabled, grey “ghost text” will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it’s faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.\nThis youtube video demos using Github Copilot in Rstudio.\nLLM chat is also possible in R/RStudio, via the ellmer package. To use LLM chat features, you must set up an API key to access models. API keys are available from Anthropic (Claude), OpenAI (ChatGPT), or Google (Gemini). Some are not free. Confusingly, an upgraded plan on ChatGPT etc that would allow you to used more advanced models through the browser does NOT cover the API tools.\nSee the ellmer documentation, slides from a short-course or this helpful youtube video for more information. I personally find the interface not as useful as VScode (see below).\n\n\nThis blog has some helpful tips, as does the corresponding instructional video How to use GitHub Copilot (the complete beginner’s guide)\nThere are extensive how-to documents about GitHub copilot with VScode here. The prompt engineering section is particularly helpful.",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "genAI II: IDE Integration",
+      "Beyond Microsoft Products: Other IDEs and Assistants"
+    ]
+  },
+  {
+    "objectID": "AI_further_reading.html",
+    "href": "AI_further_reading.html",
+    "title": "Further AI reading",
+    "section": "",
+    "text": "Leveraging Generative AI: Applications for the LTER Network\nAI for NCEAS\nAI for research: the ultimate guide to choosing the right tool\nGithub copilot for beginners blog\nChris Brown’s Blog has a lot of useful tips for ecologists getting started with AI. His Article and Tutorial on using LLMs for ecological statistics are good reading if you want to delve into this reams (but see Danger Zone.\nCopilot in VS code cheat sheet\n\n\n\nGetting started with AI: Good enough prompting\nShiny app for drafting prompts (R-focused)\n\n\n\n\n\nCursor AI-assisted IDE\nMany more!\n\n\n\n\nAI-assisted software development tools that code in the background while you work on other things.\n\nGitHub Copilot Agent (Microsoft)\nClaude code (Anthropic)\nGemini code assist (Google)\nCodex (OpenAI)",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "Further Reading"
+    ]
+  },
+  {
+    "objectID": "AI_further_reading.html#other-tutorials-blogs-and-articles",
+    "href": "AI_further_reading.html#other-tutorials-blogs-and-articles",
+    "title": "Further AI reading",
+    "section": "",
+    "text": "Leveraging Generative AI: Applications for the LTER Network\nAI for NCEAS\nAI for research: the ultimate guide to choosing the right tool\nGithub copilot for beginners blog\nChris Brown’s Blog has a lot of useful tips for ecologists getting started with AI. His Article and Tutorial on using LLMs for ecological statistics are good reading if you want to delve into this reams (but see Danger Zone.\nCopilot in VS code cheat sheet\n\n\n\nGetting started with AI: Good enough prompting\nShiny app for drafting prompts (R-focused)\n\n\n\n\n\nCursor AI-assisted IDE\nMany more!\n\n\n\n\nAI-assisted software development tools that code in the background while you work on other things.\n\nGitHub Copilot Agent (Microsoft)\nClaude code (Anthropic)\nGemini code assist (Google)\nCodex (OpenAI)",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "Further Reading"
     ]
   },
   {
@@ -139,161 +350,164 @@
     "text": "About this site"
   },
   {
-    "objectID": "be_a_good_citizen.html",
-    "href": "be_a_good_citizen.html",
-    "title": "Be a good citizen",
+    "objectID": "AI_3_Danger_zone.html",
+    "href": "AI_3_Danger_zone.html",
+    "title": "AI Danger Zone",
     "section": "",
-    "text": "Niwot is indebted to its funder (the National Science Foundation), the people who collect the data and the historical occupants of Niwot Ridge.",
+    "text": "Danger #1 Don’t stop thinking!\nAI tools are great for implementation, but they are not going to do amazing science without a human at the helm. I think of them as a great assistant to quickly take over some tedious tasks. They make fewer typos than a person. They also sometimes completely make stuff up. If you can’t read and understand the code they generate, don’t trust it! As well, you should absolutely test/validate to make sure the code generated is doing what you think it’s doing. It is tempting to think that LLMs obviate the need to learn to code, if you aren’t fluent enough in a language to understand their suggestions and/or do not carefully check the proposed code, you risk doing some pretty terrible science. They are a tool, but you need to use it effectively and responsibly.\nSoftware engineers use unit tests (where the answer is known) to ensure their code is working as expected. While there are some cases in scientific programming where this works, often we are writing code where we do not know the expected output in advance. For example, if you are running an anova model to test for a treatment effect, you are probably(?) running that model because you do not know whether the treatment has an effect or not. If an AI model suggests a different syntax, is it to be trusted? This is a simple example that might be solved by reading the relevant help files, but for more involved workflows, one option is to use characterization tests to ensure that AI generated (or modified, for example to streamline or make more efficient) generates the same output as your initial code.\nA great tool to compare files is a checksum, which can be used to test if two files are identical.\nThe code snippet below demonstrates how you would go about this.\n\n# load libraries\nlibrary (digest)\n\n# assume your original code generated the csv \"my_output.jpg\" and you have used genAI tools to speed up your code, writing out a new file \"ai_output.jpg\" that should contain exactly the same contents.\n\nhash_original &lt;- digest(file = \"my_output.jpg\", algo = \"md5\")\nhash_improved &lt;- digest(file = \"ai_output.jpg\", algo = \"md5\")\n\n# this should return TRUE if the file has not changed\nidentical(hash_original, hash_improved)\n\nIf elements of a tabular dataset (e.g. dataframe) have changed, it is also possible to see cell-wise differences directly in R using the comparedf function from the arsenal package.\nLast, if your outputs are already tracked in git, git will show a diff the output files before and after updating codes. You can use this to inspect any differences and evaluate whether the genAI tools have made desirable improvements or introduced errors.\n\n\nDanger #2 LLMs are confident but (often) incompetent statistical consultants\nAI tools will more often then not generate syntactically correct code that does the wrong thing. Trained to be helpful, they will rarely admit they do not know how to do something or have insufficient information. This is particularly dangerous in the realm of statistical analysis. A recent study determined that LLMs produced the correct statistical analysis 0 (complex tasks) to 88% (simple tasks) of the time (Jansen et al. 2025). Your statistical analyses should be right 100% of the time; and you should be able to explain why you chose the methods you did and understand how they were implemented.\n\n\nDanger #3 Inefficient/outdated code\nAI is trained on a lot of old internet material. If the stackoverflow solution references a function that has been deprecated, odds are your AI-generated code is going to use that. As well, the solutions can be pretty inefficient. Sometimes that may not matter - for a one-off analysis it’s probably better to spend 5 minutes writing code and let your computer churn away for an hour than write code for an hour that runs in 5 minutes. You can also ask your AI pair programmer to rewrite the code using a different syntax, rewrite more efficiently, or provide the errors/warnings back to the chat and ask for the code to be fixed based on that feedback. Iteration can help here, as can asking a different LLM to check the work of the first.\n\n\nDanger #4 AI agents doing something nefarious on your computer.\nAI chat models can be enabled to run code on your computer if you provide it with tools. This can be advantageous as you can get your agent to do work for you! But also dangerous, e.g. if you enable your agent to delete or modify files on your computer, download viruses from the interwebs, create a bot that writes angry emails to your advisor on your behalf etc, you will experience REGRET. Using a version control system (e.g. github) is a partial antidote to make sure that you can undo any code modifications that your AI pair programmer implements that break things in your code, but cannot prevent all disasters. Do not install vs code extensions, workspaces, or run code blindly that you find on the internet. vscode has some advice on this. Be particularly cautious with Model Context Protocol (MCP) servers, which specify what code can be run on your computer.",
     "crumbs": [
-      "Finding/Using Niwot Data",
-      "Be a Good Citizen"
+      "AI for NWT Researchers",
+      "The Danger Zone"
     ]
   },
   {
-    "objectID": "be_a_good_citizen.html#citing-data",
-    "href": "be_a_good_citizen.html#citing-data",
-    "title": "Be a good citizen",
-    "section": "Citing Data",
-    "text": "Citing Data\nIf you use a Niwot dataset in your research, remember to cite it, so that we can track data useage for ourselves, and for our funders. The landing page on each dataset provides a suggested citation format. If a journal requests a different format, that’s fine too so long as the citation includes the DOI. And yes - you should cite a dataset – even if it is one you provided.",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Be a Good Citizen"
-    ]
-  },
-  {
-    "objectID": "be_a_good_citizen.html#acknowledge-niwot-funding",
-    "href": "be_a_good_citizen.html#acknowledge-niwot-funding",
-    "title": "Be a good citizen",
-    "section": "Acknowledge Niwot funding",
-    "text": "Acknowledge Niwot funding\nThe following acknowledgment should accompany any publication that makes use of Niwot resources: Logistical support and/or data were provided by the NSF-supported Niwot Ridge LTER program (NWT VII: NSF DEB – 1637686, NWT VIII: NSF DEB-2224439)",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Be a Good Citizen"
-    ]
-  },
-  {
-    "objectID": "be_a_good_citizen.html#add-a-land-acknowledgement",
-    "href": "be_a_good_citizen.html#add-a-land-acknowledgement",
-    "title": "Be a good citizen",
-    "section": "Add a land acknowledgement",
-    "text": "Add a land acknowledgement\nSuggested text can be found on the Niwot Ridge and/or University of Colorado websites",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Be a Good Citizen"
-    ]
-  },
-  {
-    "objectID": "be_a_good_citizen.html#consider-co-authorship",
-    "href": "be_a_good_citizen.html#consider-co-authorship",
-    "title": "Be a good citizen",
-    "section": "Consider Co-authorship",
-    "text": "Consider Co-authorship\nAll Niwot data are provided free of charge, for use without restriction. However if your analysis relies heavily on data collected by others, consider asking them to collaborate. Niwot LTER’s recommended authorship guidelines can be found here.",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Be a Good Citizen"
-    ]
-  },
-  {
-    "objectID": "be_a_good_citizen.html#acknowledge-niwot-researchers-technicians-and-seasonals",
-    "href": "be_a_good_citizen.html#acknowledge-niwot-researchers-technicians-and-seasonals",
-    "title": "Be a good citizen",
-    "section": "Acknowledge Niwot Researchers, technicians and seasonals",
-    "text": "Acknowledge Niwot Researchers, technicians and seasonals\nWe encourage data re-use. If co-authorship is not appropriate, consider adding an acknowledgement to your manuscript instead. The ‘people’ element of the metadata file is a good place to start.",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Be a Good Citizen"
-    ]
-  },
-  {
-    "objectID": "be_a_good_citizen.html#keep-up-to-date-with-the-latest-recommendations",
-    "href": "be_a_good_citizen.html#keep-up-to-date-with-the-latest-recommendations",
-    "title": "Be a good citizen",
-    "section": "Keep up to date with the latest recommendations",
-    "text": "Keep up to date with the latest recommendations\nOur website has the most up to date information on authorship and citations.",
-    "crumbs": [
-      "Finding/Using Niwot Data",
-      "Be a Good Citizen"
-    ]
-  },
-  {
-    "objectID": "data_submission_overview.html",
-    "href": "data_submission_overview.html",
-    "title": "Submitting Niwot Data for Publication",
+    "objectID": "AI_how_to_1_browser_based.html",
+    "href": "AI_how_to_1_browser_based.html",
+    "title": "AI How to Part I: Using genAI Tools in Your Browser",
     "section": "",
-    "text": "Niwot Ridge follows the LTER Network Data Policy. If you are funded by the LTER, your data must submit data, on time, to the information manager, who will work with you to get it archived.",
+    "text": "An easy, low-effort way to get a feel for genAI tools is through browser-based interfaces. They do not require any installation or setup and do not have a steep learning curve to get started. Below is an example of using Claude to modify an R script to change figure aesthetics. Tweaking figures is one of my favorite ways to use genAI tools. Results are easy to verify and I often find it’s much faster than looking up documentation or searching through Stack Overflow.\n\nBrowser based\n\n\n\n\n\n\nNote the original code is from the R graph gallery\n\n\n\n“You are an expert R programmer. Modify the following R code to use red colors in p, blues in p1, greens in p2 and purples in p3. Use cowplot to make a multipanel figure with the title ‘AI tools are pretty cool’”.\n\n\n\nPromptOriginal FigureWith Anthropic/Claude modifications\n\n\n“You are an expert R programmer. Modify the following R code to use red colors in p, blues in p1, greens in p2 and purples in p3. Use cowplot to make a multipanel figure with the title ‘AI tools are pretty cool’”.\n\n# library\n\nlibrary(ggplot2)\nlibrary(ggExtra)\n\n# The mtcars dataset is proposed in R\n\nhead(mtcars)\n\n# classic plot :\n\np &lt;- ggplot(mtcars, aes(x=wt, y=mpg, color=cyl, size=cyl)) + geom_point() + theme(legend.position=\"none\")\n\n# with marginal histogram\n\np1 &lt;- ggMarginal(p, type=\"histogram\")\n\n# marginal density\n\np2 &lt;- ggMarginal(p, type=\"density\")\n\n# marginal boxplot\n\np3 &lt;- ggMarginal(p, type=\"boxplot\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity: Try it out!\n\n\n\n\nSelect an AI interface to further modify your plot. You can use any of the following: ChatGPT, Claude, Gemini, or another of your choosing. You will probably need to sign up for an account if you haven’t already.\nUse a prompt such as: “You are an expert R programmer. Modify the following R code to {use your imagination here}. Copy the R code from the”Prompt” window above, and paste it into the chat window.\nInspect the results and if they seem reasonable, copy and paste the generated code back into your R session and run it.\n\nHow did it work?\nCongratulations, you are have now dipped your toes into the world of vibe coding!",
     "crumbs": [
-      "Archiving Niwot Data",
-      "Data Submission Overview"
+      "AI for NWT Researchers",
+      "genAI I: In Your Browser"
     ]
   },
   {
-    "objectID": "data_submission_overview.html#data-policy",
-    "href": "data_submission_overview.html#data-policy",
-    "title": "Submitting Niwot Data for Publication",
+    "objectID": "AI_how_to_2_IDE_quickstart.html",
+    "href": "AI_how_to_2_IDE_quickstart.html",
+    "title": "Quickstart Guide: Using AI in Your IDE",
     "section": "",
-    "text": "Niwot Ridge follows the LTER Network Data Policy. If you are funded by the LTER, your data must submit data, on time, to the information manager, who will work with you to get it archived.",
+    "text": "To jump right in, we’ll use only one tool, but see the full instructions for more information on the different options available.\n\n\n\n\n\n\nIf you are an R user, I recommend starting with RStudio and experimenting with typeaheads.\nIf you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use VScode. The agent/edit modes interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It’s a much more streamlined interface. As well, the LLMs can use files in your project to inform their suggestions.\n\n\n\n\n\nIf you are affiliated with an academic institution, sign up for Github Copilot Pro through GitHub Education (students) or here (educators). It is free for students and educators, and well worth the effort to get verified. Github Copilot will allow you to try out a variety of models (albeit with a somewhat smaller context window than some other providers, which may give you lower quality results)\n\n\n\n\n\nTo conserve tokens start with the free tier models and work your way up to more expensive models if things aren’t working. Current consensus is that Claude code is the best for R coding; there is a blog that fairly regularly does a bake-off, so check back there if you want the most current\n\n\n\n\n\nOnce you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing VSCode (together with the Copilot extensions). If you like the interface of Rstudio (or Positron) for day-to-day coding install one or both of those as well. There are genAI tools that are only available in VSCode (not RStudio or Positron) so even if you prefer one of the more R-centric IDEs for everyday coding, consider trying out VSCode for more involved genAI tasks.\n\nRStudioPositronVSCode\n\n\nTo enable GitHub Copilot in RStudio follow the directions here (I have copied the relevant parts below)\n\nNavigate to Tools &gt; Global Options &gt; Copilot.\n\nCheck the box to “Enable GitHub Copilot”.\n\nDownload and install the Copilot Agent components.\n\nClick the “Sign In” button.\n\nIn the “GitHub Copilot: Sign in” dialog, copy the Verification Code.\n\nNavigate to or click on the link to https://github.com/login/device, paste the Verification Code and click “Continue”.\n\nGitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click “Authorize GitHub Copilot Plugin”.\n\nAfter the permissions have been approved, your RStudio IDE will indicate the currently signed in user.\n\nClose the Global Options dialogue, open a source file (.R, .py, .qmd, etc) and begin coding with Copilot!\n\nTo disable GitHub Copilot either:\n\nNavigate to Tools &gt; Global Options &gt; Copilot and uncheck “Enable GitHub Copilot”, or\n\nUse the Command Palette Cmd+Shift+P on Mac or Ctrl+Shift+P on Windows/Linux, search for “Enable GitHub Copilot” and then uncheck “Enable GitHub Copilot”.\n\n\n\nTo enable Positron Assistant follow the directions here. Note Positron supports both code completion through Github Copilot (requires Copilot setup, above) as well as sidebar/inline chat. The latter requires an Anthropic API key (paid). If you haven’t installed Positron, you can download it here. If you are already a happy RStudio user, you do not need to install Positron as the genAI functionality (for R) is about the same.\n\n\nIf you haven’t installed VScode, you can download it here. Setup instructions for copilot are here. Note to complete this step you must already registered for Github Pro and enabled Copilot).\nIf you are an R user, you’ll also want to install the R extension for VS code. Follow instructions here.\n\n\n\n\n\n\n\nTypeaheads are a quick and easy way to get started with AI-assisted coding. As you type, suggestions will appear inline, allowing you to accept or reject them with a simple keystroke.\nTo accept a suggestion, press Tab. To ignore it, just keep typing.\n\n\n\n\nFigure out what’s in an entire repository/workspace\nupdate the readme to explain the contents of each folder\nDocument the script that is open\n/doc\n\n\n\n\nexplain what this code is doing\nor\n/explain\nUse inline chat, highlighting the example code OR provide the entire script file as context.\n\n\n\n\n/fix\nProvide the datafile as context here.\nor Highlight an existing code and use the Copilot ‘Code Review’ function.\nYou can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method here\n\n\n\nOne application that AI excels at is converting repetitive code into functions.\nEnter the following into the inline chat, highlighting the example code.\nusing this example code, write a function where the input data frame, line colors, point colors and titles can be modified using function arguments\n\n\n\n\nAI isn’t great at running QC on large datasets (it doesn’t typically read in huge files). But it can help you write code to qc your own data. An example prompt might look something like this (providing the datafile as context)\nwrite R code to run quality control and visualize these data. Include checks for spelling errors, duplicates or missing data and repeating values.\n\n\n\n\n\n\nTypeaheadsChatInsert codeAccept/Reject editsReview codeLimits\n\n\nWhen enabled, grey “ghost text” will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it’s faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.\nFeatures are similar in Rstudio and VS code. The official RStudio GitHub Copilot user’s guide is here: RStudio Copilot Guide.\nThis youtube video demos using Github Copilot in Rstudio.\n\n\n\n\n\nOpen chat is located in the upper right of your screen\n\n\n\n\n\n\n\nCode generated by chat can be inserted into your code directly from the chat window\n\n\n\n\n\n\n\nEach code suggestion can be individually kept or discarded. Red lines with a are deletions, green lines are additions\n\n\n\n\n\n\n\nInvoking a review of your code from copilot\n\n\n\n\n\n\n\nSee how close you are to your monthly token limits",
     "crumbs": [
-      "Archiving Niwot Data",
-      "Data Submission Overview"
+      "AI for NWT Researchers",
+      "genAI II: IDE Integration",
+      "Copilot Quick Start Guide"
     ]
   },
   {
-    "objectID": "data_submission_overview.html#the-niwot-ridge-data-catalog",
-    "href": "data_submission_overview.html#the-niwot-ridge-data-catalog",
-    "title": "Submitting Niwot Data for Publication",
-    "section": "The Niwot Ridge Data Catalog",
-    "text": "The Niwot Ridge Data Catalog\nNiwot Ridge uses the Environmental Data Initiative as its primary archive. This also forms the backend for the Niwot Data Catalog. While we will work collaboratively on preparing your data for submission to EDI, the Niwot Information Manager must submit the data to EDI in order for it to be included in Niwot’s data catalog. Do NOT submit Niwot LTER data to EDI on your own or it will not appear in the Niwot catalog, and it will be extremely difficult for future NWT researcher to find.",
-    "crumbs": [
-      "Archiving Niwot Data",
-      "Data Submission Overview"
-    ]
-  },
-  {
-    "objectID": "ezEML.html",
-    "href": "ezEML.html",
-    "title": "ezEML",
+    "objectID": "AI_how_to_2_IDE_quickstart.html#leveling-up-using-ai-within-your-ide",
+    "href": "AI_how_to_2_IDE_quickstart.html#leveling-up-using-ai-within-your-ide",
+    "title": "Quickstart Guide: Using AI in Your IDE",
     "section": "",
-    "text": "ezEML is an GUI-based system devised by the Environmental Data Initiative to help in preparation of structured metadata. While your data will eventually be published using the Ecological Metadata Standard (a machine-readable format), these forms will guide you in preparing the information for that file. ezEML is in active development and improving all the time. Having learned how to prepare the metadata for a Niwot dataset using ezEML, you will be well on your way to being able to prepare data from other projects to this or similar repositories, so it is worth investing some time into learning this system.",
+    "text": "To jump right in, we’ll use only one tool, but see the full instructions for more information on the different options available.\n\n\n\n\n\n\nIf you are an R user, I recommend starting with RStudio and experimenting with typeaheads.\nIf you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use VScode. The agent/edit modes interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It’s a much more streamlined interface. As well, the LLMs can use files in your project to inform their suggestions.\n\n\n\n\n\nIf you are affiliated with an academic institution, sign up for Github Copilot Pro through GitHub Education (students) or here (educators). It is free for students and educators, and well worth the effort to get verified. Github Copilot will allow you to try out a variety of models (albeit with a somewhat smaller context window than some other providers, which may give you lower quality results)\n\n\n\n\n\nTo conserve tokens start with the free tier models and work your way up to more expensive models if things aren’t working. Current consensus is that Claude code is the best for R coding; there is a blog that fairly regularly does a bake-off, so check back there if you want the most current\n\n\n\n\n\nOnce you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing VSCode (together with the Copilot extensions). If you like the interface of Rstudio (or Positron) for day-to-day coding install one or both of those as well. There are genAI tools that are only available in VSCode (not RStudio or Positron) so even if you prefer one of the more R-centric IDEs for everyday coding, consider trying out VSCode for more involved genAI tasks.\n\nRStudioPositronVSCode\n\n\nTo enable GitHub Copilot in RStudio follow the directions here (I have copied the relevant parts below)\n\nNavigate to Tools &gt; Global Options &gt; Copilot.\n\nCheck the box to “Enable GitHub Copilot”.\n\nDownload and install the Copilot Agent components.\n\nClick the “Sign In” button.\n\nIn the “GitHub Copilot: Sign in” dialog, copy the Verification Code.\n\nNavigate to or click on the link to https://github.com/login/device, paste the Verification Code and click “Continue”.\n\nGitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click “Authorize GitHub Copilot Plugin”.\n\nAfter the permissions have been approved, your RStudio IDE will indicate the currently signed in user.\n\nClose the Global Options dialogue, open a source file (.R, .py, .qmd, etc) and begin coding with Copilot!\n\nTo disable GitHub Copilot either:\n\nNavigate to Tools &gt; Global Options &gt; Copilot and uncheck “Enable GitHub Copilot”, or\n\nUse the Command Palette Cmd+Shift+P on Mac or Ctrl+Shift+P on Windows/Linux, search for “Enable GitHub Copilot” and then uncheck “Enable GitHub Copilot”.\n\n\n\nTo enable Positron Assistant follow the directions here. Note Positron supports both code completion through Github Copilot (requires Copilot setup, above) as well as sidebar/inline chat. The latter requires an Anthropic API key (paid). If you haven’t installed Positron, you can download it here. If you are already a happy RStudio user, you do not need to install Positron as the genAI functionality (for R) is about the same.\n\n\nIf you haven’t installed VScode, you can download it here. Setup instructions for copilot are here. Note to complete this step you must already registered for Github Pro and enabled Copilot).\nIf you are an R user, you’ll also want to install the R extension for VS code. Follow instructions here.\n\n\n\n\n\n\n\nTypeaheads are a quick and easy way to get started with AI-assisted coding. As you type, suggestions will appear inline, allowing you to accept or reject them with a simple keystroke.\nTo accept a suggestion, press Tab. To ignore it, just keep typing.\n\n\n\n\nFigure out what’s in an entire repository/workspace\nupdate the readme to explain the contents of each folder\nDocument the script that is open\n/doc\n\n\n\n\nexplain what this code is doing\nor\n/explain\nUse inline chat, highlighting the example code OR provide the entire script file as context.\n\n\n\n\n/fix\nProvide the datafile as context here.\nor Highlight an existing code and use the Copilot ‘Code Review’ function.\nYou can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method here\n\n\n\nOne application that AI excels at is converting repetitive code into functions.\nEnter the following into the inline chat, highlighting the example code.\nusing this example code, write a function where the input data frame, line colors, point colors and titles can be modified using function arguments\n\n\n\n\nAI isn’t great at running QC on large datasets (it doesn’t typically read in huge files). But it can help you write code to qc your own data. An example prompt might look something like this (providing the datafile as context)\nwrite R code to run quality control and visualize these data. Include checks for spelling errors, duplicates or missing data and repeating values.\n\n\n\n\n\n\nTypeaheadsChatInsert codeAccept/Reject editsReview codeLimits\n\n\nWhen enabled, grey “ghost text” will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it’s faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.\nFeatures are similar in Rstudio and VS code. The official RStudio GitHub Copilot user’s guide is here: RStudio Copilot Guide.\nThis youtube video demos using Github Copilot in Rstudio.\n\n\n\n\n\nOpen chat is located in the upper right of your screen\n\n\n\n\n\n\n\nCode generated by chat can be inserted into your code directly from the chat window\n\n\n\n\n\n\n\nEach code suggestion can be individually kept or discarded. Red lines with a are deletions, green lines are additions\n\n\n\n\n\n\n\nInvoking a review of your code from copilot\n\n\n\n\n\n\n\nSee how close you are to your monthly token limits",
     "crumbs": [
-      "Archiving Niwot Data",
-      "ezEML"
+      "AI for NWT Researchers",
+      "genAI II: IDE Integration",
+      "Copilot Quick Start Guide"
     ]
   },
   {
-    "objectID": "ezEML.html#workflow-for-niwot-datasets-in-ezeml",
-    "href": "ezEML.html#workflow-for-niwot-datasets-in-ezeml",
-    "title": "ezEML",
-    "section": "Workflow for Niwot datasets in ezEML",
-    "text": "Workflow for Niwot datasets in ezEML\n\nWhen you have the data, abstract, methods, and title ready to go, please send them to the Niwot Information manager, who will review the information you have provided and provide any feedback on formatting or content before proceeding.\nThe Niwot information manager will then initiate the metadata preparation, using the EDI’s ezEML platform, and invite you to collaborate on a metadata document. Look for an email from EDI Support support@edirepository.org.\nSign into EDI using any of the options (an EDI account, google, ORCID or github).\nClick the ‘collaborate’ button in the upper right corner to complete the metadata. The metadata will be partially filled out for you including the Project, Intellectual Rights, Contacts, and Data Package ID, as well as the Title, Abstract and Methods you provided.\nYou should not ever be creating or submitting ‘New’ EML document for any Niwot data. While this workflow is available to you on EDI for other projects, please work only from the template shared with you through the Collaborate feature for Niwot datasets.",
+    "objectID": "AI_privacy_reproducibility_warning.html#i.-genai-results-are-probabilistic-and-not-deterministic",
+    "href": "AI_privacy_reproducibility_warning.html#i.-genai-results-are-probabilistic-and-not-deterministic",
+    "title": "Warning",
+    "section": "I. genAI results are probabilistic and not deterministic",
+    "text": "I. genAI results are probabilistic and not deterministic\n\nEven provided the exact same prompt, you may get a different response from any genAI tool.\nIn science, we strive for reproducible results. You cannot simply pass your data to a chatbot for analysis. ‘Results’ generated by a chatbot cannot be reproduced and will not meet scientific standards for review. However you might ask a genAI tool to help you generate code to analyse your data, that you can review, modify, save and rerun.",
     "crumbs": [
-      "Archiving Niwot Data",
-      "ezEML"
+      "AI for NWT Researchers",
+      "Before You Start"
     ]
   },
   {
-    "objectID": "ezEML.html#using-ezeml",
-    "href": "ezEML.html#using-ezeml",
-    "title": "ezEML",
-    "section": "Using ezEML",
-    "text": "Using ezEML\n\nEDI has extensive documentation provided in its User Guide\nEDI also has extensive documentation provided interactively within the ezEML platform. The (?) icon next to each section will bring up relevant documentation.\nEDI uses a system of colored badges to validate data and metadata. When your metadata is complete, there should be no red badges left!\n\n\n\n\n\nPreview your entire metadata before finalizing, using the Import/Export-&gt;Preview your Metadata in the EDI Portal menu at the top of the page. This is how your dataset will appear for the whole wide world once it is published. Check for spelling errors, weird units, anything else that you might have missed in paging through the individual forms.\nWhen you have completed filling out the metadata, email the Niwot Ridge Information Manager, who will check over the contents and submit. Do not use the share/submit button on the ezEML platform.",
+    "objectID": "AI_privacy_reproducibility_warning.html#ii.-ai-may-use-information-you-provide-to-it-to-train-its-models",
+    "href": "AI_privacy_reproducibility_warning.html#ii.-ai-may-use-information-you-provide-to-it-to-train-its-models",
+    "title": "Warning",
+    "section": "II. AI may use information you provide to it to train its models",
+    "text": "II. AI may use information you provide to it to train its models\n\nI generally expect everything I do online to end up somewhere.\nGithub copilot was trained on all public code regardless of license. Your data may already be in there.\nCopyright infringement has clearly been part of training AI models\nEven if information you provide to a genAI tool is not used to train the model, responses generated from the model may be retained. The details and laws are fuzzy and evolving.\nI would refrain from putting sensitive data online always. This includes interacting with it with AI models.",
     "crumbs": [
-      "Archiving Niwot Data",
-      "ezEML"
+      "AI for NWT Researchers",
+      "Before You Start"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "NWT Data Skills",
+    "objectID": "AI_privacy_reproducibility_warning.html#iii.-how-to-limit-the-information-you-provide-to-genai-tools",
+    "href": "AI_privacy_reproducibility_warning.html#iii.-how-to-limit-the-information-you-provide-to-genai-tools",
+    "title": "Warning",
+    "section": "III. How to limit the information you provide to genAI tools",
+    "text": "III. How to limit the information you provide to genAI tools\n\nA. Change privacy settings\n\nCurrent privacy policies are below, along with links on how to change the defaults if you wish. The policies are evolving (i.e. Anthropic changed their defaults Sept 2025).\n\n\nAnthropic/ClaudeOpenAI/ChatGPTGithub CopilotGeminiOthers?\n\n\nTo turn off data sharing go here: https://claude.ai/settings/data-privacy-controls (also located under settings -&gt; privacy). Toggle the “Help improve Claude” button to off. \n\n\nTo turn off data sharing go here: https://chatgpt.com/#settings/DataControls (also located under settings -&gt; piracy). Toggle the “Improve the model for everyone” button to off.\n\nFull policy here: https://help.openai.com/en/articles/7730893-data-controls-faq\n\n\nYou can adjust the privacy settings go here:\nhttps://docs.github.com/en/copilot/how-tos/manage-your-account/manage-policies\n\nFull policies here: https://copilot.github.trust.page/\nGitHub Copilot accesses a variety of different models and providers under the hood. Sometimes the agreements they may have with the model providers may differ based on the provider, or may differ from the default data sharing agreement were you to access that model directly from the provider. Read all about here: https://docs.github.com/en/copilot/reference/ai-models/model-hosting#openai-models\n\n\nCollects and uses your data extensively. Seems about par for the course for everything google. https://support.google.com/gemini/answer/13594961?hl=en\n\n\n\nThis list is not exhaustive and may quickly become out of date.\n\n?\n\n\n\n\n\n\n\nB. Run a model locally\nNot covered today, but some resources to get you started\n\nLM Studio https://lmstudio.ai/\nOllama https://github.com/ollama/ollama",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "Before You Start"
+    ]
+  },
+  {
+    "objectID": "AI_privacy_reproducibility_warning.html#this-list-is-not-exhaustive-and-may-quickly-become-out-of-date.",
+    "href": "AI_privacy_reproducibility_warning.html#this-list-is-not-exhaustive-and-may-quickly-become-out-of-date.",
+    "title": "Warning",
+    "section": "This list is not exhaustive and may quickly become out of date.",
+    "text": "This list is not exhaustive and may quickly become out of date.\n\n?",
+    "crumbs": [
+      "AI for NWT Researchers",
+      "Before You Start"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_abstract_and_methods.html",
+    "href": "ARCHIVE_abstract_and_methods.html",
+    "title": "Abstract and Methods",
     "section": "",
-    "text": "This guide is intended as a quick-start summary of materials for Niwot LTER researchers on how to find, use and work with data from the Niwot Ridge LTER Data Catalog.\nThe Environmental Data Catalog also has extensive resources for data users. We thank EDI for providing the basis of much of the material here.\nThis is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue here.",
+    "text": "Abstract and methods for an archived dataset differ from a publication. Here, you will want to simply describe the motivations and basics of the dataset (abstract) and details about collection and processing (methods). Do NOT include details on statistical analyses performed for publications and/or results as you would for a scientific publication\nIf you have detailed methods such as a protocol or SOP that includes diagrams etc - include the entire document as an entity in your data package and just provide a brief methodological overview in the methods component of your EML metadata.",
     "crumbs": [
-      "Intro"
+      "Archiving Niwot Data",
+      "Abstract and Methods"
     ]
   },
   {
-    "objectID": "reading_metadata.html",
-    "href": "reading_metadata.html",
+    "objectID": "ARCHIVE_decide_what_to_archive.html",
+    "href": "ARCHIVE_decide_what_to_archive.html",
+    "title": "Decide what to archive",
+    "section": "",
+    "text": "Where file sizes are small, best practice is to publicly archive quality-controlled raw data (rather than calculated fields)\n\nExceptions may be made for large datasets, fine-scale temporal data; model outputs, and or other products derived from complex calculations)\nRegardless of what you publicly archive keep a copy of all your own scanned datasheets & raw files (prior to cleaning or reformatting) - on your own computer.\n\nData will be published in data packages. A single data package can consist of multiple entities (tables, shapefiles, code, etc). In deciding what to lump/split, consider what groups of data would be usefully downloaded together (e.g. one could consider packaging up all the measurements from a single experiment).\nFor datasets where a specialized repository provides unique tools or audience, it may be appropriate to archive your data in a non-EDI repository (e.g. GenBank, Ameriflux). If you believe your data would be better served in a non-EDI data repository, contact the IM.",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "Decide What to Archive"
+    ]
+  },
+  {
+    "objectID": "ARCHIVE_qc_and_format.html",
+    "href": "ARCHIVE_qc_and_format.html",
+    "title": "QC and format your data for publication",
+    "section": "",
+    "text": "Clean your data\n\nIt is best to publish data in a minimally processed form that preserves the original measurements. Any alteration of the values and associated rational should be clearly described in the methods section of the data package metadata.\nBefore publishing, please conduct basic quality control checks, such as checking for duplicates, spelling errors, and values out of range. Where it is clear that the error is from transcription (for example copying the same data twice from field notebooks, or data are misspelled), please rectify these data before publishing.\nFor tips on data quality control using R, see the tutorial here.\nIf you discover out of range that is not simply a transcription error, consider flagging problematic data instead of removing.\n\nFormat your data\n\nUse long rather than wide formats. This facilitates tacking on another year or location of the same data without widening your data tables and remaking the metadata, and is also much easier to analyze.\nUse non proprietary tabular data (comma or tab delimited ASCII text) and geospatial data types. Do NOT use excel for published data.\nAvoid using white space or special characters in column names\nUse consistent missing value codes (i.e. do not use NA in some rows and N/A in others)\nUse UTF-8 encoding if your data includes special characters\nIf you need help achieving the above, contact the IM.\n\nFollow Niwot Ridge naming conventions for each entity\n\nAll Niwot Ridge data follow the convention &lt;short_description&gt;.&lt;author first initial last initial&gt;.data.&lt;extension&gt;. For example if Nancy Emery submitted a file on Geum demography, it might be entitled geum_demog.ne.data.csv",
+    "crumbs": [
+      "Archiving Niwot Data",
+      "QC and Format Data"
+    ]
+  },
+  {
+    "objectID": "FIND_data_download.html",
+    "href": "FIND_data_download.html",
+    "title": "Downloading data programatically",
+    "section": "",
+    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Data Download"
+    ]
+  },
+  {
+    "objectID": "FIND_data_download.html#overview-of-download-methods",
+    "href": "FIND_data_download.html#overview-of-download-methods",
+    "title": "Downloading data programatically",
+    "section": "",
+    "text": "EDI provides several tools and methods for accessing data. These include Point and Click methods from the data package landing page as well as Data Download scripts in R, Python and MATLAB that are displayed with each package.\nThe EDIutils R package also provides excellent documentation on how to Search and Access Data directly from R.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Data Download"
+    ]
+  },
+  {
+    "objectID": "FIND_data_download.html#download-programmatically-using-r",
+    "href": "FIND_data_download.html#download-programmatically-using-r",
+    "title": "Downloading data programatically",
+    "section": "Download programmatically using R",
+    "text": "Download programmatically using R\n\nFind what you want\n\nlibrary (EDIutils) # Handy tools for interacting with EDI's API\nlibrary (tidyverse) # For inspecting data\n\nIf you know the identifier of the data package you want, it’s easy to find the latest revision\n\nscope &lt;- \"knb-lter-nwt\" # Niwot scope\nidentifier &lt;- \"314\" # Dataset of interest\n\n# ask EDI to tell me what the most current version is\nrevision &lt;- list_data_package_revisions(scope, identifier, filter = \"newest\")\n\n# display current version - &gt; this is referred to as the \"packageID\"\npackageID &lt;- paste(scope, identifier, revision, sep = \".\")\npackageID\n\n[1] \"knb-lter-nwt.314.4\"\n\n\n\n\nDownload by package\nIf you want to download the entire data package, use the function read_data_package_archive. Warning some datasets are large so you may not want to read the entire dataset.\n\n# Download the ENTIRE package to a temporary directory\nread_data_package_archive(packageID, path = tempdir())\n\n# Inspect results\nlist.files(tempdir())\n\n# Download the ENTIRE package to a place you intend to store it for repeated use\n# Note you must FIRST create the directory 'some_real_path_on_your_computer'\n# before downloading\nif (!dir.exists(\"./some_real_path_on_your_computer\")) {\n  dir.create(\"./some_real_path_on_your_computer\")\n}\nread_data_package_archive(packageID, path = \"./some_real_path_on_your_computer\")\n\n# Inspect results\nlist.files(\"./some_real_path_on_your_computer\")\n\n\n\nDownload select entities\nIt is also possible to read only select portions of the dataset into your analysis pipeline. I find this helpful for sharing code among collaborators - everyone does not need to reinvent the discovery aspect, and there is no need to email files around (which inevitably ends up with someone working on the wrong file).\n\n# List data entities of the data package\nres &lt;- read_data_entity_names(packageID)\nres\n\n                          entityId\n1 fd533b5b9f3ae79862a33bad964d0c0c\n2 e786cdbe1ac83579f69a0e088cccc1c9\n                                                   entityName\n1              Homogenized, gap-filled, daily air temperature\n2 Homogenized, gap-filled, daily air temperature full methods\n\n\nUsing the above mapping information, find the entityID of the data table you want to analyze\n\nentityId &lt;- res$entityId[res$entityName == 'Homogenized, gap-filled, daily air temperature']\n\nThe read_data_entity_resource_metadata function provides additional information about each dataset entity. In particular, the resourceID provides the url that directly links to the dataset\n\nentity_resources &lt;- read_data_entity_resource_metadata(packageID, entityId)\nurl_of_the_table &lt;- entity_resources$resourceId\nname_of_the_table &lt;- entity_resources$fileName\n\nWith the url of the entities, you can down individual data tables\n\ndownload.file(url = url_of_the_table,\n                destfile = file.path('./some_real_path_on_your_computer', name_of_the_table))\n\nThis method then allows you to read back the data tables you want without the slow step of downloading each time you fix your code.\n\nmy_file &lt;- read.csv(file.path('./some_real_path_on_your_computer', name_of_the_table))\n# analyze away\n\n\n\nRead data directly into R without a separate download step\nAlternatively, you can wrap the code to read the data table directly into your code and never store the file locally.\n\nmy_awesome_data &lt;- read_data_entity(packageID, entityId) |&gt;\n  # pipe the result to readr::read_csv() to read the data into R\n  # readr::read_csv() will guess the column types\n  # but sometimes you need to have it scan a larger portion of the than the default\n  # first 1000 lines to get the right type\n  readr::read_csv(guess_max = 100000)\n\nRows: 13906 Columns: 112\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (48): LTER_site, local_site, logger, flag_1, flag_2, flag_3, source_sta...\ndbl  (63): year, airtemp_max_homogenized, airtemp_min_homogenized, airtemp_a...\ndate  (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n# analyze away\n\n\n\nAuthentication\nEDI recently it intends to require login for data download in the near future. This will also require adding EDI credentials and/or providing an EDI authentication token in API requests (such as those in the examples above). EDI is in the process of updating the EDI utils package and documentation for seamless authentication. Stay tuned.",
+    "crumbs": [
+      "Finding/Using Niwot Data",
+      "Data Download"
+    ]
+  },
+  {
+    "objectID": "FIND_reading_metadata.html",
+    "href": "FIND_reading_metadata.html",
     "title": "Understanding Metadata",
     "section": "",
     "text": "Niwot data are archived with machine-readable metadata, using the Ecological Metadata Language (EML), an XML schema for describing ecological datasets.\nIt is challenging for humans to read EML directly. However the landing page of each dataset on EDI has the salient parts displayed in an easy-to-read format. Toggling the View Full Metadata/View Summary button will display/collapse details.\n.\nWhile we recommend you read all the metadata, below we highlight some areas some users have reported difficult finding.\n\n\nCitationUnitsPeopleMethods\n\n\nAny time you download a dataset you will want to make note of the suggested dataset citation, so you can track what you are using and credit the authors appropriately. EDI provides a handy button to do just this. \n\n\nVariable definitions and units can be found under Data Entities in the section Table Column Descriptions. This section will also tell you what any abbreviations mean.\n\n\n\nCreators are the main individuals who initiated or maintained a dataset and are listed as authors in the suggested dataset citation. Where possible, we have also been adding the names of techs (they will display on EDI as ‘associate’, downloading the full EML also allows you to see their full roles). Consider adding key data contributors to you authorship or acknowledgements section as appropriate.\n\n\n\nRead the methods! They contain critical information about how the data were collected, known issues and other information that will help guide your analyses. If there’s something you don’t understand, reach out to the dataset creators and/or the dataset contact and we will put you in touch with someone who can help.",
@@ -303,14 +517,13 @@
     ]
   },
   {
-    "objectID": "ezEML.html#tips",
-    "href": "ezEML.html#tips",
-    "title": "ezEML",
-    "section": "Tips",
-    "text": "Tips\n\nOften the ezEML parser gets the ‘column types’ wrong. It is simply guessing based on content so if you have categorical variables that have numerical contents (e.g. blocks 1-3), it will often ‘assume’ this is a measured (‘Numerical’) type column and prompt you for units. You can use the ‘change type’ button to set this back to ‘text’ (even if the entire content of the column is numbers, for example for indexed values) and/or ‘categorical’ (for use when numeric codes signify particular categories).\nConversely, ezEML may miscategorize numeric columns as text when missing value codes are strings. This can also be reset by editing the column types as above, and then adding explicit missing value codes.",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NWT Data Skills",
+    "section": "",
+    "text": "This guide started a quick-start summary of materials for Niwot LTER researchers on how to find, use and work with data from the Niwot Ridge LTER Data Catalog.\nThe Environmental Data Catalog also has extensive resources for data users. We thank EDI for providing the basis of much of the material here.\nIt has morphed into a general skills-you-might want as a Niwot Researcher, and now includes information on AI tools for your everyday life.\nThis is a work in progress. If you find errors in the tutorial or that there are questions you still have after working through the materials, please make a git issue here.",
     "crumbs": [
-      "Archiving Niwot Data",
-      "ezEML"
+      "Intro"
     ]
   }
 ]

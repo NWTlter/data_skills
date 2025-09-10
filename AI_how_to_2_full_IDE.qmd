@@ -1,0 +1,91 @@
+---
+title: ""
+format:
+  html:
+    css: custom.css
+---
+
+## Beyond Microsoft Products: other IDEs and assistants
+
+
+### Many IDEs now have AI tools built in.
+
+[RStudio](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html) has Github copilot for inline code completion. Add #comments right into your script and watch copilot try to write code. Works likes a multiline typeahead.
+
+[Positron](https://positron.posit.co/assistant.html) uses Anthropic for chat and Github Copilot for inline code completion. Positron accesses Anthropic through the API, so you'll need to set up an account and pay a nominal fee for service. 
+
+[VScode](https://docs.github.com/en/copilot/how-tos/use-chat/use-chat-in-ide) (as well as Eclipse, JetBrains, Visual Studio, and Xcode) provide access to Github Copilot. Applications include inline code completion, editing and agent mode.
+
+This is not an exhaustive list. Eclipse, JetBrains, Visual Studio, and Xcode also have integrated AI tools. If you prefer or are familiar with one of those, start there. 
+
+### The AI assistants available will depend on your IDE, 3 popular plugins for VS code include
+
+[Roo]
+
+[Cline]
+
+[Copilot]
+
+### Model service providers
+-  Include companies that have developed the models (e.g. OpenAI, Anthropic, Google) as companies that have contracts to source models from different providers (e.g. Openrouter, Copilots).
+-  Generally the free tier is small to non-existent. 
+-  Paying for access to the API is different billing system than subscribing to a higher tier of the brower-based chat service. For example, if you are already have a chatGPT plus subcription, you still need to set up and fund an API account with OpenAI to use the integrated code development features. 
+
+::: panel-tabset
+To use any of the tools above, you will need to set up an account with the model service provider. Instructions for getting an API key are provided at the links below, as well as some thoughts on each and what it will (currently) cost you. Note that simple requests only cost a few cents, so funding any of the below with $5 of tokens will get you a lot of experimentation. But setting them all up is a hassle.
+
+##### Copilot
+-   Github [Copilot](https://docs.github.com/en/copilot/how-tos/set-up/set-up-for-self#1-get-access-to-github-copilot)
+
+    -   If you're a student or educator interested in using LLM's for coding, **this is the thing you should sign up for first**. There's also a free tier anyone can try. [Students](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student) and [educators](https://docs.github.com/en/education/about-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher) get [free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) access to Github Copilot Pro through GitHub Education. Note it can take a few days to get verified through GitHub Education, and can be a bit of a hassle but it is definitely worth it! Github Copilot supports \[multiple AI models\] (https://docs.github.com/en/copilot/reference/ai-models/supported-models).
+
+Note: Github Copilot is NOT the same thing as microsoft copilot. Even though github is now owned by microsoft! The 'copilot' that shows up on your windows machine and offers to help you with various tasks is a different (and much less useful, IMO) beast.
+
+##### Openrouter
+-   [Openrouter](https://openrouter.ai/docs/api-reference/api-keys/get-current-api-key) allows you to pay one fee to access multiple models from different providers (similar to copilot). I believe the context window is larger than with Copilot, so performance may be better. Have not tried it out.
+
+
+##### Claude
+-   Anthropic's [Claude](https://console.anthropic.com/settings/keys)
+
+    -   In my experience the best at coding in R. Also surprisingly good at Google Earth Engine. The API is not free but you can sign up for \$5 of tokens to try it out.
+
+##### ChatGPT
+-   OpenAI's [ChatGPT](https://platform.openai.com/api-keys)
+
+    -   The classic. The API is not free.
+    
+##### Gemini
+
+-   Google's [Gemini](https://aistudio.google.com/app/apikey)
+
+    -   You can try out gemini for free. The privacy is not the greatest. Apparently good at images/videos.
+
+:::
+
+
+
+#### Further Resources
+
+Today's quickstart demo's give you some idea of how to use these tools, but to learn more, check out the following resources:
+
+::: panel-tabset
+##### RStudio
+
+The official RStudio GitHub Copilot user's guide is here: [RStudio Copilot Guide](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html).
+
+When enabled, grey "ghost text" will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it's faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.
+
+This [youtube video](https://www.youtube.com/watch?v=Lihg6il9SzE) demos using Github Copilot in Rstudio.
+
+LLM chat is also possible in R/RStudio, via the ellmer package. To use LLM chat features, you must set up an API key to access models. API keys are available from [Anthropic](https://console.anthropic.com/settings/keys) (Claude), [OpenAI](https://platform.openai.com/api-keys) (ChatGPT), or [Google](https://aistudio.google.com/app/apikey) (Gemini). Some are not free. Confusingly, an upgraded plan on ChatGPT etc that would allow you to used more advanced models through the browser does NOT cover the API tools.
+
+See the [ellmer documentation](https://ellmer.tidyverse.org/), [slides](https://github.com/hadley/workshop-llm-hackathon/blob/main/slides-2-ukraine.pdf) from a short-course or this helpful [youtube video](https://www.youtube.com/watch?v=v1hYiuh0Q74) for more information. I personally find the interface not as useful as VScode (see below).
+
+##### VSCode
+
+This [blog](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-started-with-github-copilot/) has some helpful tips, as does the corresponding instructional video [How to use GitHub Copilot (the complete beginner's guide)](https://www.youtube.com/watch?v=SJqGYwRq0uc)
+
+There are extensive how-to documents about GitHub copilot with VScode [here](https://code.visualstudio.com/docs/copilot/overview). The [prompt engineering](https://code.visualstudio.com/docs/copilot/chat/prompt-crafting) section is particularly helpful.
+:::
+

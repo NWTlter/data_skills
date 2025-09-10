@@ -1,7 +1,0 @@
----
-title: "Abstract and Methods"
----
-
--   Abstract and methods for an archived dataset differ from a publication. Here, you will want to simply describe the motivations and basics of the dataset (abstract) and details about collection and processing (methods). Do NOT include details on statistical analyses performed for publications and/or results as you would for a scientific publication 
-
--   If you have detailed methods such as a protocol or SOP that includes diagrams etc - include the entire document as an entity in your data package and just provide a brief methodological overview in the methods component of your EML metadata.

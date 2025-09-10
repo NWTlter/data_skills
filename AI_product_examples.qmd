@@ -1,0 +1,68 @@
+---
+title: "AI Success Stories (and some failures)"
+format:
+  html:
+    css: custom.css
+---
+
+### Exploring Niwot Climate Data Trends
+
+::: panel-tabset
+##### NWT-8 Renewal Prep (2022)
+
+Original figures from the Niwot renewal prep work (pre-AI)
+
+![](figures/d1_temp_by_quarter.jpg){width="400"}
+
+##### Data Dashboard (2023)
+
+Modified code in (? an hour or two can't remember) to make nice aesthetics for the data dashboard (pre-AI)
+
+![](figures/d1_temp_anom_by_season.png){width="400"}
+
+##### NWT Symposium (2025)
+
+Modified code in \~ an hour to update the import to read from EDI following EDI API modifications, all sites, split by season, calculate mann-kendall statistics plus Thiel-sen trends, render into multi-panel figure with embedded stats. \~391 lines of code.
+
+![](figures/combined_plot_temp.jpg){width="400"}
+:::
+
+### AI meeting minutes
+
+Used claude.ai to summarize zoom meeting transcription. Committee manually reviewed, edited and augmented content, checking against notes taken during the meeting. Guess \~80% of content was generated from AI summary.
+
+![](figures/IMC_annual_meeting_notes.jpg){width="350"}
+
+### Workshop facilitation
+
+\~ A room full of 80+ people each stated their research priorities. chatGPT synthesize into 5 themes for breakouts and further refinement. Ideas revised and iterated by humans, but this is a useful tool for generating break-out groups real-time.
+
+### Data Digitization
+
+Tried a few options to get (neatly) hand-written data into spreadsheet format. [parsio](https://parsio.io/) was the winner among those I tried, but your mileage may vary. Structured format is key here; data in neat rows and columns, one value per cell, single columns contain only numbers or text not a mix of both. CHECK results carefully, they will not be perfect. But it's faster than double-key entry.
+
+### Data QC
+
+Have had mixed success here. Would not use AI as the *only * qc step, but it can be useful. Here's an example output when asked to find errors in a .csv of leaf trait measurements. I have had better success asking AI to *write code* to find errors in data. This has the benefit of being repeatable so you can check whether the errors are fixed.
+
+![](figures/chatGPT_errors.jpg){width="400"}
+
+### This presentation
+
+Used claude.ai extensively for debugging - figures not rendering, misbehaving .css, formatting issues, inscrutable error messages.
+
+## AI Failures
+
+Too many to name! Some examples below:
+
+First attempts at all coding things were filled with hallucinations, imaginary packages, functions that didn't exist and nonsense code. Syntactically correct but completely disfunctional. (this was about a year ago, things are improving fast).
+
+Many parsio alternatives. Won't throw anyone under the bus by naming them here...
+
+Asking chatGPT or copilot to make a pptx slide deck for me.
+
+Asking chatGPT to make a cartoon illustration for a talk. No matter how much prompting I provided, we just don't share the same sense of humor.
+
+# Your Turn:
+
+What have you tried? What worked, what didn't?
