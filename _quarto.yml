@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Niwot Data Skills"
+  google-analytics: "G-CW9RMD9SJW"
   navbar:
     background: light
     logo: "figures/Tundra_NoShrub_icon2.png"  # If you have a logo, otherwise remove this line
