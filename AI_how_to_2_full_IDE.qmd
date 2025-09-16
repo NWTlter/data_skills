@@ -40,7 +40,13 @@ To use any of the tools above, you will need to set up an account with the model
 
     -   If you're a student or educator interested in using LLM's for coding, **this is the thing you should sign up for first**. There's also a free tier anyone can try. [Students](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student) and [educators](https://docs.github.com/en/education/about-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher) get [free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) access to Github Copilot Pro through GitHub Education. Note it can take a few days to get verified through GitHub Education, and can be a bit of a hassle but it is definitely worth it! Github Copilot supports \[multiple AI models\] (https://docs.github.com/en/copilot/reference/ai-models/supported-models).
 
-Note: Github Copilot is NOT the same thing as microsoft copilot. Even though github is now owned by microsoft! The 'copilot' that shows up on your windows machine and offers to help you with various tasks is a different (and much less useful, IMO) beast.
+::: callout-note
+## Note: Github Copilot is NOT the same thing as Microsoft Copilot
+
+It's confusing, because github is now owned by Microsoft! The 'Copilot' that shows up on your windows machine and offers to help you with various tasks is a different (and much less useful, IMO) beast.
+
+:::
+
 
 ##### Openrouter
 
@@ -80,7 +86,7 @@ This [youtube video](https://www.youtube.com/watch?v=Lihg6il9SzE) demos using Gi
 
 LLM chat is also possible in R/RStudio, via the ellmer package. To use LLM chat features, you must set up an API key to access models. API keys are available from [Anthropic](https://console.anthropic.com/settings/keys) (Claude), [OpenAI](https://platform.openai.com/api-keys) (ChatGPT), or [Google](https://aistudio.google.com/app/apikey) (Gemini). Some are not free. Confusingly, an upgraded plan on ChatGPT etc that would allow you to used more advanced models through the browser does NOT cover the API tools.
 
-See the [ellmer documentation](https://ellmer.tidyverse.org/), [slides](https://github.com/hadley/workshop-llm-hackathon/blob/main/slides-2-ukraine.pdf) from a short-course or this helpful [youtube video](https://www.youtube.com/watch?v=v1hYiuh0Q74) for more information. I personally find the interface not as useful as VScode (see below).
+See the [ellmer documentation](https://ellmer.tidyverse.org/), [slides](https://github.com/hadley/workshop-llm-hackathon/blob/main/slides-2-ukraine.pdf) from a short-course or this helpful [youtube video](https://www.youtube.com/watch?v=v1hYiuh0Q74) for more information. I personally find the interface not as useful as VScode (see other tab).
 
 ##### VSCode
 

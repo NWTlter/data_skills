@@ -29,3 +29,61 @@
   padding: 1rem;
   border-top: 1px solid #1e3a8a;
 }
+
+/* Custom section styling */
+.custom-section {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+/* Typeaheads section - blue theme */
+.typeaheads-section {
+  background-color: #e3f2fd;
+  border-left-color: #1976d2;
+}
+
+/* Documentation section - green theme */
+.documentation-section {
+  background-color: #e8f5e8;
+  border-left-color: #388e3c;
+}
+
+/* Explain section - purple theme */
+.explain-section {
+  background-color: #f3e5f5;
+  border-left-color: #7b1fa2;
+}
+
+/* Review section - orange theme */
+.review-section {
+  background-color: #fff3e0;
+  border-left-color: #f57c00;
+}
+
+/* Function section - teal theme */
+.function-section {
+  background-color: #e0f2f1;
+  border-left-color: #00796b;
+}
+
+/* QC section - red theme */
+.qc-section {
+  background-color: #ffebee;
+  border-left-color: #d32f2f;
+}
+
+/* Unit tests section - indigo theme */
+.unit-tests-section {
+  background-color: #e8eaf6;
+  border-left-color: #3f51b5;
+}
+
+/* Section divider styling */
+.section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #ddd, #999, #ddd);
+  margin: 2rem 0;
+}

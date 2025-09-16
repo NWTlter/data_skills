@@ -21,9 +21,16 @@ tool](https://www.nature.com/articles/d41586-025-01069-0)
 [Github copilot for beginners
 blog](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-started-with-github-copilot/)
 
-Chris Brown's [Blog](https://www.seascapemodels.org/bluecology_blog.html) has a lot of useful tips for ecologists getting started with AI. His [Article](https://doi.org/10.32942/X2CS80) and [Tutorial](https://www.seascapemodels.org/rstats/2025/06/27/prompting-llms-quality-ecological-statistics.html) on using LLMs for ecological statistics are good reading if you want to delve into this reams (but see [Danger Zone](AI_3_Danger_zone.qmd).
+Chris Brown's
+[Blog](https://www.seascapemodels.org/bluecology_blog.html) has a lot of
+useful tips for ecologists getting started with AI. His
+[Article](https://doi.org/10.32942/X2CS80) and
+[Tutorial](https://www.seascapemodels.org/rstats/2025/06/27/prompting-llms-quality-ecological-statistics.html)
+on using LLMs for ecological statistics are good reading if you want to
+delve into this realm (but see [Danger Zone](AI_3_Danger_zone.qmd)).
 
-[Copilot in VS code cheat sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+[Copilot in VS code cheat
+sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
 
 ### Helpful tips on prompt engineering
 
@@ -54,5 +61,3 @@ you work on other things.
 -   [Gemini code assist](https://codeassist.google/) (Google)
 
 -   [Codex](https://openai.com/index/introducing-codex/) (OpenAI)
-
-

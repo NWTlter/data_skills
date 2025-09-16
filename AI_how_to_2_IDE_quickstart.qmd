@@ -1,11 +1,11 @@
 ---
-title: "Quickstart Guide: Using AI in Your IDE"
+title: "Quickstart Guide: Using Github Copilot AI in Your IDE"
 format:
   html:
     css: custom.css
 ---
 
-## Leveling up: using AI within your IDE
+## Leveling up: Beyond cut and paste from the browser
 
 ### Understanding the anatomy of the workflow.
 
@@ -64,7 +64,9 @@ If you haven't installed VScode, you can download it [here](https://code.visuals
 If you are an R user, you'll also want to install the R extension for VS code. Follow instructions [here](https://code.visualstudio.com/docs/languages/r).
 :::
 
-#### Demo: Easy Wins
+### Demo: AI Pair Programming Easy Wins
+
+![Let's get started!](figures/bing_pair_programming.jpg){fig-cap-location="left"}
 
 ::: {.custom-section .typeaheads-section}
 ##### Typeaheads
@@ -111,9 +113,9 @@ Use inline chat, highlighting the example code OR provide the entire script file
 
 Provide the datafile as context here.
 
-or Highlight an existing code and use the Copilot 'Code Review' function.
+or highlight existing code and use the Copilot 'Code Review' function.
 
-You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method [here](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
+You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method [here](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review).
 :::
 
 ::: {.custom-section .function-section}
@@ -138,13 +140,23 @@ AI isn't great at running QC on large datasets (it doesn't typically read in hug
 
 <hr class="section-divider">
 
+::: {.custom-section .unit-tests-section}
+##### Unit tests
+
+[Unit tests](https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/lectures/142-R-testing-example.html) are an important way to ensure your functions are doing what they are supposed to be doing. AI can help you write comprehensive unit tests. You should ensure that the outputs are in fact correct, but AI can save you a lot of boring typing here in getting them set up.
+
+`write unit tests for this function using testthat. Include tests for edge cases, invalid inputs, and expected outputs.`
+:::
+
+<hr class="section-divider">
+
 ::: callout-tip
 ## Tip: Format your code as you go
 
 Fix the indenting and spacing BEFORE you ask your AI agent to start editing. You can use the [styler](https://styler.r-lib.org/) package in Rstudio and/or in VScode right click and select 'format code' to accomplish this. Your AI agent will fix formatting as it goes, but this dramatically increases the number of lines you need to check/accept/reject.
 :::
 
-#### Review: Where the heck are all those buttons?
+### Review: Where the heck are all those buttons?
 
 ::: panel-tabset
 ## Typeaheads

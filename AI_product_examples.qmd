@@ -59,9 +59,9 @@ First attempts at all coding things were filled with hallucinations, imaginary p
 
 Many parsio alternatives. Won't throw anyone under the bus by naming them here...
 
-Asking chatGPT or copilot to make a pptx slide deck for me.
+Asking chatGPT or copilot to make a pptx slide deck for me. Gemma did slightly better but still not saving me any time.
 
-Asking chatGPT to make a cartoon illustration for a talk. No matter how much prompting I provided, we just don't share the same sense of humor.
+Asking chatGPT to make a cartoon illustration for a talk. No matter how much prompting I provided, we just don't share the same sense of humor. Bing maybe a tiny bit better but still not fabulous.
 
 # Your Turn:
 

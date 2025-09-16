@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quickstart Guide: Using AI in Your IDE – Niwot Data Skills</title>
+<title>Quickstart Guide: Using Github Copilot AI in Your IDE – Niwot Data Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -311,11 +311,13 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#leveling-up-using-ai-within-your-ide" id="toc-leveling-up-using-ai-within-your-ide" class="nav-link active" data-scroll-target="#leveling-up-using-ai-within-your-ide">Leveling up: using AI within your IDE</a>
+  <li><a href="#leveling-up-beyond-cut-and-paste-from-the-browser" id="toc-leveling-up-beyond-cut-and-paste-from-the-browser" class="nav-link active" data-scroll-target="#leveling-up-beyond-cut-and-paste-from-the-browser">Leveling up: Beyond cut and paste from the browser</a>
   <ul class="collapse">
   <li><a href="#understanding-the-anatomy-of-the-workflow." id="toc-understanding-the-anatomy-of-the-workflow." class="nav-link" data-scroll-target="#understanding-the-anatomy-of-the-workflow.">Understanding the anatomy of the workflow.</a></li>
   <li><a href="#im-overwhelmed-already-where-should-i-start" id="toc-im-overwhelmed-already-where-should-i-start" class="nav-link" data-scroll-target="#im-overwhelmed-already-where-should-i-start">I’m overwhelmed already where should I start?</a></li>
   <li><a href="#software-setup-is-half-the-battle.-or-maybe-34." id="toc-software-setup-is-half-the-battle.-or-maybe-34." class="nav-link" data-scroll-target="#software-setup-is-half-the-battle.-or-maybe-34.">Software Setup is half the battle. Or maybe 3/4.</a></li>
+  <li><a href="#demo-ai-pair-programming-easy-wins" id="toc-demo-ai-pair-programming-easy-wins" class="nav-link" data-scroll-target="#demo-ai-pair-programming-easy-wins">Demo: AI Pair Programming Easy Wins</a></li>
+  <li><a href="#review-where-the-heck-are-all-those-buttons" id="toc-review-where-the-heck-are-all-those-buttons" class="nav-link" data-scroll-target="#review-where-the-heck-are-all-those-buttons">Review: Where the heck are all those buttons?</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/NWTlter/data_skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -327,7 +329,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./AI_intro_to_AI.html">AI for NWT Researchers</a></li><li class="breadcrumb-item"><a href="./AI_how_to_2_IDE_quickstart.html">genAI II: IDE Integration</a></li><li class="breadcrumb-item"><a href="./AI_how_to_2_IDE_quickstart.html">Copilot Quick Start Guide</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Quickstart Guide: Using AI in Your IDE</h1>
+<h1 class="title">Quickstart Guide: Using Github Copilot AI in Your IDE</h1>
 </div>
 
 
@@ -344,8 +346,8 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 </header>
 
 
-<section id="leveling-up-using-ai-within-your-ide" class="level2">
-<h2 class="anchored" data-anchor-id="leveling-up-using-ai-within-your-ide">Leveling up: using AI within your IDE</h2>
+<section id="leveling-up-beyond-cut-and-paste-from-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="leveling-up-beyond-cut-and-paste-from-the-browser">Leveling up: Beyond cut and paste from the browser</h2>
 <section id="understanding-the-anatomy-of-the-workflow." class="level3">
 <h3 class="anchored" data-anchor-id="understanding-the-anatomy-of-the-workflow.">Understanding the anatomy of the workflow.</h3>
 <p><img src="figures/genAI_code_workflow.jpg" class="img-fluid"></p>
@@ -416,8 +418,15 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<section id="demo-easy-wins" class="level4">
-<h4 class="anchored" data-anchor-id="demo-easy-wins">Demo: Easy Wins</h4>
+</section>
+<section id="demo-ai-pair-programming-easy-wins" class="level3">
+<h3 class="anchored" data-anchor-id="demo-ai-pair-programming-easy-wins">Demo: AI Pair Programming Easy Wins</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/bing_pair_programming.jpg" class="img-fluid figure-img"></p>
+<figcaption>Let’s get started!</figcaption>
+</figure>
+</div>
 <section id="typeaheads" class="level5 custom-section typeaheads-section">
 <h5 class="anchored" data-anchor-id="typeaheads">Typeaheads</h5>
 <p>Typeaheads are a quick and easy way to get started with AI-assisted coding. As you type, suggestions will appear inline, allowing you to accept or reject them with a simple keystroke.</p>
@@ -444,8 +453,8 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <h5 class="anchored" data-anchor-id="reviewfix">Review/Fix</h5>
 <p><code>/fix</code></p>
 <p>Provide the datafile as context here.</p>
-<p>or Highlight an existing code and use the Copilot ‘Code Review’ function.</p>
-<p>You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method <a href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review">here</a></p>
+<p>or highlight existing code and use the Copilot ‘Code Review’ function.</p>
+<p>You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method <a href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review">here</a>.</p>
 </section>
 <section id="script---function" class="level5 custom-section function-section">
 <h5 class="anchored" data-anchor-id="script---function">Script -&gt; function</h5>
@@ -458,6 +467,12 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <h5 class="anchored" data-anchor-id="qc">QC</h5>
 <p>AI isn’t great at running QC on large datasets (it doesn’t typically read in huge files). But it can help you write code to qc your own data. An example prompt might look something like this (providing the datafile as context)</p>
 <p><code>write R code to run quality control and visualize these data. Include checks for spelling errors, duplicates or missing data and repeating values.</code></p>
+</section>
+<hr class="section-divider">
+<section id="unit-tests" class="level5 custom-section unit-tests-section">
+<h5 class="anchored" data-anchor-id="unit-tests">Unit tests</h5>
+<p><a href="https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/lectures/142-R-testing-example.html">Unit tests</a> are an important way to ensure your functions are doing what they are supposed to be doing. AI can help you write comprehensive unit tests. You should ensure that the outputs are in fact correct, but AI can save you a lot of boring typing here in getting them set up.</p>
+<p><code>write unit tests for this function using testthat. Include tests for edge cases, invalid inputs, and expected outputs.</code></p>
 </section>
 <hr class="section-divider">
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -474,8 +489,8 @@ Tip: Format your code as you go
 </div>
 </div>
 </section>
-<section id="review-where-the-heck-are-all-those-buttons" class="level4">
-<h4 class="anchored" data-anchor-id="review-where-the-heck-are-all-those-buttons">Review: Where the heck are all those buttons?</h4>
+<section id="review-where-the-heck-are-all-those-buttons" class="level3">
+<h3 class="anchored" data-anchor-id="review-where-the-heck-are-all-those-buttons">Review: Where the heck are all those buttons?</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Typeaheads</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Chat</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Insert code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Accept/Reject edits</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Review code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Limits</a></li></ul>
 <div class="tab-content">
@@ -528,7 +543,6 @@ Tip: Format your code as you go
 </div>
 
 
-</section>
 </section>
 </section>
 
