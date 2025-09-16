@@ -61,3 +61,10 @@ you work on other things.
 -   [Gemini code assist](https://codeassist.google/) (Google)
 
 -   [Codex](https://openai.com/index/introducing-codex/) (OpenAI)
+
+### Should I be worried about my carbon footprint?
+
+Absolutely! We should all be working hard to lower our carbon emissions. 
+
+Realistically, the [energy use of using AI tools probably pales in comparison to most of your activities](https://www.sustainabilitybynumbers.com/p/ai-footprint-august-2025). If you want to meaningfully reduce your carbon impact, consider [skipping your next plane trip](https://noflyclimatesci.org/) or use any number of [online climate action tools](https://jointheshift.earth/) to calculate where your biggest impact is. It probably won't be your AI use.
+
