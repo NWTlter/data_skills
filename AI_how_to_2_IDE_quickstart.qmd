@@ -23,11 +23,11 @@ To jump right in, we'll use only one tool, but see the [full instructions](AI_ho
 
 #### Model service providers
 
--   If you are affiliated with an academic institution, sign up for Github Copilot Pro through [GitHub Education](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student) (students) or [here](https://docs.github.com/en/education/about-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher) (educators). It is free for students and educators, and well worth the effort to get verified. Github Copilot will allow you to try out a variety of models (albeit with a somewhat smaller context window than some other providers, which may give you lower quality results)
+-   If you are affiliated with an academic institution, sign up for Github Copilot Pro through [GitHub Education](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student) (students) or [here](https://docs.github.com/en/education/about-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher) (educators). It is free for students and educators, and well worth the effort to get verified. Github Copilot will allow you to try out a variety of models (albeit with a somewhat smaller context window than some other providers, which may give you lower quality results).
 
 #### Models
 
--   To conserve tokens start with the free tier models and work your way up to more expensive models if things aren't working. Current consensus is that Claude code is the best for R coding; there is a [blog](https://www.simonpcouch.com/blog/) that fairly regularly does a bake-off, so check back there if you want the most current
+-   To conserve tokens start with the free tier models and work your way up to more expensive models if things aren't working. Claude code and or chatGPT 5 are generally the best for R coding; there is a [blog](https://www.simonpcouch.com/blog/) that fairly regularly does a bake-off, so check back there if you want the most current recommendations.
 
 ### Software Setup is half the battle. Or maybe 3/4.
 
