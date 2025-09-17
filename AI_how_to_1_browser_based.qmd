@@ -1,5 +1,5 @@
 ---
-title: "AI How to Part I: Using genAI Tools in Your Browser"
+title: "AI How to Part I: Using GenAI Tools in Your Browser"
 format:
   html:
     css: custom.css
@@ -60,7 +60,7 @@ p3 <- ggMarginal(p, type="boxplot")
 ::: {.callout-note icon="false"}
 #### Activity: Try it out!
 
--   Select an AI interface to further modify your plot. You can use any of the following: [ChatGPT](https://chatgpt.com//), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com), or another of your choosing. You will probably need to sign up for an account if you haven't already.
+-   Select an AI interface to further modify your plot. You can use any of the following: [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), or another of your choosing. You will probably need to sign up for an account if you haven't already.
 
 -   Use a prompt such as: "You are an expert R programmer. Modify the following R code to {use your imagination here}. Copy the R code from the "Prompt" window above, and paste it into the chat window. Or use your own code for an existing figure and experiment with a prompt you think would improve the figure aesthetics. 
 

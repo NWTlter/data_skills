@@ -33,7 +33,7 @@ identical(hash_original, hash_improved)
 
 If elements of a tabular dataset (e.g. dataframe) have changed, it is also possible to see cell-wise differences directly in R using the [comparedf](https://cran.r-project.org/web/packages/arsenal/vignettes/comparedf.html) function from the arsenal package.
 
-Last, if your outputs are already tracked in git, git will show a diff the output files before and after updating codes. You can use this to inspect any differences and evaluate whether the genAI tools have made desirable improvements or introduced errors.
+Last, if your outputs are already tracked in git, git will show a diff the output files before and after updating codes. You can use this to inspect any differences and evaluate whether the GenAI tools have made desirable improvements or introduced errors.
 
 ### Danger #2 LLMs are confident but (often) incompetent statistical consultants
 
