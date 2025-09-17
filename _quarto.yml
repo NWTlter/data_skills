@@ -51,8 +51,8 @@ website:
       - href: AI_privacy_reproducibility_warning.qmd
         text: "Before You Start"
       - href: AI_how_to_1_browser_based.qmd
-        text: "genAI I: In Your Browser"
-      - section: "genAI II: IDE Integration"
+        text: "GenAI I: In Your Browser"
+      - section: "GenAI II: IDE Integration"
         contents:
         - href: AI_how_to_2_IDE_quickstart.qmd
           text: "Copilot Quick Start Guide"

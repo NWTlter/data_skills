@@ -5,7 +5,7 @@ format:
     css: custom.css
 ---
 
-An easy, low-effort way to get a feel for genAI tools is through browser-based interfaces. They do not require any installation or setup and do not have a steep learning curve to get started. Below is an example of using [Claude](https://claude.ai/) to modify an R script to change figure aesthetics. Tweaking figures is one of my favorite ways to use genAI tools. Results are easy to verify and I often find it's much faster than looking up documentation or searching through Stack Overflow.
+An easy, low-effort way to get a feel for GenAI tools is through browser-based interfaces. They do not require any installation or setup and do not have a steep learning curve to get started. Below is an example of using [Claude](https://claude.ai/) to modify an R script to change figure aesthetics. Tweaking figures is one of my favorite ways to use GenAI tools. Results are easy to verify and I often find it's much faster than looking up documentation or searching through Stack Overflow.
 
 ### Browser based
 
@@ -62,7 +62,7 @@ p3 <- ggMarginal(p, type="boxplot")
 
 -   Select an AI interface to further modify your plot. You can use any of the following: [ChatGPT](https://chatgpt.com//), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com), or another of your choosing. You will probably need to sign up for an account if you haven't already.
 
--   Use a prompt such as: "You are an expert R programmer. Modify the following R code to {use your imagination here}. Copy the R code from the "Prompt" window above, and paste it into the chat window.
+-   Use a prompt such as: "You are an expert R programmer. Modify the following R code to {use your imagination here}. Copy the R code from the "Prompt" window above, and paste it into the chat window. Or use your own code for an existing figure and experiment with a prompt you think would improve the figure aesthetics. 
 
 -   Inspect the results and if they seem reasonable, copy and paste the generated code back into your R session and run it.
 
