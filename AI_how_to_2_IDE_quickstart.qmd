@@ -123,9 +123,9 @@ You can also request a code review on github. Using this method, github will (as
 
 One application that AI excels at is converting repetitive code into functions.
 
-Enter the following into the inline chat, highlighting the example code.
+For example you could use the plotting code we used in the [Browser-based](AI_how_to_1_browser_based.qmd) exercise and have AI turn it into a function that can be run on different datasets. A prompt to achieve this:
 
-`using this example code, write a function where the input data frame, line colors, point colors and titles can be modified using function arguments`
+`using this example code, write a function where the input data frame, x, y, color, size and title variables can be modified using function arguments`
 :::
 
 <hr class="section-divider">
