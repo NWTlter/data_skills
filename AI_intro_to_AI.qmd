@@ -7,9 +7,9 @@ format:
 
 This workshop is a very short introduction to AI tools that may speed up your every day life as a researcher. The field is moving fast and what is relevant/true today may not be tomorrow. The aim is to give an overview of things you might try, and to give you the confidence to continue exploring on your own.
 
-This workshop is specifically about using Generative Artificial Intelligence (GenAI), or large language models (LLMs) to speed up everyday tasks of a researcher. It is mainly focused on how to use these tools for scientific coding. There are many other applications of AI to scientific research that are not covered here!
+This workshop is specifically about using Generative Artificial Intelligence (GenAI), or large language models (LLMs) to speed up common tasks of a researcher. It is mainly focused on how to use these tools for scientific coding. There are many other applications of AI to scientific research that are not covered here!
 
-## Teach the Controversy
+## Teach the controversy
 
 Many people – whom I respect – are against using GenAI tools in their scientific research.
 *Academia is somewhat of an outlier here.*
@@ -17,7 +17,7 @@ Many people – whom I respect – are against using GenAI tools in their scient
 ::: panel-tabset
 ##### Nick Lyon
 
-Nick Lyon (LTER LNO data analyst) [perspective on AI tools](https://njlyon0.github.io/collab_bilingualism/) \| ![](figures/Nick_on_AI.jpg)
+Nick Lyon (LTER LNO data analyst) [perspective on AI tools](https://njlyon0.github.io/collab_bilingualism/)![](figures/Nick_on_AI.jpg)
 
 ##### Jonathan Foley
 
@@ -57,7 +57,7 @@ Kyle Jennings (Technology for Human Empowerment, Google.org) [Employers are mand
     -   Tweaking aesthetics - figures, this website, etc.
     -   Typeaheads (code completion)
     -   Data wrangling
-    -   Turning example scripts into functions
+    -   Turning scripts into functions
     -   Code review
     -   Coding in languages I don't know fluently but can read (experimental/higher risk)
 
