@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Further AI reading – Niwot Data Skills</title>
+<title>Quickstart Guide: Using AI in Your IDE for R Programming – Niwot Data Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./AI_product_examples.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -119,7 +118,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./AI_intro_to_AI.html">AI for NWT Researchers</a></li><li class="breadcrumb-item"><a href="./AI_further_reading.html">Further Reading</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Quickstart Guide: Using AI in Your IDE for R Programming</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -294,7 +293,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./AI_further_reading.html" class="sidebar-item-text sidebar-link active">
+  <a href="./AI_further_reading.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Further Reading</span></a>
   </div>
 </li>
@@ -310,12 +309,13 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#other-tutorials-blogs-and-articles" id="toc-other-tutorials-blogs-and-articles" class="nav-link active" data-scroll-target="#other-tutorials-blogs-and-articles">Other tutorials, blogs, and articles</a>
+  <li><a href="#leveling-up-beyond-cut-and-paste-from-the-browser" id="toc-leveling-up-beyond-cut-and-paste-from-the-browser" class="nav-link active" data-scroll-target="#leveling-up-beyond-cut-and-paste-from-the-browser">Leveling up: Beyond cut and paste from the browser</a>
   <ul class="collapse">
-  <li><a href="#helpful-tips-on-prompt-engineering" id="toc-helpful-tips-on-prompt-engineering" class="nav-link" data-scroll-target="#helpful-tips-on-prompt-engineering">Helpful tips on prompt engineering</a></li>
-  <li><a href="#alternatives-to-vscode" id="toc-alternatives-to-vscode" class="nav-link" data-scroll-target="#alternatives-to-vscode">Alternatives to vscode</a></li>
-  <li><a href="#ai-agents" id="toc-ai-agents" class="nav-link" data-scroll-target="#ai-agents">AI agents</a></li>
-  <li><a href="#should-i-be-worried-about-my-carbon-footprint" id="toc-should-i-be-worried-about-my-carbon-footprint" class="nav-link" data-scroll-target="#should-i-be-worried-about-my-carbon-footprint">Should I be worried about my carbon footprint?</a></li>
+  <li><a href="#understanding-the-anatomy-of-the-workflow." id="toc-understanding-the-anatomy-of-the-workflow." class="nav-link" data-scroll-target="#understanding-the-anatomy-of-the-workflow.">Understanding the anatomy of the workflow.</a></li>
+  <li><a href="#im-overwhelmed-already-where-should-i-start" id="toc-im-overwhelmed-already-where-should-i-start" class="nav-link" data-scroll-target="#im-overwhelmed-already-where-should-i-start">I’m overwhelmed already where should I start?</a></li>
+  <li><a href="#software-setup-is-half-the-battle.-or-maybe-34." id="toc-software-setup-is-half-the-battle.-or-maybe-34." class="nav-link" data-scroll-target="#software-setup-is-half-the-battle.-or-maybe-34.">Software Setup is half the battle. Or maybe 3/4.</a></li>
+  <li><a href="#demo-ai-pair-programming-easy-wins" id="toc-demo-ai-pair-programming-easy-wins" class="nav-link" data-scroll-target="#demo-ai-pair-programming-easy-wins">Demo: AI Pair Programming Easy Wins</a></li>
+  <li><a href="#review-where-the-heck-are-all-those-buttons" id="toc-review-where-the-heck-are-all-those-buttons" class="nav-link" data-scroll-target="#review-where-the-heck-are-all-those-buttons">Review: Where the heck are all those buttons?</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/NWTlter/data_skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -325,9 +325,9 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./AI_intro_to_AI.html">AI for NWT Researchers</a></li><li class="breadcrumb-item"><a href="./AI_further_reading.html">Further Reading</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Further AI reading</h1>
+<h1 class="title">Quickstart Guide: Using AI in Your IDE for R Programming</h1>
 </div>
 
 
@@ -344,42 +344,231 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 </header>
 
 
-<section id="other-tutorials-blogs-and-articles" class="level2">
-<h2 class="anchored" data-anchor-id="other-tutorials-blogs-and-articles">Other tutorials, blogs, and articles</h2>
-<p><a href="https://lternet.edu/stories/leveraging-generative-ai-applications-for-the-lter-network/">Leveraging Generative AI: Applications for the LTER Network</a></p>
-<p><a href="https://nceas-learning-hub.github.io/ai_for_nceas/">AI for NCEAS</a></p>
-<p><a href="https://www.nature.com/articles/d41586-025-01069-0">AI for research: the ultimate guide to choosing the right tool</a></p>
-<p><a href="https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-started-with-github-copilot/">Github copilot for beginners blog</a></p>
-<p>Chris Brown’s <a href="https://www.seascapemodels.org/bluecology_blog.html">Blog</a> has a lot of useful tips for ecologists getting started with AI. His <a href="https://doi.org/10.32942/X2CS80">Article</a> and <a href="https://www.seascapemodels.org/rstats/2025/06/27/prompting-llms-quality-ecological-statistics.html">Tutorial</a> on using LLMs for ecological statistics are good reading if you want to delve into this realm (but see <a href="./AI_3_Danger_zone.html">Danger Zone</a>).</p>
-<p><a href="https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features">Copilot in VS code cheat sheet</a></p>
-<section id="helpful-tips-on-prompt-engineering" class="level3">
-<h3 class="anchored" data-anchor-id="helpful-tips-on-prompt-engineering">Helpful tips on prompt engineering</h3>
+<section id="leveling-up-beyond-cut-and-paste-from-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="leveling-up-beyond-cut-and-paste-from-the-browser">Leveling up: Beyond cut and paste from the browser</h2>
+<section id="understanding-the-anatomy-of-the-workflow." class="level3">
+<h3 class="anchored" data-anchor-id="understanding-the-anatomy-of-the-workflow.">Understanding the anatomy of the workflow.</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/workflow.jpg" class="img-fluid figure-img"></p>
+<figcaption>Workflow diagram showing the typical layers of interaction from programmer to LLM. Exemplar IDEs, AI assistants, model providers and LLMs are provided in the bottom row.</figcaption>
+</figure>
+</div>
+</section>
+<section id="im-overwhelmed-already-where-should-i-start" class="level3">
+<h3 class="anchored" data-anchor-id="im-overwhelmed-already-where-should-i-start">I’m overwhelmed already where should I start?</h3>
+<p>To jump right in, we’ll showcase just a few tools, but see the <a href="./AI_how_to_2_full_IDE.html">full instructions</a> for more information on the different options available.</p>
+<section id="ides" class="level4">
+<h4 class="anchored" data-anchor-id="ides">IDEs</h4>
 <ul>
-<li><p><a href="https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough">Getting started with AI: Good enough prompting</a></p></li>
-<li><p><a href="https://jcheng.shinyapps.io/ellmer-assistant/">Shiny app</a> for drafting prompts (R-focused)</p></li>
+<li><p>If you are an R user, I recommend starting with RStudio and experimenting with typeaheads.</p></li>
+<li><p>If you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use Positron/ VS Code. The agent/edit modes of ‘chat’ (VS Code) or Positron Assistant interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It’s a much more streamlined interface than cutting and pasting code into your browser and can do much more advanced work than typeaheads. As well, the LLMs can use files in your project as context to inform their suggestions.</p></li>
 </ul>
 </section>
-<section id="alternatives-to-vscode" class="level3">
-<h3 class="anchored" data-anchor-id="alternatives-to-vscode">Alternatives to vscode</h3>
+<section id="model-providers" class="level4">
+<h4 class="anchored" data-anchor-id="model-providers">Model Providers</h4>
 <ul>
-<li><a href="https://cursor.com/features">Cursor</a> AI-assisted IDE</li>
-<li>Many more!</li>
+<li>If you are affiliated with an academic institution, sign up for free Github Copilot Pro through GitHub Education as a <a href="https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student">student</a> or <a href="https://docs.github.com/en/education/about-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher">educator</a>. It can be a hassle and often takes a couple of tries to get them to accept your verification documentation, but is well worth the effort. Github Copilot will allow you to try out a variety of models (albeit with a somewhat smaller context window than some other providers, which may give you lower quality results).</li>
 </ul>
 </section>
-<section id="ai-agents" class="level3">
-<h3 class="anchored" data-anchor-id="ai-agents">AI agents</h3>
-<p>AI-assisted software development tools that code in the background while you work on other things.</p>
+<section id="ai-model" class="level4">
+<h4 class="anchored" data-anchor-id="ai-model">AI Model</h4>
 <ul>
-<li><p><a href="https://code.visualstudio.com/docs/copilot/copilot-coding-agent">GitHub Copilot Agent</a> (Microsoft)</p></li>
-<li><p><a href="https://www.anthropic.com/claude-code?utm_source=google&amp;utm_medium=paid_search_coder&amp;utm_campaign=acq_code_us_q3&amp;utm_term=ai%20development%20agent&amp;gad_source=1&amp;gad_campaignid=22795617257&amp;gbraid=0AAAAA99jmqvVD7X-E8VhaZmqFVKbE-8u3&amp;gclid=Cj0KCQjwndHEBhDVARIsAGh0g3CO73LVU889MkatKGOhQFT6g_kLNPmN1pp6TzySUKLOyTzHPyB5pCUaAoatEALw_wcB">Claude code</a> (Anthropic)</p></li>
-<li><p><a href="https://codeassist.google/">Gemini code assist</a> (Google)</p></li>
-<li><p><a href="https://openai.com/index/introducing-codex/">Codex</a> (OpenAI)</p></li>
+<li>To conserve tokens start with the free tier models and work your way up to more expensive models if things aren’t working. There is a <a href="https://www.simonpcouch.com/blog/">blog</a> that fairly regularly does a bake-off, so check back there if you want the most current recommendations.</li>
 </ul>
 </section>
-<section id="should-i-be-worried-about-my-carbon-footprint" class="level3">
-<h3 class="anchored" data-anchor-id="should-i-be-worried-about-my-carbon-footprint">Should I be worried about my carbon footprint?</h3>
-<p>Absolutely! We should all be working hard to lower our carbon emissions.</p>
-<p>Realistically, the <a href="https://www.sustainabilitybynumbers.com/p/ai-footprint-august-2025">energy use of using AI tools probably pales in comparison to most of your activities</a>. If you want to meaningfully reduce your carbon impact, consider <a href="https://noflyclimatesci.org/">skipping your next plane trip</a> or use any number of <a href="https://jointheshift.earth/">online climate action tools</a> to calculate where your biggest impact is. It probably won’t be your AI use.</p>
+</section>
+<section id="software-setup-is-half-the-battle.-or-maybe-34." class="level3">
+<h3 class="anchored" data-anchor-id="software-setup-is-half-the-battle.-or-maybe-34.">Software Setup is half the battle. Or maybe 3/4.</h3>
+<p>Once you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing Positron (and enabling Positron Assistant) and/or VS Code (together with the Copilot extensions). <em>Note there are GenAI tools that are only available in VSCode/Positron (not RStudio) so even if you prefer one of the more RStudio for everyday coding, consider trying out Positron or VSCode for more involved GenAI tasks.</em></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Positron</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">VS Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>To enable GitHub Copilot in RStudio follow the directions <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">here</a> (I have copied the relevant parts below)</p>
+<ol type="1">
+<li>Navigate to Tools &gt; Global Options &gt; Copilot.<br>
+</li>
+<li>Check the box to “Enable GitHub Copilot”.<br>
+</li>
+<li>Download and install the Copilot Agent components.<br>
+</li>
+<li>Click the “Sign In” button.<br>
+</li>
+<li>In the “GitHub Copilot: Sign in” dialog, copy the Verification Code.<br>
+</li>
+<li>Navigate to or click on the link to <a href="https://github.com/login/device" class="uri">https://github.com/login/device</a>, paste the Verification Code and click “Continue”.<br>
+</li>
+<li>GitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click “Authorize GitHub Copilot Plugin”.<br>
+</li>
+<li>After the permissions have been approved, your RStudio IDE will indicate the currently signed in user.<br>
+</li>
+<li>Close the Global Options dialogue, open a source file (<code>.R</code>, <code>.py</code>, <code>.qmd</code>, etc) and begin coding with Copilot!</li>
+</ol>
+<p>To disable GitHub Copilot either:</p>
+<ul>
+<li>Navigate to Tools &gt; Global Options &gt; Copilot and uncheck “Enable GitHub Copilot”, or<br>
+</li>
+<li>Use the Command Palette <kbd>Cmd+Shift+P</kbd> on Mac or <kbd>Ctrl+Shift+P</kbd> on Windows/Linux, search for “Enable GitHub Copilot” and then uncheck “Enable GitHub Copilot”.</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>To enable Positron Assistant follow the directions <a href="https://positron.posit.co/assistant-getting-started.html">here</a>. Note Positron supports both code completion through Github Copilot (requires Copilot setup, above) as well as sidebar/inline chat. If you haven’t installed Positron, you can download it <a href="https://positron.posit.co/start.html#install-positron">here</a>.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>If you haven’t installed VS Code, you can download it <a href="https://code.visualstudio.com/">here</a>. Setup instructions for copilot are <a href="https://code.visualstudio.com/docs/copilot/setup">here</a>. Note to complete this step you must already registered for Github Pro and enabled Copilot.</p>
+<p>If you are an R user, you’ll also want to install the R extension for VS code. Follow instructions <a href="https://code.visualstudio.com/docs/languages/r">here</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="demo-ai-pair-programming-easy-wins" class="level3">
+<h3 class="anchored" data-anchor-id="demo-ai-pair-programming-easy-wins">Demo: AI Pair Programming Easy Wins</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/bing_pair_programming.jpg" class="img-fluid figure-img"></p>
+<figcaption>Let’s get started!</figcaption>
+</figure>
+</div>
+<section id="typeaheads" class="level5 custom-section typeaheads-section">
+<h5 class="anchored" data-anchor-id="typeaheads">Typeaheads</h5>
+<p>Typeaheads are a quick and easy way to get started with AI-assisted coding. As you type, suggestions will appear inline, allowing you to accept or reject them with a simple keystroke.</p>
+<p>To accept a suggestion, press <kbd>Tab</kbd>. To ignore it, just keep typing.</p>
+</section>
+<hr class="section-divider">
+<section id="documentation" class="level5 custom-section documentation-section">
+<h5 class="anchored" data-anchor-id="documentation">Documentation</h5>
+<p>Figure out what’s in an entire repository/workspace</p>
+<p><code>update the readme to explain the contents of each folder</code></p>
+<p>Document the script that is open</p>
+<p><code>/doc</code></p>
+</section>
+<hr class="section-divider">
+<section id="explain" class="level5 custom-section explain-section">
+<h5 class="anchored" data-anchor-id="explain">Explain</h5>
+<p><code>explain what this code is doing</code></p>
+<p>or</p>
+<p><code>/explain</code></p>
+<p>Use inline chat, highlighting the example code OR provide the entire script file as context.</p>
+</section>
+<hr class="section-divider">
+<section id="reviewfix" class="level5 custom-section review-section">
+<h5 class="anchored" data-anchor-id="reviewfix">Review/Fix</h5>
+<p><code>/fix</code></p>
+<p>Provide the datafile as context here.</p>
+<p>or highlight existing code and use the Copilot ‘Code Review’ function.</p>
+<p>You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method <a href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review">here</a>.</p>
+</section>
+<section id="script---function" class="level5 custom-section function-section">
+<h5 class="anchored" data-anchor-id="script---function">Script -&gt; function</h5>
+<p>One application that AI excels at is converting repetitive code into functions.</p>
+<p>For example you could use the plotting code we used in the <a href="./AI_how_to_1_browser_based.html">Browser-based</a> exercise and have AI turn it into a function that can be run on different datasets. A prompt to achieve this:</p>
+<p><code>using this example code, write a function where the input data frame, x, y, color, size and title variables can be modified using function arguments</code></p>
+</section>
+<hr class="section-divider">
+<section id="unit-tests" class="level5 custom-section unit-tests-section">
+<h5 class="anchored" data-anchor-id="unit-tests">Unit tests</h5>
+<p><a href="https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/lectures/142-R-testing-example.html">Unit tests</a> are an important way to ensure your functions are doing what they are supposed to be doing. AI can help you write comprehensive unit tests. You should ensure that the outputs are in fact correct, but AI can save you a lot of boring typing here in getting them set up.</p>
+<p><code>write unit tests for this function using testthat. Include tests for edge cases, invalid inputs, and expected outputs.</code></p>
+</section>
+<hr class="section-divider">
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning: Databot is fully agentic, use with caution!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before experimenting with Databot, please read the Posit blog post <a href="https://posit.co/blog/databot-is-not-a-flotation-device/">Databot is not a flotation device</a>, and review the <a href="AI_3_Danger_zone.html">Danger Zone</a> for important considerations when using agentic AI tools. Databot – when running unsupervised – is an example of an agent that could be vulnerable to a prompt injection attack, or delete files on your computer. Consider the potential consequences before clicking that ‘always allow’ button.</p>
+</div>
+</div>
+<section id="qc" class="level5 custom-section qc-section">
+<h5 class="anchored" data-anchor-id="qc">QC</h5>
+<p>AI isn’t great at running QC on large datasets (it doesn’t typically read in huge files). But it can help you write code to qc your own data. An example prompt might look something like this (providing the datafile as context)</p>
+<p><code>write R code to run quality control and visualize these data. Include checks for spelling errors, duplicates or missing data and repeating values.</code></p>
+<p>Alternatively, try out Databot, Positron’s experimental tool for exploratory data analysis. Read more about Databot <a href="https://positron.posit.co/databot.html">here</a> and <a href="https://posit.co/blog/introducing-databot/">here</a>. Databot is accessed via the Command Palette <kbd>Cmd+Shift+P</kbd> on Mac or <kbd>Ctrl+Shift+P</kbd> on Windows/Linux and typing the keyword ‘Databot’.</p>
+<p class="body-md-regular">
+</p><p>The folks at <a href="https://posit.co/blog/introducing-databot/">Positron</a> have made a nice video to demo Databot in action, that is embedded below.</p>
+<p></p>
+<p>
+<script src="https://fast.wistia.com/player.js" async=""></script>
+<script src="https://fast.wistia.com/embed/t85bb5gr6p.js" async="" type="module"></script>
+</p>
+<style>wistia-player[media-id='t85bb5gr6p']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/t85bb5gr6p/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+<p>
+<wistia-player media-id="t85bb5gr6p" aspect="1.7777777777777777"></wistia-player>
+</p>
+</section>
+<hr class="section-divider">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip: Format your code as you go
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fix the indenting and spacing BEFORE you ask your AI agent to start editing. You can use the <a href="https://styler.r-lib.org/">styler</a> package in Rstudio and/or in VScode right click and select ‘format code’ to accomplish this. Your AI agent will fix formatting as it goes, but this dramatically increases the number of lines you need to check/accept/reject.</p>
+</div>
+</div>
+</section>
+<section id="review-where-the-heck-are-all-those-buttons" class="level3">
+<h3 class="anchored" data-anchor-id="review-where-the-heck-are-all-those-buttons">Review: Where the heck are all those buttons?</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Typeaheads</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Chat</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Insert code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Accept/Reject edits</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Review code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Limits</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>When enabled, grey “ghost text” will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it’s faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.</p>
+<p>Features are similar in Rstudio/VS code/Positron. The official RStudio GitHub Copilot user’s guide is here: <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">RStudio Copilot Guide</a>.</p>
+<p>This <a href="https://www.youtube.com/watch?v=Lihg6il9SzE">youtube video</a> demos using Github Copilot in Rstudio.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/vscode_open_chat.jpg" class="img-fluid figure-img"></p>
+<figcaption>Open chat is located in the upper right of your screen in VS Code</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/vscode_ask_apply_insert.jpg" class="img-fluid figure-img"></p>
+<figcaption>Code generated by chat can be inserted into your code directly from the chat window</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/vscode_keep_discard.jpg" class="img-fluid figure-img"></p>
+<figcaption>Each code suggestion can be individually kept or discarded. Red lines with a are deletions, green lines are additions</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/vscode_review.jpg" class="img-fluid figure-img"></p>
+<figcaption>Invoking a review of your code from copilot</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/vscode_copilot_usage.jpg" class="img-fluid figure-img"></p>
+<figcaption>See how close you are to your monthly token limits. This feature seems to be limited to VS Code as of today; I expect it will be introduced into Positron soon</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -806,15 +995,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./AI_product_examples.html" class="pagination-link" aria-label="AI Successes and Failures">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI Successes and Failures</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

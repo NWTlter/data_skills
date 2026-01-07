@@ -55,7 +55,7 @@ website:
       - section: "GenAI II: IDE Integration"
         contents:
         - href: AI_how_to_2_IDE_quickstart.qmd
-          text: "Copilot Quick Start Guide"
+          text: "Quickstart Guide: Using AI in Your IDE for R Programming"
         - href: AI_how_to_2_full_IDE.qmd
           text: "Beyond Microsoft Products: Other IDEs and Assistants" 
       - href: AI_3_Danger_zone.qmd

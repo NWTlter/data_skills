@@ -270,7 +270,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./AI_how_to_2_IDE_quickstart.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Copilot Quick Start Guide</span></a>
+ <span class="menu-text">Quickstart Guide: Using AI in Your IDE for R Programming</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,8 +333,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <section id="many-ides-now-have-ai-tools-built-in." class="level3">
 <h3 class="anchored" data-anchor-id="many-ides-now-have-ai-tools-built-in.">Many IDEs now have AI tools built in.</h3>
 <p><a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">RStudio</a> has Github copilot for inline code completion. Add #comments right into your script and watch copilot try to write code. Works likes a multiline typeahead.</p>
-<p><a href="https://positron.posit.co/assistant.html">Positron</a> uses Anthropic for chat and Github Copilot for inline code completion. Positron accesses Anthropic through the API, so you’ll need to set up an account and pay a nominal fee for service.</p>
-<p><a href="https://docs.github.com/en/copilot/how-tos/use-chat/use-chat-in-ide">VScode</a> (as well as Eclipse, JetBrains, Visual Studio, and Xcode) provide access to Github Copilot. Applications include inline code completion, editing and agent mode.</p>
+<p><a href="https://positron.posit.co/assistant.html">Positron</a>/<a href="https://docs.github.com/en/copilot/how-tos/use-chat/use-chat-in-ide">VS code</a> can provide access to a variety of model providers and models. Note that you will need to have API access (e.g.&nbsp;setting up an API for Anthropic) and (often) pay a nominal fee for service. As of January 2026, both VS Code and Positron can be configured to use Github Copilot as a model provider, which provides a fairly generous free tier for academics. Applications include inline code completion, editing and agent mode as well as exploratory data analysis.</p>
 <p>This is not an exhaustive list. Eclipse, JetBrains, Visual Studio, and Xcode also have integrated AI tools. If you prefer or are familiar with one of those, start there.</p>
 </section>
 <section id="the-ai-assistants-available-will-depend-on-your-ide-2-popular-plugins-for-vs-code-include" class="level3">
@@ -351,7 +350,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <figcaption>Roo code</figcaption>
 </figure>
 </div>
-<p>Both tools are also available as command line interfaces (CLIs) if you want to use them outside of VScode. The number of landscape of coding agents is expanding rapidly, so keep exploring.</p>
+<p>Both tools are also available as command line interfaces (CLIs) if you want to use them outside of VS Code. The number of landscape of coding agents is expanding rapidly, so keep exploring.</p>
 </section>
 <section id="model-service-providers" class="level3">
 <h3 class="anchored" data-anchor-id="model-service-providers">Model service providers</h3>
@@ -419,16 +418,19 @@ Note: Github Copilot is NOT the same thing as Microsoft Copilot
 <h4 class="anchored" data-anchor-id="further-resources">Further Resources</h4>
 <p>Today’s quickstart demo’s give you some idea of how to use these tools, but to learn more, check out the following resources:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">VSCode</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Positron</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">VS Code</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>The official RStudio GitHub Copilot user’s guide is here: <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">RStudio Copilot Guide</a>.</p>
 <p>When enabled, grey “ghost text” will appear as you type. Accept the suggestion by pressing tab or select Enter/Return to ignore the suggestion. I often find the suggestion is 80% correct and it’s faster to accept an incorrect suggestion and then edit it to have the correct content than to do all the typing myself.</p>
 <p>This <a href="https://www.youtube.com/watch?v=Lihg6il9SzE">youtube video</a> demos using Github Copilot in Rstudio.</p>
 <p>LLM chat is also possible in R/RStudio, via the ellmer package. To use LLM chat features, you must set up an API key to access models. API keys are available from <a href="https://console.anthropic.com/settings/keys">Anthropic</a> (Claude), <a href="https://platform.openai.com/api-keys">OpenAI</a> (ChatGPT), or <a href="https://aistudio.google.com/app/apikey">Google</a> (Gemini). Some are not free. Confusingly, an upgraded plan on ChatGPT etc that would allow you to used more advanced models through the browser does NOT cover the API tools.</p>
-<p>See the <a href="https://ellmer.tidyverse.org/">ellmer documentation</a>, <a href="https://github.com/hadley/workshop-llm-hackathon/blob/main/slides-2-ukraine.pdf">slides</a> from a short-course or this helpful <a href="https://www.youtube.com/watch?v=v1hYiuh0Q74">youtube video</a> for more information. I personally find the interface not as useful as VScode (see other tab).</p>
+<p>See the <a href="https://ellmer.tidyverse.org/">ellmer documentation</a>, <a href="https://github.com/hadley/workshop-llm-hackathon/blob/main/slides-2-ukraine.pdf">slides</a> from a short-course or this helpful <a href="https://www.youtube.com/watch?v=v1hYiuh0Q74">youtube video</a> for more information. I personally find the interface not as useful as VS Code/Positron (see other tab).</p>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Positron has two major AI pair programming tools. <a href="https://positron.posit.co/assistant">Positron Assistant</a> provides dedicated chat pane for coding, troubleshooting and planning, inline chat, or for code completion. <a href="https://positron.posit.co/databot.html">Databot</a> is Posit’s (still somewhat exploratory) data analysis AI tool that can help you explore and visualize data.</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>This <a href="https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-started-with-github-copilot/">blog</a> has some helpful tips, as does the corresponding instructional video <a href="https://www.youtube.com/watch?v=SJqGYwRq0uc">How to use GitHub Copilot (the complete beginner’s guide)</a></p>
 <p>There are extensive how-to documents about GitHub copilot with VScode <a href="https://code.visualstudio.com/docs/copilot/overview">here</a>. The <a href="https://code.visualstudio.com/docs/copilot/chat/prompt-crafting">prompt engineering</a> section is particularly helpful.</p>
 </div>
@@ -863,8 +865,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./AI_how_to_2_IDE_quickstart.html" class="pagination-link" aria-label="Copilot Quick Start Guide">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Copilot Quick Start Guide</span>
+      <a href="./AI_how_to_2_IDE_quickstart.html" class="pagination-link" aria-label="Quickstart Guide: Using AI in Your IDE for R Programming">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Quickstart Guide: Using AI in Your IDE for R Programming</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
