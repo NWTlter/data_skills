@@ -19,7 +19,7 @@ To jump right in, we'll showcase just a few tools, but see the [full instruction
 
 -   If you are an R user, I recommend starting with RStudio and experimenting with typeaheads.
 
--   If you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use Positron/ VS Code. The agent/edit modes of 'chat' (VS Code) or Positron Assistant interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It's a much more streamlined interface than cutting and pasting code into your browser and can do much more advanced work than typeaheads. As well, the LLMs can use files in your project as context to inform their suggestions.
+-   If you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use Positron/ VS Code. The agent/edit modes of 'Copilot chat' (VS Code) or 'Positron Assistant' (Positron) interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It's a much more streamlined interface than cutting and pasting code into your browser and can do much more advanced work than typeaheads. As well, the LLMs can use files in your project as context to inform their suggestions.
 
 #### Model Providers
 
@@ -27,11 +27,11 @@ To jump right in, we'll showcase just a few tools, but see the [full instruction
 
 #### AI Model
 
--   To conserve tokens start with the free tier models and work your way up to more expensive models if things aren't working. There is a [blog](https://www.simonpcouch.com/blog/) that fairly regularly does a bake-off, so check back there if you want the most current recommendations.
+-   To conserve tokens start with the free tier models and work your way up to more expensive models if things aren't working. I currently find Claude Sonnet 4.5 is usually a good compromise between inept and expensive. There is a [blog](https://www.simonpcouch.com/blog/) that fairly regularly does a bake-off, so check back there if you want the most current recommendations.
 
 ### Software Setup is half the battle. Or maybe 3/4.
 
-Once you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing Positron (and enabling Positron Assistant) and/or VS Code (together with the Copilot extensions). *Note there are GenAI tools that are only available in VSCode/Positron (not RStudio) so even if you prefer one of the more RStudio for everyday coding, consider trying out Positron or VSCode for more involved GenAI tasks.*
+Once you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing Positron (and enabling Positron Assistant) and/or VS Code (together with the Copilot extensions). *Note there are GenAI tools that are only available in VS Code/Positron (not RStudio) so even if you prefer one of the more RStudio for everyday coding, consider trying out Positron or VS Code for more involved GenAI tasks.* VS Code and Positron have a lot of overlapping AI functionality right now, though some tools are available in only one or the other. 
 
 ::: panel-tabset
 ##### RStudio
@@ -54,8 +54,8 @@ To disable GitHub Copilot either:
 -   Use the Command Palette <kbd>Cmd+Shift+P</kbd> on Mac or <kbd>Ctrl+Shift+P</kbd> on Windows/Linux, search for "Enable GitHub Copilot" and then uncheck "Enable GitHub Copilot".
 
 ##### Positron
-
-To enable Positron Assistant follow the directions [here](https://positron.posit.co/assistant-getting-started.html). Note Positron supports both code completion through Github Copilot (requires Copilot setup, above) as well as sidebar/inline chat. If you haven't installed Positron, you can download it [here](https://positron.posit.co/start.html#install-positron).
+If you haven't installed Positron, you can download it [here](https://positron.posit.co/start.html#install-positron).
+Positron supports (1) code completion through Github Copilot (note to complete this step you must already registered for Github Pro and enabled Copilot); (2) sidebar/inline chat through Positron Assistant (setup instructions [here](https://positron.posit.co/assistant-getting-started.html)) and (3) agentic exploratory data analysis through Databot (setup instructions [here](https://positron.posit.co/databot.html))
 
 ##### VS Code
 
@@ -78,6 +78,14 @@ To accept a suggestion, press <kbd>Tab</kbd>. To ignore it, just keep typing.
 
 <hr class="section-divider">
 
+::: callout-tip
+## Tip: Chat with your IDE
+
+While typeaheads can be accomplished in RStudio, the remaining demo tools can only be accessed using Positron or VS Code, usually using either the sidebar or inline chat.
+:::
+
+
+
 ::: {.custom-section .documentation-section}
 ##### Documentation
 
@@ -85,9 +93,7 @@ Figure out what's in an entire repository/workspace
 
 `update the readme to explain the contents of each folder`
 
-Document the script that is open
-
-`/doc`
+`Document the script that is open`
 :::
 
 <hr class="section-divider">
@@ -113,7 +119,7 @@ Use inline chat, highlighting the example code OR provide the entire script file
 
 Provide the datafile as context here.
 
-or highlight existing code and use the Copilot 'Code Review' function.
+or highlight existing code and use the Github Copilot 'Code Review' function (VS Code) or Positron Assistant's "Rewrite->Review" option.
 
 You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method [here](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review).
 :::
@@ -146,7 +152,6 @@ For example you could use the plotting code we used in the [Browser-based](AI_ho
 AI isn't great at running QC on large datasets (it doesn't typically read in huge files). But it can help you write code to qc your own data. An example prompt might look something like this (providing the datafile as context)
 
 `write R code to run quality control and visualize these data. Include checks for spelling errors, duplicates or missing data and repeating values.`
-
 :::
 
 ::: callout-warning
@@ -157,6 +162,7 @@ Before experimenting with Databot, please read the Posit blog post [Databot is n
 
 ::: {.custom-section .qc-section}
 ##### Agentic QC
+
 Databot is Positron's experimental tool for exploratory data analysis. Based on a user's prompt, it can iteratively write and execute code, analyze the output, and propose next steps. Databot is accessed via the Command Palette <kbd>Cmd+Shift+P</kbd> on Mac or <kbd>Ctrl+Shift+P</kbd> on Windows/Linux and typing the keyword 'Databot'. You can read more about Databot [here](https://positron.posit.co/databot.html) and [here](https://posit.co/blog/introducing-databot/). A video demo really helps to illustrate its capabilities.
 
 <p class="body-md-regular">
@@ -189,7 +195,7 @@ The folks at <a href="https://posit.co/blog/introducing-databot/">Positron</a> h
 ::: callout-tip
 ## Tip: Format your code as you go
 
-Fix the indenting and spacing BEFORE you ask your AI agent to start editing. You can use the [styler](https://styler.r-lib.org/) package in Rstudio and/or in VScode right click and select 'format code' to accomplish this. Your AI agent will fix formatting as it goes, but this dramatically increases the number of lines you need to check/accept/reject.
+Fix the indenting and spacing BEFORE you ask your AI agent to start editing. You can use the [styler](https://styler.r-lib.org/) package in Rstudio, or using 'format code' in the command palette in VS Code/Positron use to accomplish this. Your AI agent will fix formatting as it goes, but this dramatically increases the number of lines you need to check/accept/reject.
 :::
 
 ### Review: Where the heck are all those buttons?
@@ -217,9 +223,9 @@ This [youtube video](https://www.youtube.com/watch?v=Lihg6il9SzE) demos using Gi
 
 ## Review code
 
-![Invoking a review of your code from copilot](figures/vscode_review.jpg)
+![Invoking a review of your code from Github copilot in VS Code](figures/vscode_review.jpg)
 
 ## Limits
 
-![See how close you are to your monthly token limits. This feature seems to be limited to VS Code as of today; I expect it will be introduced into Positron soon](figures/vscode_copilot_usage.jpg)
+![See how close you are to your monthly token limits. This feature seems to be limited to VS Code as of today; I expect it will be introduced into Positron soon.](figures/vscode_copilot_usage.jpg)
 :::

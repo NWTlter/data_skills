@@ -364,7 +364,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <h4 class="anchored" data-anchor-id="ides">IDEs</h4>
 <ul>
 <li><p>If you are an R user, I recommend starting with RStudio and experimenting with typeaheads.</p></li>
-<li><p>If you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use Positron/ VS Code. The agent/edit modes of ‘chat’ (VS Code) or Positron Assistant interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It’s a much more streamlined interface than cutting and pasting code into your browser and can do much more advanced work than typeaheads. As well, the LLMs can use files in your project as context to inform their suggestions.</p></li>
+<li><p>If you want to do more complicated code modifications than simple figure tweaks, I highly recommend you use Positron/ VS Code. The agent/edit modes of ‘Copilot chat’ (VS Code) or ‘Positron Assistant’ (Positron) interact directly with your files, offering code suggestions with a built-in editor that you can use to accept/reject suggestions and have them inserted right into your code. It’s a much more streamlined interface than cutting and pasting code into your browser and can do much more advanced work than typeaheads. As well, the LLMs can use files in your project as context to inform their suggestions.</p></li>
 </ul>
 </section>
 <section id="model-providers" class="level4">
@@ -376,13 +376,13 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <section id="ai-model" class="level4">
 <h4 class="anchored" data-anchor-id="ai-model">AI Model</h4>
 <ul>
-<li>To conserve tokens start with the free tier models and work your way up to more expensive models if things aren’t working. There is a <a href="https://www.simonpcouch.com/blog/">blog</a> that fairly regularly does a bake-off, so check back there if you want the most current recommendations.</li>
+<li>To conserve tokens start with the free tier models and work your way up to more expensive models if things aren’t working. I currently find Claude Sonnet 4.5 is usually a good compromise between inept and expensive. There is a <a href="https://www.simonpcouch.com/blog/">blog</a> that fairly regularly does a bake-off, so check back there if you want the most current recommendations.</li>
 </ul>
 </section>
 </section>
 <section id="software-setup-is-half-the-battle.-or-maybe-34." class="level3">
 <h3 class="anchored" data-anchor-id="software-setup-is-half-the-battle.-or-maybe-34.">Software Setup is half the battle. Or maybe 3/4.</h3>
-<p>Once you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing Positron (and enabling Positron Assistant) and/or VS Code (together with the Copilot extensions). <em>Note there are GenAI tools that are only available in VSCode/Positron (not RStudio) so even if you prefer one of the more RStudio for everyday coding, consider trying out Positron or VSCode for more involved GenAI tasks.</em></p>
+<p>Once you have signed up for one (or more) of the accounts above, you then have to figure out how to get your computer to know that, not just you. If you are an R user, I recommend installing Positron (and enabling Positron Assistant) and/or VS Code (together with the Copilot extensions). <em>Note there are GenAI tools that are only available in VS Code/Positron (not RStudio) so even if you prefer one of the more RStudio for everyday coding, consider trying out Positron or VS Code for more involved GenAI tasks.</em> VS Code and Positron have a lot of overlapping AI functionality right now, though some tools are available in only one or the other.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Positron</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">VS Code</a></li></ul>
 <div class="tab-content">
@@ -415,7 +415,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 </ul>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>To enable Positron Assistant follow the directions <a href="https://positron.posit.co/assistant-getting-started.html">here</a>. Note Positron supports both code completion through Github Copilot (requires Copilot setup, above) as well as sidebar/inline chat. If you haven’t installed Positron, you can download it <a href="https://positron.posit.co/start.html#install-positron">here</a>.</p>
+<p>If you haven’t installed Positron, you can download it <a href="https://positron.posit.co/start.html#install-positron">here</a>. Positron supports (1) code completion through Github Copilot (note to complete this step you must already registered for Github Pro and enabled Copilot); (2) sidebar/inline chat through Positron Assistant (setup instructions <a href="https://positron.posit.co/assistant-getting-started.html">here</a>) and (3) agentic exploratory data analysis through Databot (setup instructions <a href="https://positron.posit.co/databot.html">here</a>)</p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>If you haven’t installed VS Code, you can download it <a href="https://code.visualstudio.com/">here</a>. Setup instructions for copilot are <a href="https://code.visualstudio.com/docs/copilot/setup">here</a>. Note to complete this step you must already registered for Github Pro and enabled Copilot.</p>
@@ -438,12 +438,24 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <p>To accept a suggestion, press <kbd>Tab</kbd>. To ignore it, just keep typing.</p>
 </section>
 <hr class="section-divider">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip: Chat with your IDE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>While typeaheads can be accomplished in RStudio, the remaining demo tools can only be accessed using Positron or VS Code, usually using either the sidebar or inline chat.</p>
+</div>
+</div>
 <section id="documentation" class="level5 custom-section documentation-section">
 <h5 class="anchored" data-anchor-id="documentation">Documentation</h5>
 <p>Figure out what’s in an entire repository/workspace</p>
 <p><code>update the readme to explain the contents of each folder</code></p>
-<p>Document the script that is open</p>
-<p><code>/doc</code></p>
+<p><code>Document the script that is open</code></p>
 </section>
 <hr class="section-divider">
 <section id="explain" class="level5 custom-section explain-section">
@@ -458,7 +470,7 @@ gtag('config', 'G-CW9RMD9SJW', { 'anonymize_ip': true});
 <h5 class="anchored" data-anchor-id="reviewfix">Review/Fix</h5>
 <p><code>/fix</code></p>
 <p>Provide the datafile as context here.</p>
-<p>or highlight existing code and use the Copilot ‘Code Review’ function.</p>
+<p>or highlight existing code and use the Github Copilot ‘Code Review’ function (VS Code) or Positron Assistant’s “Rewrite-&gt;Review” option.</p>
 <p>You can also request a code review on github. Using this method, github will (asynchronously) review your code and create a pull request for you to review and merge if you agree with the suggestions. Read more about this method <a href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review">here</a>.</p>
 </section>
 <section id="script---function" class="level5 custom-section function-section">
@@ -489,12 +501,12 @@ Warning: Databot is fully agentic, use with caution!
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Before experimenting with Databot, please read the Posit blog post <a href="https://posit.co/blog/databot-is-not-a-flotation-device/">Databot is not a flotation device</a>, and review the <a href="AI_3_Danger_zone.html">Danger Zone</a> for important considerations when using agentic AI tools. Databot – when running unsupervised – is an example of an agent that could be vulnerable to a prompt injection attack, or delete files on your computer. Consider the potential consequences before clicking that ‘always allow’ button.</p>
+<p>Before experimenting with Databot, please read the Posit blog post <a href="https://posit.co/blog/databot-is-not-a-flotation-device/">Databot is not a flotation device</a>, and review the <a href="AI_3_Danger_zone.html">Danger Zone</a> for important considerations when using agentic AI tools. Databot – when running unsupervised – is an example of an agent that could be vulnerable to a prompt injection attack, or delete files on your computer. It also can churn through tokens pretty quickly. Consider the potential consequences before clicking that ‘always allow’ button.</p>
 </div>
 </div>
 <section id="agentic-qc" class="level5 custom-section qc-section">
 <h5 class="anchored" data-anchor-id="agentic-qc">Agentic QC</h5>
-<p>Alternatively, try out Databot, Positron’s experimental tool for exploratory data analysis. Read more about Databot <a href="https://positron.posit.co/databot.html">here</a> and <a href="https://posit.co/blog/introducing-databot/">here</a>. Databot is accessed via the Command Palette <kbd>Cmd+Shift+P</kbd> on Mac or <kbd>Ctrl+Shift+P</kbd> on Windows/Linux and typing the keyword ‘Databot’.</p>
+<p>Databot is Positron’s experimental tool for exploratory data analysis. Based on a user’s prompt, it can iteratively write and execute code, analyze the output, and propose next steps. Databot is accessed via the Command Palette <kbd>Cmd+Shift+P</kbd> on Mac or <kbd>Ctrl+Shift+P</kbd> on Windows/Linux and typing the keyword ‘Databot’. You can read more about Databot <a href="https://positron.posit.co/databot.html">here</a> and <a href="https://posit.co/blog/introducing-databot/">here</a>. A video demo really helps to illustrate its capabilities.</p>
 <p class="body-md-regular">
 </p><p>The folks at <a href="https://posit.co/blog/introducing-databot/">Positron</a> have made a nice video to demo Databot in action, that is embedded below.</p>
 <p></p>
@@ -518,7 +530,7 @@ Tip: Format your code as you go
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Fix the indenting and spacing BEFORE you ask your AI agent to start editing. You can use the <a href="https://styler.r-lib.org/">styler</a> package in Rstudio and/or in VScode right click and select ‘format code’ to accomplish this. Your AI agent will fix formatting as it goes, but this dramatically increases the number of lines you need to check/accept/reject.</p>
+<p>Fix the indenting and spacing BEFORE you ask your AI agent to start editing. You can use the <a href="https://styler.r-lib.org/">styler</a> package in Rstudio, or using ‘format code’ in the command palette in VS Code/Positron use to accomplish this. Your AI agent will fix formatting as it goes, but this dramatically increases the number of lines you need to check/accept/reject.</p>
 </div>
 </div>
 </section>
@@ -560,7 +572,7 @@ Tip: Format your code as you go
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figures/vscode_review.jpg" class="img-fluid figure-img"></p>
-<figcaption>Invoking a review of your code from copilot</figcaption>
+<figcaption>Invoking a review of your code from Github copilot in VS Code</figcaption>
 </figure>
 </div>
 </div>
@@ -568,7 +580,7 @@ Tip: Format your code as you go
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figures/vscode_copilot_usage.jpg" class="img-fluid figure-img"></p>
-<figcaption>See how close you are to your monthly token limits. This feature seems to be limited to VS Code as of today; I expect it will be introduced into Positron soon</figcaption>
+<figcaption>See how close you are to your monthly token limits. This feature seems to be limited to VS Code as of today; I expect it will be introduced into Positron soon.</figcaption>
 </figure>
 </div>
 </div>
