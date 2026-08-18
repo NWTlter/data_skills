@@ -20,18 +20,8 @@ website:
     contents:
     - href: index.qmd
       text: Intro
-    - section: Finding/Using Niwot Data
-      contents:
-      - href: FIND_where_data_live.qmd
-        text: Where Data Live
-      - href: FIND_finding_data.qmd
-        text: Finding Data
-      - href: FIND_reading_metadata.qmd
-        text: Reading Metadata
-      - href: FIND_data_download.qmd
-        text: Data Download
-      - href: FIND_be_a_good_citizen.qmd
-        text: Be a Good Citizen
+    - href: https://nwtlter.github.io/NWT_Data_Skills_Find_And_Download/
+      text: "Finding/Using Niwot Data ↗"
     - section: Archiving Niwot Data
       contents:
       - href: ARCHIVE_data_submission_overview.qmd
